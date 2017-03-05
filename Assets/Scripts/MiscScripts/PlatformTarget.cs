@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlatformTarget : SwitchTarget{
 
-	public float MoveDistance = -1.0f; 
-	public float MoveTime = 1.0f;
+	public float MoveDistance = 1.0f; 
+	public int DefaultDirection = 1;
+
+
 
 	// Use this for initialization
-	void Start () {
-		
+	override public void Start () {
+		base.Start ();
 	}
 	
 	// Update is called once per frame
@@ -19,14 +21,14 @@ public class PlatformTarget : SwitchTarget{
 
 	override public void Activate(bool activating){
 		Debug.Log ("Activating platform");
-		int direction = 1; 
-		if (activating)
+		int direction = DefaultDirection;
+		if (!activating)
 			direction *= -1;
 
 		Vector3 curPos = transform.position;
 		Vector3 newPos = transform.position + new Vector3(0.0f, direction * MoveDistance, 0.0f);
 
-		StartCoroutine (MovePlatform (curPos, newPos, MoveTime));
+		StartCoroutine (MovePlatform (curPos, newPos, base.Duration));
 	}
 
 	IEnumerator MovePlatform(Vector3 oldPos, Vector3 newPos, float duration){
