@@ -11,6 +11,12 @@ public class PlayerScript : MonoBehaviour {
 
 	private bool attatched;
 
+	Animator anim;
+	private bool facingRight = true;
+
+	/* Check if she's in ground*/
+	private bool isGrounded = true;
+	public float jumpForce = 1.0f;
 
 	private float xThrowMagnitude;
 	private float yThrowMagnitude;
@@ -22,29 +28,75 @@ public class PlayerScript : MonoBehaviour {
 	private float endY;
 	private float direction = 1;
 
+	private bool walkingLeft = false;
+	private bool walkingRight = false;
+
 
 	// Use this for initialization
 	void Start () {
 		attatched = true;
 		body = this.GetComponent<Rigidbody> ();
 		teleporterBody = teleporterSphere.GetComponent<Rigidbody> ();
+		anim = GetComponent<Animator> ();
 	}
+	
 
 	// Update is called once per frame
 	void Update () {
+		//OnCollisionEnter ();
+		if(isGrounded != true)
+			Debug.Log (isGrounded);
+
 		//player navigation
-		if (Input.GetKey (KeyCode.LeftArrow)) {
+		if (Input.GetKeyDown (KeyCode.LeftArrow)) {
+			anim.SetBool ("isWalkingLeft", true);
+			walkingLeft = true;
+			facingRight = false;
+
+		}
+		if (Input.GetKeyUp (KeyCode.LeftArrow)) {
+			anim.SetBool ("isWalkingLeft", false);
+			walkingLeft = false;
+		}
+
+		if (walkingLeft) {
 			direction = -1;
 			transform.Translate (.1f * direction, 0, 0);
 		}
-		if (Input.GetKey (KeyCode.RightArrow)) {
+
+		if (Input.GetKeyDown (KeyCode.RightArrow)) {
+			anim.SetBool ("isWalkingRight", true);
+			walkingRight = true;
+			facingRight = true;
+
+		}
+		if (Input.GetKeyUp (KeyCode.RightArrow)) {
+			anim.SetBool ("isWalkingRight", false);
+			walkingRight = false;
+		}
+
+		if (walkingRight) {
 			direction = 1;
 			transform.Translate (.1f * direction, 0, 0);
 		}
-		if (Input.GetKey (KeyCode.UpArrow)) {
-			direction = 1;
-			transform.Translate (0, .1f * direction, 0);
+
+
+			if (Input.GetKey (KeyCode.UpArrow)) {
+				if (facingRight) {
+					anim.SetBool ("isJumpingRight", true);
+				} else
+					anim.SetBool ("isJumpingLeft", true);
+				//direction = 1;
+				//transform.Translate (0, .1f * direction, 0);
+				body.AddForce (Vector3.up * jumpForce);
+			}
+
+
+		if (isGrounded) {
+			anim.SetBool ("isJumpingRight", false);
+			anim.SetBool ("isJumpingLeft", false);
 		}
+
 		if (Input.GetKey (KeyCode.DownArrow)) {
 			direction = -1;
 			transform.Translate (0, .1f * direction, 0);
@@ -68,6 +120,8 @@ public class PlayerScript : MonoBehaviour {
 			throwTeleporter ();
 		}
 	}
+
+
 
 
 	//teleporting to the teleporter sphere
@@ -98,5 +152,11 @@ public class PlayerScript : MonoBehaviour {
 		if (col.gameObject.name == "Teleporter Sphere") {
 			attatched = true;
 		}
+		if (col.gameObject.name == "Plane")
+			isGrounded = true;
+	}
+	void OnCollisionExit(Collision col){
+		if (col.gameObject.name == "Plane")
+			isGrounded = false;
 	}
 }
