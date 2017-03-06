@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MainCamera : MonoBehaviour {
 
+	public static MainCamera instance = null;
+
 	private float dampTime = 0.3f;
 
 	public float DampTime {
@@ -16,8 +18,27 @@ public class MainCamera : MonoBehaviour {
 
 	private Camera cam;
 
+	void Awake()
+	{
+		//Check if instance already exists
+		if (instance == null)
+
+			//if not, set instance to this
+			instance = this;
+
+		//If instance already exists and it's not this:
+		else if (instance != this)
+
+			//Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+			Destroy (gameObject); 
+
+		transform.Find ("FadeOut").gameObject.SetActive (true);
+	}
+
 	void Start(){
+		Debug.Log ("start");
 		cam = gameObject.GetComponent<Camera> ();
+		transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (true);
 	}
 
 	void Update ()  {
