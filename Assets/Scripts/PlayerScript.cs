@@ -30,6 +30,7 @@ public class PlayerScript : MonoBehaviour {
 
 	private bool walkingLeft = false;
 	private bool walkingRight = false;
+	private bool jumping = false;
 
 
 	// Use this for initialization
@@ -81,20 +82,26 @@ public class PlayerScript : MonoBehaviour {
 		}
 
 
-			if (Input.GetKey (KeyCode.UpArrow)) {
-				if (facingRight) {
-					anim.SetBool ("isJumpingRight", true);
-				} else
-					anim.SetBool ("isJumpingLeft", true);
-				//direction = 1;
-				//transform.Translate (0, .1f * direction, 0);
-				body.AddForce (Vector3.up * jumpForce);
-			}
+		if (Input.GetKey (KeyCode.UpArrow)) {
+			if (facingRight) {
+				anim.SetBool ("isJumpingRight", true);
+			} else
+				anim.SetBool ("isJumpingLeft", true);
+			jumping = true;
+			//direction = 1;
+			//transform.Translate (0, .1f * direction, 0);
+			body.AddForce (Vector3.up * jumpForce);
+		}
 
+		if (isGrounded && jumping) {
+			body.AddForce (Vector3.up * jumpForce);
+			jumping = false;
+		}
 
-		if (isGrounded) {
+		if (isGrounded && !jumping) {
 			anim.SetBool ("isJumpingRight", false);
 			anim.SetBool ("isJumpingLeft", false);
+			Debug.Log ("landed!");
 		}
 
 		if (Input.GetKey (KeyCode.DownArrow)) {
