@@ -1,0 +1,4173 @@
+fileFormatVersion: 2
+guid: 726d0802373ca476a87f71ca87604a71
+timeCreated: 1488756793
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: bn_chest_A
+    100002: bn_chest_B
+    100004: bn_hat_A
+    100006: bn_hat_B
+    100008: bn_hat_C
+    100010: bn_head
+    100012: bn_head_A
+    100014: bn_head_B
+    100016: bn_hood
+    100018: bn_l_ankle
+    100020: bn_l_arm
+    100022: bn_l_ball
+    100024: bn_l_elbow
+    100026: bn_l_hand
+    100028: bn_l_hip
+    100030: bn_l_knee
+    100032: bn_l_sleeve_A
+    100034: bn_l_sleeve_B
+    100036: bn_l_sleeve_C
+    100038: bn_l_toe
+    100040: bn_neck
+    100042: bn_r_ankle
+    100044: bn_r_arm
+    100046: bn_r_ball
+    100048: bn_r_elbow
+    100050: bn_r_hand
+    100052: bn_r_hip
+    100054: bn_r_knee
+    100056: bn_r_sleeve_A
+    100058: bn_r_sleeve_B
+    100060: bn_r_sleeve_C
+    100062: bn_r_toe
+    100064: bn_root
+    100066: char_blendshapes
+    100068: char_body
+    100070: char_ctrls
+    100072: char_head
+    100074: char_l_eye
+    100076: char_l_leg
+    100078: char_mesh
+    100080: char_misc
+    100082: char_r_eye
+    100084: char_r_leg
+    100086: char_skeleton
+    100088: ctrl_chest_A
+    100090: ctrl_chest_B
+    100092: ctrl_head
+    100094: ctrl_hip
+    100096: ctrl_hood_A
+    100098: ctrl_hood_B
+    100100: ctrl_hood_C
+    100102: ctrl_l_elbow
+    100104: ctrl_l_foot
+    100106: ctrl_l_hand
+    100108: ctrl_l_shoulder
+    100110: ctrl_l_sleeve_A
+    100112: ctrl_l_sleeve_B
+    100114: ctrl_r_elbow
+    100116: ctrl_r_foot
+    100118: ctrl_r_hand
+    100120: ctrl_r_shoulder
+    100122: ctrl_r_sleeve_A
+    100124: ctrl_r_sleeve_B
+    100126: ctrl_root
+    100128: ik_l_leg
+    100130: ik_r_leg
+    100132: ik_sc_l_ball
+    100134: ik_sc_l_toe
+    100136: ik_sc_r_ball
+    100138: ik_sc_r_toe
+    100140: rev_l_ankle
+    100142: rev_l_ball
+    100144: rev_l_heel
+    100146: rev_l_toe
+    100148: rev_r_ankle
+    100150: rev_r_ball
+    100152: rev_r_heel
+    100154: rev_r_toe
+    100156: //RootNode
+    400000: bn_chest_A
+    400002: bn_chest_B
+    400004: bn_hat_A
+    400006: bn_hat_B
+    400008: bn_hat_C
+    400010: bn_head
+    400012: bn_head_A
+    400014: bn_head_B
+    400016: bn_hood
+    400018: bn_l_ankle
+    400020: bn_l_arm
+    400022: bn_l_ball
+    400024: bn_l_elbow
+    400026: bn_l_hand
+    400028: bn_l_hip
+    400030: bn_l_knee
+    400032: bn_l_sleeve_A
+    400034: bn_l_sleeve_B
+    400036: bn_l_sleeve_C
+    400038: bn_l_toe
+    400040: bn_neck
+    400042: bn_r_ankle
+    400044: bn_r_arm
+    400046: bn_r_ball
+    400048: bn_r_elbow
+    400050: bn_r_hand
+    400052: bn_r_hip
+    400054: bn_r_knee
+    400056: bn_r_sleeve_A
+    400058: bn_r_sleeve_B
+    400060: bn_r_sleeve_C
+    400062: bn_r_toe
+    400064: bn_root
+    400066: char_blendshapes
+    400068: char_body
+    400070: char_ctrls
+    400072: char_head
+    400074: char_l_eye
+    400076: char_l_leg
+    400078: char_mesh
+    400080: char_misc
+    400082: char_r_eye
+    400084: char_r_leg
+    400086: char_skeleton
+    400088: ctrl_chest_A
+    400090: ctrl_chest_B
+    400092: ctrl_head
+    400094: ctrl_hip
+    400096: ctrl_hood_A
+    400098: ctrl_hood_B
+    400100: ctrl_hood_C
+    400102: ctrl_l_elbow
+    400104: ctrl_l_foot
+    400106: ctrl_l_hand
+    400108: ctrl_l_shoulder
+    400110: ctrl_l_sleeve_A
+    400112: ctrl_l_sleeve_B
+    400114: ctrl_r_elbow
+    400116: ctrl_r_foot
+    400118: ctrl_r_hand
+    400120: ctrl_r_shoulder
+    400122: ctrl_r_sleeve_A
+    400124: ctrl_r_sleeve_B
+    400126: ctrl_root
+    400128: ik_l_leg
+    400130: ik_r_leg
+    400132: ik_sc_l_ball
+    400134: ik_sc_l_toe
+    400136: ik_sc_r_ball
+    400138: ik_sc_r_toe
+    400140: rev_l_ankle
+    400142: rev_l_ball
+    400144: rev_l_heel
+    400146: rev_l_toe
+    400148: rev_r_ankle
+    400150: rev_r_ball
+    400152: rev_r_heel
+    400154: rev_r_toe
+    400156: //RootNode
+    4300000: char_head
+    4300002: char_r_eye
+    4300004: char_r_leg
+    4300006: char_l_leg
+    4300008: char_body
+    4300010: char_l_eye
+    7400000: witch_idle_right
+    7400002: witch_idle_left
+    7400004: witch_walk_right
+    7400006: witch_walk_left
+    7400008: witch_prep_left
+    7400010: witch_jump_left
+    7400012: witch_fall_left
+    7400014: witch_prep_right
+    7400016: witch_jump_right
+    7400018: witch_fall_right
+    7400020: witch_idle_front
+    7400022: witch_pull_left
+    7400024: witch_pull_right
+    7400026: witch_deathFall
+    7400028: witch_dead
+    7400030: witch_throw_right
+    7400032: witch_throw_left
+    7400034: witch_happy
+    7400036: witch_walk_front
+    7400038: witch_walk_back
+    7400040: witch_doorOpen
+    9500000: //RootNode
+    13700000: char_body
+    13700002: char_head
+    13700004: char_l_eye
+    13700006: char_l_leg
+    13700008: char_r_eye
+    13700010: char_r_leg
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: witch_idle_right
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 110
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_idle_left
+      takeName: Take 001
+      firstFrame: 131
+      lastFrame: 240
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_walk_right
+      takeName: Take 001
+      firstFrame: 265
+      lastFrame: 296
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_walk_left
+      takeName: Take 001
+      firstFrame: 309
+      lastFrame: 340
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_prep_left
+      takeName: Take 001
+      firstFrame: 350
+      lastFrame: 355
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_jump_left
+      takeName: Take 001
+      firstFrame: 355
+      lastFrame: 364
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_fall_left
+      takeName: Take 001
+      firstFrame: 370
+      lastFrame: 379
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_prep_right
+      takeName: Take 001
+      firstFrame: 381
+      lastFrame: 381
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_jump_right
+      takeName: Take 001
+      firstFrame: 386
+      lastFrame: 395
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_fall_right
+      takeName: Take 001
+      firstFrame: 401
+      lastFrame: 409
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_idle_front
+      takeName: Take 001
+      firstFrame: 415
+      lastFrame: 524
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_pull_left
+      takeName: Take 001
+      firstFrame: 530
+      lastFrame: 559
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_pull_right
+      takeName: Take 001
+      firstFrame: 560
+      lastFrame: 589
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_deathFall
+      takeName: Take 001
+      firstFrame: 595
+      lastFrame: 610
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_dead
+      takeName: Take 001
+      firstFrame: 610
+      lastFrame: 610
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_throw_right
+      takeName: Take 001
+      firstFrame: 615
+      lastFrame: 669
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_throw_left
+      takeName: Take 001
+      firstFrame: 675
+      lastFrame: 729
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_happy
+      takeName: Take 001
+      firstFrame: 740
+      lastFrame: 780
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_walk_front
+      takeName: Take 001
+      firstFrame: 794
+      lastFrame: 825
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_walk_back
+      takeName: Take 001
+      firstFrame: 839
+      lastFrame: 870
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: witch_doorOpen
+      takeName: Take 001
+      firstFrame: 876
+      lastFrame: 906
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: char_ctrls
+        weight: 1
+      - path: char_ctrls/ctrl_root
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_head/ctrl_hood_A/ctrl_hood_B/ctrl_hood_C
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_l_shoulder/ctrl_l_elbow/ctrl_l_hand/ctrl_l_sleeve_A/ctrl_l_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_hip/ctrl_chest_A/ctrl_chest_B/ctrl_r_shoulder/ctrl_r_elbow/ctrl_r_hand/ctrl_r_sleeve_A/ctrl_r_sleeve_B
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_l_foot
+        weight: 1
+      - path: char_ctrls/ctrl_root/ctrl_r_foot
+        weight: 1
+      - path: char_mesh
+        weight: 1
+      - path: char_mesh/char_blendshapes
+        weight: 1
+      - path: char_mesh/char_body
+        weight: 1
+      - path: char_mesh/char_head
+        weight: 1
+      - path: char_mesh/char_l_eye
+        weight: 1
+      - path: char_mesh/char_l_leg
+        weight: 1
+      - path: char_mesh/char_r_eye
+        weight: 1
+      - path: char_mesh/char_r_leg
+        weight: 1
+      - path: char_misc
+        weight: 1
+      - path: char_misc/rev_l_heel
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/ik_sc_l_toe
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/ik_sc_l_ball
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle
+        weight: 1
+      - path: char_misc/rev_l_heel/rev_l_toe/rev_l_ball/rev_l_ankle/ik_l_leg
+        weight: 1
+      - path: char_misc/rev_r_heel
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/ik_sc_r_toe
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/ik_sc_r_ball
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle
+        weight: 1
+      - path: char_misc/rev_r_heel/rev_r_toe/rev_r_ball/rev_r_ankle/ik_r_leg
+        weight: 1
+      - path: char_skeleton
+        weight: 1
+      - path: char_skeleton/bn_root
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_l_arm/bn_l_elbow/bn_l_hand/bn_l_sleeve_A/bn_l_sleeve_B/bn_l_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_head_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_neck/bn_head/bn_head_A/bn_hood/bn_hat_A/bn_hat_B/bn_hat_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B
+        weight: 1
+      - path: char_skeleton/bn_root/bn_chest_A/bn_chest_B/bn_r_arm/bn_r_elbow/bn_r_hand/bn_r_sleeve_A/bn_r_sleeve_B/bn_r_sleeve_C
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_l_hip/bn_l_knee/bn_l_ankle/bn_l_ball/bn_l_toe
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball
+        weight: 1
+      - path: char_skeleton/bn_root/bn_r_hip/bn_r_knee/bn_r_ankle/bn_r_ball/bn_r_toe
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
