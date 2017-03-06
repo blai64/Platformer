@@ -20,7 +20,6 @@ public class PlatformTarget : SwitchTarget{
 	}
 
 	override public void Activate(bool activating){
-		Debug.Log ("Activating platform");
 		int direction = DefaultDirection;
 		if (!activating)
 			direction *= -1;

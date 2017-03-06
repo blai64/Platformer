@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerBehavior : MonoBehaviour {
+	public static PlayerBehavior instance; 
 
 	// Public gameobjects
 	public GameObject Teleporter; 
@@ -40,6 +41,21 @@ public class PlayerBehavior : MonoBehaviour {
 	private float endX;
 	private float endY;
 	private int direction = 1;
+
+	void Awake()
+	{
+		//Check if instance already exists
+		if (instance == null)
+
+			//if not, set instance to this
+			instance = this;
+
+		//If instance already exists and it's not this:
+		else if (instance != this)
+
+			//Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+			Destroy (gameObject); 
+	}
 
 	void Start () {
 		body = GetComponent<Rigidbody> ();
@@ -170,6 +186,19 @@ public class PlayerBehavior : MonoBehaviour {
 		}
 	}
 
+	//If player is colliding and presses button, then change switch
+	void OnTriggerStay (Collider other){
+		if (other.gameObject.CompareTag ("Switch") && 
+			Input.GetKeyDown (KeyCode.L)) {
+			Debug.Log ("should animate");
+			if (other.gameObject.GetComponent<SwitchScript>().IsActive)
+				Pull(false);
+			else 
+				Pull(true);
+		}
+
+	}
+
 	/**************************** ANIMATION EVENTS ****************************/
 
 	private void Jump() {
@@ -219,8 +248,9 @@ public class PlayerBehavior : MonoBehaviour {
 		if (animTimer < 0f) {
 			animTimer = AnimTimer;
 			canMove = true;
+			enableMove = false;
 		}
-		enableMove = false;
+
 	}
 
 	private void Throw(Vector3 force) {
