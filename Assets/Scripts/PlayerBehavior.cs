@@ -12,12 +12,16 @@ public class PlayerBehavior : MonoBehaviour {
 	private Rigidbody body;
 	private Rigidbody teleporterBody;
 	private Animator anim;
+	private TeleporterBehavior tb;
 
 	// Animation state variables
 	private bool isLeft = false;
 	private bool isGrounded = true;
 	private float prevHeight;
 	private bool canMove = true;
+	private bool enableMove = false;
+	public float AnimTimer = 2f;
+	private float animTimer;
 
 	// Physics variables
 	public float JumpForce = 1.0f;
@@ -29,10 +33,10 @@ public class PlayerBehavior : MonoBehaviour {
 	private bool attached = true;
 	private float xThrowMagnitude;
 	private float yThrowMagnitude;
-//	private float xTeleportVector;
-//	private float yTeleportVector;
-	private float startX = 571f;
-	private float startY = 143f;
+	private float xTeleportVector;
+	private float yTeleportVector;
+	private float startX;
+	private float startY;
 	private float endX;
 	private float endY;
 	private int direction = 1;
@@ -41,20 +45,22 @@ public class PlayerBehavior : MonoBehaviour {
 		body = GetComponent<Rigidbody> ();
 		teleporterBody = Teleporter.GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
+		tb = Teleporter.GetComponent<TeleporterBehavior> ();
+
 		prevHeight = body.position.y;
 
 		jumpForce = JumpForce;
 		speed = WalkingSpeed;
+		animTimer = AnimTimer;
 	}
-
+		
 	void Update () {
 
 		if (canMove) {
 			InputManager ();
 		} else {
-			AnimatorStateInfo curr = anim.GetCurrentAnimatorStateInfo (0);
-			if (curr.fullPathHash == Animator.StringToHash("Base Layer.idle_right")) {
-				Debug.Log("pls");
+			if (enableMove) {
+				EnableMove ();
 			}
 		}
 	}
@@ -90,16 +96,11 @@ public class PlayerBehavior : MonoBehaviour {
 		// Falling
 		Fall ();
 
-		// Throwing
-		if (attached) 
-			Teleporter.transform.position = new Vector3 (this.transform.position.x,
-														 this.transform.position.y + 1, 0);
-
 		if (Input.GetKeyDown (KeyCode.Space) && !attached) {
 			Teleport ();
 		}
 
-		if (Input.GetMouseButtonDown (0)) {
+		if (Input.GetMouseButtonDown (0) && attached) {
 			Instantiate (throwVectorArrow);
 			throwVectorArrow.transform.position = Teleporter.transform.position;
 		}
@@ -114,7 +115,7 @@ public class PlayerBehavior : MonoBehaviour {
 		} else if (Input.GetKeyDown ("h")) {
 			Happy ();
 		} else if (Input.GetKeyDown ("t")) {
-			Throw ();
+			ThrowSingle (500f);
 		} else if (Input.GetKeyDown (KeyCode.LeftShift)) {
 			Pull (true);
 		} else if (Input.GetKeyDown (KeyCode.RightShift)) {
@@ -124,19 +125,26 @@ public class PlayerBehavior : MonoBehaviour {
 
 	/**************************** TELEPORTER CODE ****************************/
 
-	//teleporting to the teleporter sphere
-	void Teleport() {	
-//		xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
-//		yTeleportVector = teleporterBody.transform.position.y - transform.position.y;
+	// teleporting to the teleporter sphere
+	void Teleport() {
+		
+		xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
+		yTeleportVector = teleporterBody.transform.position.y - transform.position.y;
 		transform.position = new Vector3 (teleporterBody.transform.position.x,
-										  teleporterBody.transform.position.y, 0);
+										  teleporterBody.transform.position.y,
+										  transform.position.z);
 		body.velocity = teleporterBody.velocity;
+
+		tb.Disappear ();
 		attached = true;
+
+		// TODO: Particle System + Animation for Teleportation?
 	}
 
-	//throw the teleporter
+	// throw the teleporter
 	void ThrowTeleporter() {
-		attached = false;
+		startX = 571f;
+		startY = 143f;
 		endX = Input.mousePosition.x;
 		endY = Input.mousePosition.y;
 		//fails to throw if you try to throw in the direction you aren't facing
@@ -144,17 +152,14 @@ public class PlayerBehavior : MonoBehaviour {
 			endX = startX;
 		xThrowMagnitude = endX - startX;
 		yThrowMagnitude = endY - startY;
-		teleporterBody.AddForce (xThrowMagnitude * 5 * direction, yThrowMagnitude * 5, 0);
 
-		Throw ();
+		Throw (new Vector3(xThrowMagnitude * 5f * direction, yThrowMagnitude * 5f, 0));
 	}
 
 	/**************************** COLLISION EVENTS ****************************/
 
 	void OnCollisionEnter(Collision col) {
-		if (col.gameObject.tag == "Teleporter") {
-			attached = true;
-		} else if (col.gameObject.tag == "Ground") {
+		if (col.gameObject.tag == "Ground") {
 			Land ();
 		}
 	}
@@ -209,8 +214,25 @@ public class PlayerBehavior : MonoBehaviour {
 		transform.Translate (speed * direction, 0, 0);
 	}
 
-	private void Throw() {
+	private void EnableMove() {
+		animTimer -= Time.deltaTime;
+		if (animTimer < 0f) {
+			animTimer = AnimTimer;
+			canMove = true;
+		}
+		enableMove = false;
+	}
+
+	private void Throw(Vector3 force) {
+		attached = false;
 		anim.SetTrigger ("isThrowing");
+		tb.SetForce (force);
+	}
+
+	private void ThrowSingle(float force) {
+		attached = false;
+		anim.SetTrigger ("isThrowing");
+		tb.SetSingleForce (force);
 	}
 
 	private void Pull(bool left) {
@@ -220,6 +242,7 @@ public class PlayerBehavior : MonoBehaviour {
 			anim.SetTrigger ("isPullingRight");
 		}
 		canMove = false;
+		enableMove = true;
 	}
 
 	private void Die() {
@@ -230,6 +253,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private void Happy() {
 		anim.SetTrigger ("isHappy");
 		canMove = false;
+		enableMove = true;
 	}
 
 	private void Leave() {
