@@ -1524,7 +1524,7 @@ ModelImporter:
       name: witch_prep_right
       takeName: Take 001
       firstFrame: 381
-      lastFrame: 381
+      lastFrame: 386
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
