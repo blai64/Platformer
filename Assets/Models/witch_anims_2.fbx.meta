@@ -2826,7 +2826,7 @@ ModelImporter:
       name: witch_dead
       takeName: Take 001
       firstFrame: 610
-      lastFrame: 610
+      lastFrame: 611
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
