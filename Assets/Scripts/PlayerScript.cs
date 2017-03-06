@@ -87,10 +87,7 @@ public class PlayerScript : MonoBehaviour {
 				anim.SetBool ("isJumpingRight", true);
 			} else
 				anim.SetBool ("isJumpingLeft", true);
-<<<<<<< HEAD
 			jumping = true;
-=======
->>>>>>> 7cdff69584c1767044897428f60983eda1e839e1
 			//direction = 1;
 			//transform.Translate (0, .1f * direction, 0);
 			body.AddForce (Vector3.up * jumpForce);
