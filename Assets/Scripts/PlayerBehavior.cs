@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerBehavior : MonoBehaviour {
+	// Script
+	public static PlayerBehavior game;
 
 	// Public gameobjects
 	public GameObject Teleporter; 
@@ -41,7 +43,9 @@ public class PlayerBehavior : MonoBehaviour {
 	private float endY;
 	private int direction = 1;
 
+
 	void Start () {
+		game = this;
 		body = GetComponent<Rigidbody> ();
 		teleporterBody = Teleporter.GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
@@ -96,13 +100,12 @@ public class PlayerBehavior : MonoBehaviour {
 		// Falling
 		Fall ();
 
-		if (Input.GetKeyDown (KeyCode.Space) && !attached) {
+		if (Input.GetKeyDown (KeyCode.Space) && !attached && TeleporterBehavior.game.isGrounded) {
 			Teleport ();
 		}
 
 		if (Input.GetMouseButtonDown (0) && attached) {
-			Instantiate (throwVectorArrow);
-			throwVectorArrow.transform.position = Teleporter.transform.position;
+			
 		}
 
 		if (Input.GetMouseButtonUp (0) && attached) {
@@ -114,7 +117,7 @@ public class PlayerBehavior : MonoBehaviour {
 			Die ();
 		} else if (Input.GetKeyDown ("h")) {
 			Happy ();
-		} else if (Input.GetKeyDown ("t")) {
+		} else if (Input.GetKeyDown ("t") && attached) {
 			ThrowSingle (500f);
 		} else if (Input.GetKeyDown (KeyCode.LeftShift)) {
 			Pull (true);
@@ -131,12 +134,13 @@ public class PlayerBehavior : MonoBehaviour {
 		xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
 		yTeleportVector = teleporterBody.transform.position.y - transform.position.y;
 		transform.position = new Vector3 (teleporterBody.transform.position.x,
-										  teleporterBody.transform.position.y,
+										  teleporterBody.transform.position.y + .6f,
 										  transform.position.z);
 		body.velocity = teleporterBody.velocity;
 
 		tb.Disappear ();
 		attached = true;
+		TeleporterBehavior.game.isGrounded = false;
 
 		// TODO: Particle System + Animation for Teleportation?
 	}
@@ -154,6 +158,13 @@ public class PlayerBehavior : MonoBehaviour {
 		yThrowMagnitude = endY - startY;
 
 		Throw (new Vector3(xThrowMagnitude * 5f * direction, yThrowMagnitude * 5f, 0));
+	}
+
+	//pick up teleporter when you collide with it
+	public void pickUp(){
+		attached = true;
+		tb.Disappear ();
+		TeleporterBehavior.game.isGrounded = false;
 	}
 
 	/**************************** COLLISION EVENTS ****************************/
