@@ -2,11 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-using System.Collections;
-
 public class MainCamera : MonoBehaviour {
 
-	private float dampTime = 0.75f;
+	private float dampTime = 0.3f;
 
 	public float DampTime {
 		get { return dampTime; } 
@@ -16,20 +14,16 @@ public class MainCamera : MonoBehaviour {
 	private Vector3 velocity = Vector3.zero;
 	public Transform target;
 
-	private Camera camera;
+	private Camera cam;
 
 	void Start(){
-		camera = gameObject.GetComponent<Camera> ();
+		cam = gameObject.GetComponent<Camera> ();
 	}
 
-
-	// Update is called once per frame
-	void Update () 
-	{
-		if (target)
-		{
-			Vector3 point = camera.WorldToViewportPoint(target.position);
-			Vector3 delta = target.position - camera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
+	void Update ()  {
+		if (target) {
+			Vector3 point = cam.WorldToViewportPoint(target.position);
+			Vector3 delta = target.position - cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
 			Vector3 destination = transform.position + delta;
 			transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 		}
