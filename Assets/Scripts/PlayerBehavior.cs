@@ -17,6 +17,9 @@ public class PlayerBehavior : MonoBehaviour {
 	private Animator anim;
 	private TeleporterBehavior tb;
 
+	// Crystals
+	public GameObject crystal;
+
 	// Animation state variables
 	private bool isLeft = false;
 	private bool isGrounded = true;
