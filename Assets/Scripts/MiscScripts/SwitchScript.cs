@@ -48,7 +48,7 @@ public class SwitchScript : MonoBehaviour {
 	}
 
 	IEnumerator MoveSwitch(){
-		yield return new WaitForSeconds (1.0f);
+		yield return new WaitForSeconds (0.5f);
 		float t = 0.0f;
 		float rotateDistance;
 
