@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerBehavior : MonoBehaviour {
+	// Script
+	public static PlayerBehavior instance; 
+
 
 	// Public gameobjects
 	public GameObject Teleporter; 
@@ -43,6 +46,22 @@ public class PlayerBehavior : MonoBehaviour {
 	private float endX;
 	private float endY;
 	private int direction = 1;
+
+
+	void Awake()
+	{
+		//Check if instance already exists
+		if (instance == null)
+
+			//if not, set instance to this
+			instance = this;
+
+		//If instance already exists and it's not this:
+		else if (instance != this)
+
+			//Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+			Destroy (gameObject); 
+	}
 
 	void Start () {
 		body = GetComponent<Rigidbody> ();
@@ -99,13 +118,12 @@ public class PlayerBehavior : MonoBehaviour {
 		// Falling
 		Fall ();
 
-		if (Input.GetKeyDown (KeyCode.Space) && !attached) {
+		if (Input.GetKeyDown (KeyCode.Space) && !attached && TeleporterBehavior.instance.isGrounded) {
 			Teleport ();
 		}
 
 		if (Input.GetMouseButtonDown (0) && attached) {
-			Instantiate (throwVectorArrow);
-			throwVectorArrow.transform.position = Teleporter.transform.position;
+			
 		}
 
 		if (Input.GetMouseButtonUp (0) && attached) {
@@ -117,7 +135,7 @@ public class PlayerBehavior : MonoBehaviour {
 			Die ();
 		} else if (Input.GetKeyDown ("h")) {
 			Happy ();
-		} else if (Input.GetKeyDown ("t")) {
+		} else if (Input.GetKeyDown ("t") && attached) {
 			ThrowSingle (500f);
 		} else if (Input.GetKeyDown (KeyCode.LeftShift)) {
 			Pull (true);
@@ -134,12 +152,13 @@ public class PlayerBehavior : MonoBehaviour {
 		xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
 		yTeleportVector = teleporterBody.transform.position.y - transform.position.y;
 		transform.position = new Vector3 (teleporterBody.transform.position.x,
-										  teleporterBody.transform.position.y,
+										  teleporterBody.transform.position.y + .6f,
 										  transform.position.z);
 		body.velocity = teleporterBody.velocity;
 
 		tb.Disappear ();
 		attached = true;
+		TeleporterBehavior.instance.isGrounded = false;
 
 		// TODO: Particle System + Animation for Teleportation?
 	}
@@ -159,6 +178,13 @@ public class PlayerBehavior : MonoBehaviour {
 		Throw (new Vector3(xThrowMagnitude * 5f * direction, yThrowMagnitude * 5f, 0));
 	}
 
+	//pick up teleporter when you collide with it
+	public void pickUp(){
+		attached = true;
+		tb.Disappear ();
+		TeleporterBehavior.instance.isGrounded = false;
+	}
+
 	/**************************** COLLISION EVENTS ****************************/
 
 	void OnCollisionEnter(Collision col) {
@@ -171,6 +197,19 @@ public class PlayerBehavior : MonoBehaviour {
 		if (col.gameObject.tag == "Ground") {
 			isGrounded = false;
 		}
+	}
+
+	//If player is colliding and presses button, then change switch
+	void OnTriggerStay (Collider other){
+		if (other.gameObject.CompareTag ("Switch") && 
+			Input.GetKeyDown (KeyCode.L)) {
+			Debug.Log ("should animate");
+			if (other.gameObject.GetComponent<SwitchScript>().IsActive)
+				Pull(false);
+			else 
+				Pull(true);
+		}
+
 	}
 
 	/**************************** ANIMATION EVENTS ****************************/
@@ -222,8 +261,9 @@ public class PlayerBehavior : MonoBehaviour {
 		if (animTimer < 0f) {
 			animTimer = AnimTimer;
 			canMove = true;
+			enableMove = false;
 		}
-		enableMove = false;
+
 	}
 
 	private void Throw(Vector3 force) {
