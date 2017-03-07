@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerBehavior : MonoBehaviour {
 	// Script
-	public static PlayerBehavior game;
+	public static PlayerBehavior instance; 
+
 
 	// Public gameobjects
 	public GameObject Teleporter; 
@@ -44,8 +45,22 @@ public class PlayerBehavior : MonoBehaviour {
 	private int direction = 1;
 
 
+	void Awake()
+	{
+		//Check if instance already exists
+		if (instance == null)
+
+			//if not, set instance to this
+			instance = this;
+
+		//If instance already exists and it's not this:
+		else if (instance != this)
+
+			//Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+			Destroy (gameObject); 
+	}
+
 	void Start () {
-		game = this;
 		body = GetComponent<Rigidbody> ();
 		teleporterBody = Teleporter.GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
@@ -100,7 +115,7 @@ public class PlayerBehavior : MonoBehaviour {
 		// Falling
 		Fall ();
 
-		if (Input.GetKeyDown (KeyCode.Space) && !attached && TeleporterBehavior.game.isGrounded) {
+		if (Input.GetKeyDown (KeyCode.Space) && !attached && TeleporterBehavior.instance.isGrounded) {
 			Teleport ();
 		}
 
@@ -140,7 +155,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 		tb.Disappear ();
 		attached = true;
-		TeleporterBehavior.game.isGrounded = false;
+		TeleporterBehavior.instance.isGrounded = false;
 
 		// TODO: Particle System + Animation for Teleportation?
 	}
@@ -164,7 +179,7 @@ public class PlayerBehavior : MonoBehaviour {
 	public void pickUp(){
 		attached = true;
 		tb.Disappear ();
-		TeleporterBehavior.game.isGrounded = false;
+		TeleporterBehavior.instance.isGrounded = false;
 	}
 
 	/**************************** COLLISION EVENTS ****************************/
@@ -179,6 +194,19 @@ public class PlayerBehavior : MonoBehaviour {
 		if (col.gameObject.tag == "Ground") {
 			isGrounded = false;
 		}
+	}
+
+	//If player is colliding and presses button, then change switch
+	void OnTriggerStay (Collider other){
+		if (other.gameObject.CompareTag ("Switch") && 
+			Input.GetKeyDown (KeyCode.L)) {
+			Debug.Log ("should animate");
+			if (other.gameObject.GetComponent<SwitchScript>().IsActive)
+				Pull(false);
+			else 
+				Pull(true);
+		}
+
 	}
 
 	/**************************** ANIMATION EVENTS ****************************/
@@ -230,8 +258,9 @@ public class PlayerBehavior : MonoBehaviour {
 		if (animTimer < 0f) {
 			animTimer = AnimTimer;
 			canMove = true;
+			enableMove = false;
 		}
-		enableMove = false;
+
 	}
 
 	private void Throw(Vector3 force) {

@@ -5,7 +5,7 @@ using UnityEngine;
 public class TeleporterBehavior : MonoBehaviour {
 
 	public GameObject parentBone;
-	public static TeleporterBehavior game;
+	public static TeleporterBehavior instance;
 
 	// Components
 	private Rigidbody rb;
@@ -16,7 +16,7 @@ public class TeleporterBehavior : MonoBehaviour {
 	public bool isGrounded = false;
 
 	void Start() {
-		game = this;
+		instance = this;
 		rb = GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
 
@@ -60,7 +60,7 @@ public class TeleporterBehavior : MonoBehaviour {
 				isGrounded = true;
 			}
 		if (col.gameObject.name == "witch_char" && isGrounded)
-			PlayerBehavior.game.pickUp ();
+			PlayerBehavior.instance.pickUp ();
 	}
 	void OnCollisionExit(Collision col) {
 		if (col.gameObject.tag == "Ground") {
