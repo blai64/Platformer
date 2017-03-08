@@ -176,6 +176,10 @@ public class PlayerBehavior : MonoBehaviour {
 		if ((!isLeft && endX > startX) || (isLeft && endX < startX)) {
 			xThrowMagnitude = (endX - startX) * direction;
 			yThrowMagnitude = endY - startY;
+			if (xThrowMagnitude > 100)
+				xThrowMagnitude = 100;
+			if (yThrowMagnitude > 100)
+				yThrowMagnitude = 100;
 			Throw (new Vector3 (xThrowMagnitude * 5f * direction, yThrowMagnitude * 5f, 0));
 		}
 	}
@@ -192,6 +196,9 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.tag == "Ground") {
 			Land ();
+		}
+		else if (col.gameObject.CompareTag("Killer")){
+			Die();
 		}
 	}
 
