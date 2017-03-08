@@ -1,12 +1,5 @@
 fileFormatVersion: 2
-<<<<<<< HEAD
 guid: dd8d8a192d5357d46992fd71f43eff9c
-timeCreated: 1488929529
-=======
-guid: 8fac984e39cf441a9ac7e1fc170a914d
-timeCreated: 1488929514
->>>>>>> 55b7346f697ade8a0f93f0133b6f679093d5a533
-licenseType: Free
 ModelImporter:
   serializedVersion: 19
   fileIDToRecycleName:
@@ -445,6 +438,7 @@ ModelImporter:
     4300156: pillar_6
     4300158: pillar_7
     4300160: pillar_8
+    9500000: //RootNode
   materials:
     importMaterials: 1
     materialName: 0
@@ -469,7 +463,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1
+    globalScale: 0
     meshCompression: 0
     addColliders: 0
     importBlendShapes: 1
@@ -507,7 +501,7 @@ ModelImporter:
     hasExtraRoot: 0
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 0
+  animationType: 2
   humanoidOversampling: 1
   additionalBone: 0
   userData: 
