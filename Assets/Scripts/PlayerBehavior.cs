@@ -46,6 +46,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private float endX;
 	private float endY;
 	private int direction = 1;
+	public int teleportCharges = 3;
 
 
 	void Awake()
@@ -148,19 +149,21 @@ public class PlayerBehavior : MonoBehaviour {
 
 	// teleporting to the teleporter sphere
 	void Teleport() {
-		
-		xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
-		yTeleportVector = teleporterBody.transform.position.y - transform.position.y;
-		transform.position = new Vector3 (teleporterBody.transform.position.x,
-										  teleporterBody.transform.position.y + .6f,
-										  transform.position.z);
-		body.velocity = teleporterBody.velocity;
+		if (teleportCharges > 0) {
+			xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
+			yTeleportVector = teleporterBody.transform.position.y - transform.position.y;
+			transform.position = new Vector3 (teleporterBody.transform.position.x,
+				teleporterBody.transform.position.y + .6f,
+				transform.position.z);
+			body.velocity = teleporterBody.velocity;
 
-		tb.Disappear ();
-		attached = true;
-		TeleporterBehavior.instance.isGrounded = false;
+			tb.Disappear ();
+			attached = true;
+			teleportCharges -= 1;
+			TeleporterBehavior.instance.isGrounded = false;
 
-		// TODO: Particle System + Animation for Teleportation?
+			// TODO: Particle System + Animation for Teleportation?
+		}
 	}
 
 	// throw the teleporter
@@ -170,12 +173,11 @@ public class PlayerBehavior : MonoBehaviour {
 		endX = Input.mousePosition.x;
 		endY = Input.mousePosition.y;
 		//fails to throw if you try to throw in the direction you aren't facing
-		if((endX - startX < 0 && direction == 1) || (startX - endX < 0 && direction == -1))
-			endX = startX;
-		xThrowMagnitude = endX - startX;
-		yThrowMagnitude = endY - startY;
-
-		Throw (new Vector3(xThrowMagnitude * 5f * direction, yThrowMagnitude * 5f, 0));
+		if ((!isLeft && endX > startX) || (isLeft && endX < startX)) {
+			xThrowMagnitude = (endX - startX) * direction;
+			yThrowMagnitude = endY - startY;
+			Throw (new Vector3 (xThrowMagnitude * 5f * direction, yThrowMagnitude * 5f, 0));
+		}
 	}
 
 	//pick up teleporter when you collide with it
@@ -241,6 +243,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private void ChangeDirection(bool left) {
 		isLeft = left;
 		anim.SetBool ("isLeft", left);
+		direction *= -1;
 	}
 
 	private void Walk(bool on) {
