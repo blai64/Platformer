@@ -17,8 +17,8 @@ public class PlayerBehavior : MonoBehaviour {
 	private Animator anim;
 	private TeleporterBehavior tb;
 
-	// Crystals
-	public GameObject crystal;
+	// Textbox
+	public GameObject text;
 
 	// Animation state variables
 	private bool isLeft = false;
@@ -78,6 +78,8 @@ public class PlayerBehavior : MonoBehaviour {
 	}
 		
 	void Update () {
+		if (Input.anyKey)
+			UIFade.instance.Fade (false);
 
 		if (canMove) {
 			InputManager ();
@@ -301,6 +303,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private void Die() {
 		anim.SetTrigger ("isDead");
 		canMove = false;
+		MainCamera.instance.transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (false);
 	}
 
 	private void Happy() {
