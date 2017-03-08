@@ -3,7 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class PlayerBehavior : MonoBehaviour {
+	// Script
 	public static PlayerBehavior instance; 
+
 
 	// Public gameobjects
 	public GameObject Teleporter; 
@@ -14,6 +16,9 @@ public class PlayerBehavior : MonoBehaviour {
 	private Rigidbody teleporterBody;
 	private Animator anim;
 	private TeleporterBehavior tb;
+
+	// Textbox
+	public GameObject text;
 
 	// Animation state variables
 	private bool isLeft = false;
@@ -41,6 +46,8 @@ public class PlayerBehavior : MonoBehaviour {
 	private float endX;
 	private float endY;
 	private int direction = 1;
+	public int teleportCharges = 3;
+
 
 	void Awake()
 	{
@@ -71,6 +78,8 @@ public class PlayerBehavior : MonoBehaviour {
 	}
 		
 	void Update () {
+		if (Input.anyKey)
+			UIFade.instance.Fade (false);
 
 		if (canMove) {
 			InputManager ();
@@ -79,6 +88,10 @@ public class PlayerBehavior : MonoBehaviour {
 				EnableMove ();
 			}
 		}
+	}
+
+	public int GetDirection() {
+		return direction;
 	}
 
 	/**************************** INPUT MANAGER ****************************/
@@ -112,13 +125,12 @@ public class PlayerBehavior : MonoBehaviour {
 		// Falling
 		Fall ();
 
-		if (Input.GetKeyDown (KeyCode.Space) && !attached) {
+		if (Input.GetKeyDown (KeyCode.Space) && !attached && TeleporterBehavior.instance.isGrounded) {
 			Teleport ();
 		}
 
 		if (Input.GetMouseButtonDown (0) && attached) {
-			Instantiate (throwVectorArrow);
-			throwVectorArrow.transform.position = Teleporter.transform.position;
+			
 		}
 
 		if (Input.GetMouseButtonUp (0) && attached) {
@@ -130,7 +142,7 @@ public class PlayerBehavior : MonoBehaviour {
 			Die ();
 		} else if (Input.GetKeyDown ("h")) {
 			Happy ();
-		} else if (Input.GetKeyDown ("t")) {
+		} else if (Input.GetKeyDown ("t") && attached) {
 			ThrowSingle (500f);
 		} else if (Input.GetKeyDown (KeyCode.LeftShift)) {
 			Pull (true);
@@ -143,18 +155,21 @@ public class PlayerBehavior : MonoBehaviour {
 
 	// teleporting to the teleporter sphere
 	void Teleport() {
-		
-		xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
-		yTeleportVector = teleporterBody.transform.position.y - transform.position.y;
-		transform.position = new Vector3 (teleporterBody.transform.position.x,
-										  teleporterBody.transform.position.y,
-										  transform.position.z);
-		body.velocity = teleporterBody.velocity;
+		if (teleportCharges > 0) {
+			xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
+			yTeleportVector = teleporterBody.transform.position.y - transform.position.y;
+			transform.position = new Vector3 (teleporterBody.transform.position.x,
+				teleporterBody.transform.position.y + .6f,
+				transform.position.z);
+			body.velocity = teleporterBody.velocity;
 
-		tb.Disappear ();
-		attached = true;
+			tb.Disappear ();
+			attached = true;
+			teleportCharges -= 1;
+			TeleporterBehavior.instance.isGrounded = false;
 
-		// TODO: Particle System + Animation for Teleportation?
+			// TODO: Particle System + Animation for Teleportation?
+		}
 	}
 
 	// throw the teleporter
@@ -164,12 +179,22 @@ public class PlayerBehavior : MonoBehaviour {
 		endX = Input.mousePosition.x;
 		endY = Input.mousePosition.y;
 		//fails to throw if you try to throw in the direction you aren't facing
-		if((endX - startX < 0 && direction == 1) || (startX - endX < 0 && direction == -1))
-			endX = startX;
-		xThrowMagnitude = endX - startX;
-		yThrowMagnitude = endY - startY;
+		if ((!isLeft && endX > startX) || (isLeft && endX < startX)) {
+			xThrowMagnitude = (endX - startX) * direction;
+			yThrowMagnitude = endY - startY;
+			if (xThrowMagnitude > 100)
+				xThrowMagnitude = 100;
+			if (yThrowMagnitude > 100)
+				yThrowMagnitude = 100;
+			Throw (new Vector3 (xThrowMagnitude * 5f * direction, yThrowMagnitude * 5f, 0));
+		}
+	}
 
-		Throw (new Vector3(xThrowMagnitude * 5f * direction, yThrowMagnitude * 5f, 0));
+	//pick up teleporter when you collide with it
+	public void pickUp(){
+		attached = true;
+		tb.Disappear ();
+		TeleporterBehavior.instance.isGrounded = false;
 	}
 
 	/**************************** COLLISION EVENTS ****************************/
@@ -177,6 +202,9 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.tag == "Ground") {
 			Land ();
+		}
+		else if (col.gameObject.CompareTag("Killer")){
+			Die();
 		}
 	}
 
@@ -228,6 +256,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private void ChangeDirection(bool left) {
 		isLeft = left;
 		anim.SetBool ("isLeft", left);
+		direction *= -1;
 	}
 
 	private void Walk(bool on) {
@@ -278,6 +307,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private void Die() {
 		anim.SetTrigger ("isDead");
 		canMove = false;
+		MainCamera.instance.transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (false);
 	}
 
 	private void Happy() {

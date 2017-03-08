@@ -6,6 +6,8 @@ public class Fade : MonoBehaviour {
 
 	private SpriteRenderer fadeoutSprite;
 
+	public int FadeDuration = 2;
+
 	// Use this for initialization
 	void Start () {
 	}
@@ -16,7 +18,7 @@ public class Fade : MonoBehaviour {
 	}
 
 	public void FadeInOut(bool fadingIn){
-		StartCoroutine(StartFade(4, fadingIn));
+		StartCoroutine(StartFade(FadeDuration, fadingIn));
 	}
 
 	IEnumerator StartFade(float duration, bool fadingIn){

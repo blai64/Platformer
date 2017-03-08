@@ -6,7 +6,9 @@ public class MainCamera : MonoBehaviour {
 
 	public static MainCamera instance = null;
 
-	private float dampTime = 0.3f;
+	public float dampTime = 0.3f;
+	public float xOffset = 0f;
+	public float yOffset = 0f;
 
 	public float DampTime {
 		get { return dampTime; } 
@@ -15,6 +17,7 @@ public class MainCamera : MonoBehaviour {
 		
 	private Vector3 velocity = Vector3.zero;
 	public Transform target;
+	private PlayerBehavior pb;
 
 	private Camera cam;
 
@@ -29,14 +32,15 @@ public class MainCamera : MonoBehaviour {
 		//If instance already exists and it's not this:
 		else if (instance != this)
 
-			//Then destroy this. This enforces our singleton pattern, meaning there can only ever be one instance of a GameManager.
+			//Then destroy this. This enforces our singleton pattern,
+			//meaning there can only ever be one instance of a GameManager.
 			Destroy (gameObject); 
 
 		transform.Find ("FadeOut").gameObject.SetActive (true);
+		pb = target.gameObject.GetComponent<PlayerBehavior> ();
 	}
 
 	void Start(){
-		Debug.Log ("start");
 		cam = gameObject.GetComponent<Camera> ();
 		transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (true);
 	}
@@ -44,7 +48,10 @@ public class MainCamera : MonoBehaviour {
 	void Update ()  {
 		if (target) {
 			Vector3 point = cam.WorldToViewportPoint(target.position);
-			Vector3 delta = target.position - cam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, point.z)); //(new Vector3(0.5, 0.5, point.z));
+			float direction = (float) pb.GetDirection ();
+			Vector3 delta = target.position - cam.ViewportToWorldPoint(new Vector3(0.5f - direction * xOffset,
+																				   0.5f + yOffset,
+																				   point.z));
 			Vector3 destination = transform.position + delta;
 			transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 		}

@@ -27,7 +27,7 @@ public class SwitchScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		isActive = false;
-		handle = transform.Find ("pCube2").gameObject;
+		handle = transform.Find ("lever_handle").gameObject;
 	}
 
 	void Update(){
@@ -48,13 +48,13 @@ public class SwitchScript : MonoBehaviour {
 	}
 
 	IEnumerator MoveSwitch(){
-		yield return new WaitForSeconds (1.0f);
+		yield return new WaitForSeconds (0.5f);
 		float t = 0.0f;
 		float rotateDistance;
 
 		Vector3 temp = handle.transform.rotation.eulerAngles;
 
-		rotateDistance = 90;
+		rotateDistance = -90;
 
 		if (isActive)
 			rotateDistance *= -1; 
