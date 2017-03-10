@@ -9,7 +9,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 	// Public gameobjects
 	public GameObject Teleporter; 
-	public GameObject throwVectorArrow;
+	public GameObject teleportAura;
 
 	// Components
 	private Rigidbody body;
@@ -47,6 +47,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private float endY;
 	private int direction = 1;
 	public int teleportCharges = 3;
+	private bool teleporting = false;
 
 
 	void Awake()
@@ -90,14 +91,37 @@ public class PlayerBehavior : MonoBehaviour {
 		}
 	}
 
+	/**************************** ACCESS METHODS ****************************/
 	public int GetDirection() {
 		return direction;
+	}
+
+	public bool IsTeleporting(){
+		return teleporting;
+	}
+
+	public void StopTeleporting(){
+		teleporting = false;
+		tb.Disappear ();
+		attached = true;
+	}
+
+	public float GetXDistance(){
+		return xTeleportVector;
+	}
+
+	public float GetYDistance(){
+		return yTeleportVector;
+	}
+
+	public float GetEndX(){
+		return teleporterBody.transform.position.x;
 	}
 
 	/**************************** INPUT MANAGER ****************************/
 
 	void InputManager() {
-		
+
 		// Jumping
 		if (Input.GetKey (KeyCode.UpArrow)) {
 			Jump ();
@@ -129,10 +153,6 @@ public class PlayerBehavior : MonoBehaviour {
 			Teleport ();
 		}
 
-		if (Input.GetMouseButtonDown (0) && attached) {
-			
-		}
-
 		if (Input.GetMouseButtonUp (0) && attached) {
 			ThrowTeleporter ();
 		}
@@ -153,28 +173,32 @@ public class PlayerBehavior : MonoBehaviour {
 
 	/**************************** TELEPORTER CODE ****************************/
 
+	//resets the position of the teleport aura 
+	void AuraReset(){
+		teleportAura.SetActive (true);
+		teleportAura.transform.position = this.gameObject.transform.position;
+		this.gameObject.SetActive (false);
+	}
+
 	// teleporting to the teleporter sphere
 	void Teleport() {
 		if (teleportCharges > 0) {
+			AuraReset ();
+			teleporting = true;
 			xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
 			yTeleportVector = teleporterBody.transform.position.y - transform.position.y;
 			transform.position = new Vector3 (teleporterBody.transform.position.x,
 				teleporterBody.transform.position.y + .6f,
 				transform.position.z);
-			body.velocity = teleporterBody.velocity;
-
-			tb.Disappear ();
-			attached = true;
 			teleportCharges -= 1;
 			TeleporterBehavior.instance.isGrounded = false;
-
 			// TODO: Particle System + Animation for Teleportation?
 		}
 	}
 
 	// throw the teleporter
 	void ThrowTeleporter() {
-		startX = 571f;
+		startX = 728f;
 		startY = 143f;
 		endX = Input.mousePosition.x;
 		endY = Input.mousePosition.y;
@@ -182,11 +206,7 @@ public class PlayerBehavior : MonoBehaviour {
 		if ((!isLeft && endX > startX) || (isLeft && endX < startX)) {
 			xThrowMagnitude = (endX - startX) * direction;
 			yThrowMagnitude = endY - startY;
-			if (xThrowMagnitude > 100)
-				xThrowMagnitude = 100;
-			if (yThrowMagnitude > 100)
-				yThrowMagnitude = 100;
-			Throw (new Vector3 (xThrowMagnitude * 5f * direction, yThrowMagnitude * 5f, 0));
+			Throw (new Vector3 (xThrowMagnitude / 2f * direction, yThrowMagnitude / 2f, 0));
 		}
 	}
 
