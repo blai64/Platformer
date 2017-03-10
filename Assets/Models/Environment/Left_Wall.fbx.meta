@@ -1,0 +1,172 @@
+fileFormatVersion: 2
+guid: 033575c19c8fc4ed687f37df6f6866ae
+timeCreated: 1489169396
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: back3
+    100002: back4
+    100004: bar_door_2
+    100006: bar_end_13
+    100008: bar_end_14
+    100010: bar_end_15
+    100012: bar_end_2
+    100014: bar_end_4
+    100016: bar_end_6
+    100018: bar_end_7
+    100020: bar_end_8
+    100022: bar_end_9
+    100024: bar_hor_1
+    100026: bar_hor_2
+    100028: bar_hor_3
+    100030: bar_vert_1
+    100032: bar_vert_2
+    100034: bar_vert_3
+    100036: left
+    100038: //RootNode
+    100040: walls
+    400000: back3
+    400002: back4
+    400004: bar_door_2
+    400006: bar_end_13
+    400008: bar_end_14
+    400010: bar_end_15
+    400012: bar_end_2
+    400014: bar_end_4
+    400016: bar_end_6
+    400018: bar_end_7
+    400020: bar_end_8
+    400022: bar_end_9
+    400024: bar_hor_1
+    400026: bar_hor_2
+    400028: bar_hor_3
+    400030: bar_vert_1
+    400032: bar_vert_2
+    400034: bar_vert_3
+    400036: left
+    400038: //RootNode
+    400040: walls
+    2300000: back3
+    2300002: back4
+    2300004: bar_end_13
+    2300006: bar_end_14
+    2300008: bar_end_15
+    2300010: bar_end_2
+    2300012: bar_end_4
+    2300014: bar_end_6
+    2300016: bar_end_7
+    2300018: bar_end_8
+    2300020: bar_end_9
+    2300022: bar_hor_1
+    2300024: bar_hor_2
+    2300026: bar_hor_3
+    2300028: bar_vert_1
+    2300030: bar_vert_2
+    2300032: bar_vert_3
+    2300034: left
+    3300000: back3
+    3300002: back4
+    3300004: bar_end_13
+    3300006: bar_end_14
+    3300008: bar_end_15
+    3300010: bar_end_2
+    3300012: bar_end_4
+    3300014: bar_end_6
+    3300016: bar_end_7
+    3300018: bar_end_8
+    3300020: bar_end_9
+    3300022: bar_hor_1
+    3300024: bar_hor_2
+    3300026: bar_hor_3
+    3300028: bar_vert_1
+    3300030: bar_vert_2
+    3300032: bar_vert_3
+    3300034: left
+    4300000: left
+    4300002: back3
+    4300004: back4
+    4300006: bar_vert_1
+    4300008: bar_vert_2
+    4300010: bar_vert_3
+    4300012: bar_hor_1
+    4300014: bar_hor_2
+    4300016: bar_hor_3
+    4300018: bar_end_2
+    4300020: bar_end_4
+    4300022: bar_end_6
+    4300024: bar_end_7
+    4300026: bar_end_8
+    4300028: bar_end_9
+    4300030: bar_end_13
+    4300032: bar_end_14
+    4300034: bar_end_15
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
