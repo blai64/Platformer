@@ -37,6 +37,7 @@ public class TeleporterBehavior : MonoBehaviour {
 	public void Summon() {
 		anim.SetBool ("isVisible", true);
 	}
+		
 
 	public void Release() {
 		transform.parent = null;
@@ -66,5 +67,9 @@ public class TeleporterBehavior : MonoBehaviour {
 		if (col.gameObject.tag == "Ground") {
 			isGrounded = false;
 		}
+	}
+
+	void Update(){
+		//print (rb.velocity);
 	}
 }

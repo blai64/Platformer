@@ -10,6 +10,8 @@ public class PlayerBehavior : MonoBehaviour {
 	// Public gameobjects
 	public GameObject Teleporter; 
 	public GameObject teleportAura;
+	public GameObject trajectoryBallPrefab;
+
 
 	// Components
 	private Rigidbody body;
@@ -41,13 +43,16 @@ public class PlayerBehavior : MonoBehaviour {
 	private float yThrowMagnitude;
 	private float xTeleportVector;
 	private float yTeleportVector;
-	private float startX;
-	private float startY;
+	private float startX = 728f;
+	private float startY = 143f;
 	private float endX;
 	private float endY;
 	private int direction = 1;
 	public int teleportCharges = 3;
 	private bool teleporting = false;
+	private List<GameObject> trajectoryBallList = new List<GameObject> ();
+	private bool listFilled = false;
+	private bool projected = false;
 
 
 	void Awake()
@@ -121,7 +126,6 @@ public class PlayerBehavior : MonoBehaviour {
 	/**************************** INPUT MANAGER ****************************/
 
 	void InputManager() {
-
 		// Jumping
 		if (Input.GetKey (KeyCode.UpArrow)) {
 			Jump ();
@@ -153,8 +157,16 @@ public class PlayerBehavior : MonoBehaviour {
 			Teleport ();
 		}
 
+		// While holding the mouse down, displays trajectory of throw
+		if (Input.GetMouseButtonDown (0) && attached) {
+			projected = true;
+		}
+		if(projected)
+			DisplayThrowTrajectory ();
+
 		if (Input.GetMouseButtonUp (0) && attached) {
 			ThrowTeleporter ();
+			DestroyProjectedPath ();
 		}
 
 		/** TEST FUNCTIONS REMOVE LATER **/
@@ -198,8 +210,6 @@ public class PlayerBehavior : MonoBehaviour {
 
 	// throw the teleporter
 	void ThrowTeleporter() {
-		startX = 728f;
-		startY = 143f;
 		endX = Input.mousePosition.x;
 		endY = Input.mousePosition.y;
 		//fails to throw if you try to throw in the direction you aren't facing
@@ -209,6 +219,43 @@ public class PlayerBehavior : MonoBehaviour {
 			Throw (new Vector3 (xThrowMagnitude / 2f * direction, yThrowMagnitude / 2f, 0));
 		}
 	}
+
+	// Displays throw trajectory
+	void DisplayThrowTrajectory(){
+		projected = true;
+		float xValue;
+		float yValue;
+		Vector3 initialVelocity = new Vector3(((Input.mousePosition.x - startX) / 2) / teleporterBody.mass * Time.fixedDeltaTime,
+											   (Input.mousePosition.y - startY) / 2 / teleporterBody.mass * Time.fixedDeltaTime,
+										   	   0);
+		// fills list with 10 trajectory balls
+		if (!listFilled) {
+			for (int x = 0; x < 20; x++)
+				trajectoryBallList.Add (Instantiate (trajectoryBallPrefab));
+			listFilled = true;
+		}
+		// places balls on path of projected trajectory
+		for (int i = 0; i < 20; i++) {
+			xValue = Teleporter.transform.position.x + (initialVelocity.x * (i *.1f));
+			yValue = Teleporter.transform.position.y + (initialVelocity.y * (i * .1f) + (-4.9f)*((i *.1f)*(i *.1f)));
+			if(!isLeft)
+				trajectoryBallList [i].transform.position = new Vector3 (xValue + 1, yValue + 1, 0);
+			else
+				trajectoryBallList [i].transform.position = new Vector3 (xValue - .3f , yValue + .5f, 0);
+		}
+	}
+		
+	// clears the trajectory projection
+	void DestroyProjectedPath(){
+		projected = false;
+		listFilled = false;
+		foreach (GameObject ball in trajectoryBallList) {
+			Destroy (ball);
+		}
+		trajectoryBallList = new List<GameObject> ();
+
+	}
+
 
 	//pick up teleporter when you collide with it
 	public void pickUp(){
