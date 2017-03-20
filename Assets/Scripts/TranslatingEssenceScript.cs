@@ -3,18 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class TranslatingEssenceScript : MonoBehaviour {
+	
 	public GameObject Player;
 
 	private float XDirection;
 	private float YDirection;
 	private float limit;
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
 	void Update () {
 		limit = PlayerBehavior.instance.GetEndX ();
 		XDirection = PlayerBehavior.instance.GetXDistance ();
@@ -33,10 +28,8 @@ public class TranslatingEssenceScript : MonoBehaviour {
 		else if (PlayerBehavior.instance.GetDirection() == -1 && transform.position.x < limit)
 			PlayerBehavior.instance.StopTeleporting ();
 	}
-		
-
 	// disables aura and re-enables player
-	void Disable(){
+	void Disable() {
 		this.gameObject.SetActive (false);
 		Player.SetActive (true);
 		PlayerBehavior.instance.StopTeleporting ();

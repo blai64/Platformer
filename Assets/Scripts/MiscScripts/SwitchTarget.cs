@@ -14,7 +14,6 @@ public abstract class SwitchTarget : MonoBehaviour {
 		set{ duration = value;}
 	}
 
-	// Use this for initialization
 	virtual public void Start () {
 		isActive = mySwitch.GetComponent<SwitchScript> ().IsActive;
 		duration = mySwitch.GetComponent<SwitchScript> ().Duration;
@@ -24,7 +23,6 @@ public abstract class SwitchTarget : MonoBehaviour {
 	virtual public void Update () {
 		switchActive = mySwitch.GetComponent<SwitchScript> ().IsActive;
 		if (isActive != switchActive) {
-			Debug.Log ("switch changed!");
 			isActive = switchActive;
 			Activate (isActive);
 		}

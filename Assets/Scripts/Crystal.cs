@@ -45,7 +45,7 @@ public class Crystal : MonoBehaviour {
 	}
 
 	void OnTriggerEnter(Collider col){
-		if(col.gameObject.name == "witch_char"){
+		if(col.gameObject.tag == "Player"){
 			if(PlayerBehavior.instance.teleportCharges < 3)
 				PlayerBehavior.instance.teleportCharges += 1;
 			Collect ();

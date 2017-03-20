@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class SwitchScript : MonoBehaviour {
-	//TODO: Need to add animations for switch object
 
 	private bool isActive;
 
@@ -23,8 +22,6 @@ public class SwitchScript : MonoBehaviour {
 
 	private float disableTime; 
 
-
-	// Use this for initialization
 	void Start () {
 		isActive = false;
 		handle = transform.Find ("lever_handle").gameObject;
@@ -44,7 +41,6 @@ public class SwitchScript : MonoBehaviour {
 			StartCoroutine (MovePlayer ());
 			disableTime = duration;
 		}
-			
 	}
 
 	IEnumerator MoveSwitch(){

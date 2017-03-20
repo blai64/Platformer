@@ -1,21 +1,14 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Fade : MonoBehaviour {
 
 	private SpriteRenderer fadeoutSprite;
 
+	public string SceneName = "Michelle_Beta";
 	public int FadeDuration = 2;
-
-	// Use this for initialization
-	void Start () {
-	}
-
-	// Update is called once per frame
-	void Update () {
-
-	}
 
 	public void FadeInOut(bool fadingIn){
 		StartCoroutine(StartFade(FadeDuration, fadingIn));
@@ -42,5 +35,13 @@ public class Fade : MonoBehaviour {
 
 			yield return 0;
 		}
+
+		if (!fadingIn) {
+			NextScene ();
+		}
+	}
+
+	private void NextScene() {
+		SceneManager.LoadScene(SceneName);
 	}
 }

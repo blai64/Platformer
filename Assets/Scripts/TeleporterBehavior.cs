@@ -51,8 +51,6 @@ public class TeleporterBehavior : MonoBehaviour {
 	public void SetSingleForce(float force) {
 		throwForce = -1f * transform.forward * force;
 	}
-		
-
 
 	//Collisions
 	void OnCollisionEnter(Collision col){
@@ -66,5 +64,9 @@ public class TeleporterBehavior : MonoBehaviour {
 		if (col.gameObject.tag == "Ground") {
 			isGrounded = false;
 		}
+	}
+
+	void Update(){
+		//print (rb.velocity);
 	}
 }

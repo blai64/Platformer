@@ -5,7 +5,7 @@ public class FlickeringLightBehavior : MonoBehaviour {
 
 	public float speed = 5f;
 
-	private Light light;
+	private Light newLight;
 	private Color originalColor;
 	private float timePassed;
 	private float changeValue;
@@ -13,10 +13,10 @@ public class FlickeringLightBehavior : MonoBehaviour {
 
 	void Start(){
 
-		light = GetComponent<Light> ();
+		newLight = GetComponent<Light> ();
 
-		if (light != null) {
-			originalColor = light.color;
+		if (newLight != null) {
+			originalColor = newLight.color;
 		} else {
 			enabled = false;
 			return;
@@ -29,7 +29,7 @@ public class FlickeringLightBehavior : MonoBehaviour {
 	void Update () {
 		timePassed = Time.time;
 		timePassed = timePassed - Mathf.Floor (timePassed);
-		light.color = originalColor * CalculateChange ();
+		newLight.color = originalColor * CalculateChange ();
 	}
 
 	private float CalculateChange() {

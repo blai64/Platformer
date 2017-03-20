@@ -2,19 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlatformTarget : SwitchTarget{
+public class PlatformTarget : SwitchTarget {
 
 	public float MoveDistance = 1.0f; 
 	public int DefaultDirection = 1;
 
-
-
-	// Use this for initialization
 	override public void Start () {
 		base.Start ();
 	}
-	
-	// Update is called once per frame
+
 	override public void Update () {
 		base.Update ();
 	}
@@ -34,7 +30,6 @@ public class PlatformTarget : SwitchTarget{
 		yield return new WaitForSeconds (0.5f);
 
 		float t = 0.0f;
-
 
 		while (t < 1.0f) {
 			t += Time.deltaTime / duration;
