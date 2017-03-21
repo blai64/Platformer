@@ -56,6 +56,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private List<GameObject> trajectoryBallList = new List<GameObject> ();
 	private bool listFilled = false;
 	private bool projected = false;
+	private bool isLeftOfTeleporter;
 
 
 	void Awake() {
@@ -128,6 +129,10 @@ public class PlayerBehavior : MonoBehaviour {
 
 	public float GetEndX(){
 		return teleporterBody.transform.position.x;
+	}
+
+	public bool leftOfTeleporter(){
+		return isLeftOfTeleporter;
 	}
 
 	/**************************** INPUT MANAGER ****************************/
@@ -203,6 +208,10 @@ public class PlayerBehavior : MonoBehaviour {
 	// teleporting to the teleporter sphere
 	void Teleport() {
 		if (teleportCharges > 0) {
+			if (transform.position.x < Teleporter.transform.position.x)
+				isLeftOfTeleporter = true;
+			else
+				isLeftOfTeleporter = false;
 			AuraReset ();
 			teleporting = true;
 			xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
