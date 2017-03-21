@@ -88,8 +88,6 @@ public class PlayerBehavior : MonoBehaviour {
 	}
 		
 	void Update () {
-		if (Input.anyKey)
-			UIFade.instance.Fade (false);
 
 		if (canMove) {
 			InputManager ();
