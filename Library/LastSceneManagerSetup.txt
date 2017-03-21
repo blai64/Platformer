@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Michelle_Beta.unity
+- path: Assets/Scenes/Blai_UI_Trigger_Testing.unity
   isLoaded: 1
   isActive: 1

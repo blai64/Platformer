@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class UITrigger : MonoBehaviour {
 
+	public string content; 
+
 
 
 	// Use this for initialization
@@ -19,11 +21,14 @@ public class UITrigger : MonoBehaviour {
 	void OnTriggerEnter (Collider other){
 		if (other.gameObject.CompareTag ("Player")) {
 			UIFade.instance.Fade (true);
+			UIFade.instance.SetText (content);
 		}
 	}
 	void OnTriggerExit (Collider other){
 		if (other.gameObject.CompareTag ("Player")) {
 			UIFade.instance.Fade (false);
 		}
+
+
 	}
 }

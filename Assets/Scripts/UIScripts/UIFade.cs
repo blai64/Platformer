@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class UIFade : MonoBehaviour {
 	public static UIFade instance;
 
 	private float speed = 0.5f;
+	private IEnumerator current;
 
 	void Awake()
 	{
@@ -24,7 +26,7 @@ public class UIFade : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		StartCoroutine (FadeIn (2.0f));
+		
 	}
 	
 	// Update is called once per frame
@@ -32,11 +34,21 @@ public class UIFade : MonoBehaviour {
 		
 	}
 
+	public void SetText(string content){
+		transform.Find ("Panel/Text").gameObject.GetComponent<Text> ().text = content;
+	}
+
 	public void Fade (bool fadeIn){
-		if (fadeIn)
-			StartCoroutine (FadeIn (0.0f));
-		else
-			StartCoroutine (FadeOut (0.0f));
+		if (current != null)
+			StopCoroutine (current);
+		if (fadeIn) {
+			current = FadeIn (0.0f);
+		}
+		else {
+			current = FadeOut (0.0f);
+		}
+
+		StartCoroutine (current);
 	}
 
 
