@@ -6,7 +6,8 @@ using UnityEngine.UI;
 public class UIFade : MonoBehaviour {
 	public static UIFade instance;
 
-	private float speed = 0.5f;
+	private float inSpeed = 0.5f;
+	private float outSpeed = 1.0f;
 	private IEnumerator current;
 
 	void Awake()
@@ -60,7 +61,7 @@ public class UIFade : MonoBehaviour {
 
 
 		while (cg.alpha < 1) {
-			cg.alpha += Time.deltaTime * speed; 
+			cg.alpha += Time.deltaTime * inSpeed; 
 			yield return null;
 		}
 	}
@@ -72,7 +73,7 @@ public class UIFade : MonoBehaviour {
 
 
 		while (cg.alpha > 0) {
-			cg.alpha -= Time.deltaTime * speed; 
+			cg.alpha -= Time.deltaTime * outSpeed; 
 			yield return null;
 		}
 	}
