@@ -5,8 +5,7 @@ using UnityEngine;
 public class DoorTarget : SwitchTarget {
 
 	public GameObject Player;
-	public float RotateSpeed = 3f; 
-	public int DefaultDirection = 1;
+	public float RotateSpeed = 2f; 
 
 	private PlayerBehavior pb;
 

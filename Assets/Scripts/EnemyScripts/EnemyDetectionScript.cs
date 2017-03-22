@@ -3,22 +3,30 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyDetectionScript : MonoBehaviour {
+
+	public Camera cam;
+
+	private Animator anim;
+
 	private float MoveDistance = 5.0f;
 	private float MoveTime = 1.5f;
 	private bool moving;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+
+	void Start() {
+		anim = GetComponent<Animator> ();
 	}
 
-	void OnTriggerStay (Collider other){
+	void OnTriggerStay (Collider other) {
 		if (other.gameObject.CompareTag ("Player") && !moving) {
-			gameObject.GetComponent<Rigidbody> ().AddForce (0,3,0,ForceMode.Impulse);
+//			gameObject.GetComponent<Rigidbody> ().AddForce (0,3,0,ForceMode.Impulse);
+
+			if (transform.position.x > other.transform.position.x) {
+				anim.SetBool ("isLeft", true);
+			} else {
+				anim.SetBool ("isLeft", false);
+			}
+
+			anim.SetBool ("isAttacking", true);
 
 			int direction = 1; 
 
@@ -30,12 +38,10 @@ public class EnemyDetectionScript : MonoBehaviour {
 
 			moving = true;
 			StartCoroutine (MoveEnemy(curPos, newPos, MoveTime));
-
-
 		}
 	}
 
-	IEnumerator MoveEnemy(Vector3 oldPos, Vector3 newPos, float duration){
+	IEnumerator MoveEnemy(Vector3 oldPos, Vector3 newPos, float duration) {
 		yield return new WaitForSeconds (1);
 
 		float t = 0.0f;
@@ -47,8 +53,8 @@ public class EnemyDetectionScript : MonoBehaviour {
 		}
 		yield return new WaitForSeconds (1);
 		moving = false;
+		anim.SetBool ("isAttacking", false);
 	}
-
 }
 
 
