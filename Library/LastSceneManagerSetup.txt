@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Blai_UI_Trigger_Testing.unity
+- path: Assets/Scenes/Blai_Beta_Test_Mechanics.unity
   isLoaded: 1
   isActive: 1
