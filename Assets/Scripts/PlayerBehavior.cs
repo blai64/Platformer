@@ -57,6 +57,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private List<GameObject> trajectoryBallList = new List<GameObject> ();
 	private bool listFilled = false;
 	private bool projected = false;
+	private bool isLeftOfTeleporter;
 
 	// Pause
 	public GameObject controller;
@@ -97,9 +98,13 @@ public class PlayerBehavior : MonoBehaviour {
 	}
 		
 	void Update () {
+<<<<<<< HEAD
 		//isPaused = PauseButton.GetComponent<MainButton>().isPaused ();
 		//CheckGrounded();
 
+=======
+		isPaused = controller.GetComponent<PauseGame>().isPaused ();
+>>>>>>> 8462ab45a3a11ef854be8b5ca0c0e47914bcf8cc
 		if (canMove) {
 			if(!isPaused)
 				InputManager ();
@@ -146,6 +151,10 @@ public class PlayerBehavior : MonoBehaviour {
 		return teleporterBody.transform.position.x;
 	}
 
+	public bool leftOfTeleporter(){
+		return isLeftOfTeleporter;
+	}
+
 	/**************************** INPUT MANAGER ****************************/
 
 	void InputManager() {
@@ -183,27 +192,41 @@ public class PlayerBehavior : MonoBehaviour {
 			Teleport ();
 		}
 
-		// While holding the mouse down, displays trajectory of throw
-		if (Input.GetMouseButtonDown (0) && attached) {
-			canUseArrows = false;
-			startX = Input.mousePosition.x;
-			projected = true;
-		}
-		if (projected) {
-			Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
+		if (!isPaused) {
+			
+			// While holding the mouse down, displays trajectory of throw
+			if (Input.GetMouseButtonDown (0) && attached) {
+				canUseArrows = false;
+				startX = Input.mousePosition.x;
+				projected = true;
+			}
+			if (projected) {
+				Vector3 screenPos = cam.WorldToScreenPoint (transform.position);
 
-			if ((Input.mousePosition.x > screenPos.x) && isLeft) {
-				ChangeDirection (false);
-			} else if ((Input.mousePosition.x < screenPos.x) && !isLeft) {
-				ChangeDirection (true);
+				if ((Input.mousePosition.x > screenPos.x) && isLeft) {
+					ChangeDirection (false);
+				} else if ((Input.mousePosition.x < screenPos.x) && !isLeft) {
+					ChangeDirection (true);
+				}
+		
+
+				DisplayThrowTrajectory ();
 			}
 
-			DisplayThrowTrajectory ();
-		}
+			if (Input.GetMouseButtonUp (0) && attached && projected) {
 
-		if (Input.GetMouseButtonUp (0) && attached) {
-			ThrowTeleporter ();
-			DestroyProjectedPath ();
+				ThrowTeleporter ();
+				DestroyProjectedPath ();
+
+
+			}
+
+			// Cancels the throwing animation without throwing
+			if (Input.GetMouseButtonDown (1) && projected) {
+				projected = false;
+				canUseArrows = true;
+				DestroyProjectedPath ();
+			}
 		}
 	}
 
@@ -219,6 +242,10 @@ public class PlayerBehavior : MonoBehaviour {
 	// teleporting to the teleporter sphere
 	void Teleport() {
 		if (teleportCharges > 0) {
+			if (transform.position.x < Teleporter.transform.position.x)
+				isLeftOfTeleporter = true;
+			else
+				isLeftOfTeleporter = false;
 			AuraReset ();
 			teleporting = true;
 			xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
@@ -313,6 +340,7 @@ public class PlayerBehavior : MonoBehaviour {
 		}
 	}
 
+<<<<<<< HEAD
 	void OnCollisionExit(Collision col) {
 		if (col.gameObject.tag == "Ground") {
 			RaycastHit objectHit; 
@@ -325,10 +353,12 @@ public class PlayerBehavior : MonoBehaviour {
 		}
 	}
 
+=======
+>>>>>>> 8462ab45a3a11ef854be8b5ca0c0e47914bcf8cc
 	//If player is colliding and presses button, then change switch
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Switch") && 
-			(Input.GetKeyDown (KeyCode.L) || Input.GetKeyDown(KeyCode.LeftShift))) {
+			(Input.GetKeyDown(KeyCode.LeftShift))) {
 			if (other.gameObject.GetComponent<SwitchScript>().IsActive)
 				Pull(false);
 			else 
