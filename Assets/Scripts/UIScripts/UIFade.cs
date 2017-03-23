@@ -6,6 +6,8 @@ using UnityEngine.UI;
 public class UIFade : MonoBehaviour {
 	public static UIFade instance;
 
+	public GameObject dialogue;
+
 	private float inSpeed = 0.5f;
 	private float outSpeed = 1.0f;
 	private IEnumerator current;
@@ -36,7 +38,7 @@ public class UIFade : MonoBehaviour {
 	}
 
 	public void SetText(string content){
-		transform.Find ("Panel/Text").gameObject.GetComponent<Text> ().text = content;
+		dialogue.GetComponent<Text> ().text = content;
 	}
 
 	public void Fade (bool fadeIn){

@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 85a9d7b501f814c4ca207976a574e55c
+timeCreated: 1490298179
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Quill Sword Condensed Italic
+  fontNames:
+  - Quill Sword Condensed Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

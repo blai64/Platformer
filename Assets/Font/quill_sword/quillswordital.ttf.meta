@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 73ab173fdd80e4f6c954be40af68c1d0
+timeCreated: 1490298179
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Quill Sword Italic
+  fontNames:
+  - Quill Sword Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
