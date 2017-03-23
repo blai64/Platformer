@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Blai_Beta_Level1.unity
+=======
+- path: Assets/Scenes/Zao Test.unity
+>>>>>>> 4826e546480141857bca779605254d916fe91c18
   isLoaded: 1
   isActive: 1
