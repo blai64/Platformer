@@ -10,6 +10,12 @@ public class DoorTarget : SwitchTarget {
 	private PlayerBehavior pb;
 	private bool open = false;
 
+	private SoundManager sm;
+
+	void Awake () {
+		sm = GameObject.Find ("SoundManager").GetComponent<SoundManager>();
+	}
+
 	override public void Start () {
 		base.Start ();
 		pb = Player.GetComponent<PlayerBehavior> ();
@@ -20,10 +26,11 @@ public class DoorTarget : SwitchTarget {
 	}
 
 	override public void Activate (bool activating) {
-		if (activating && !open){
+		if (activating && !open) {
+			sm.PlaySound ("door-open");
 			StartCoroutine (RotateDoor (base.Duration));
-			open = true;}
-
+			open = true;
+		}
 	}
 
 	IEnumerator RotateDoor(float duration){

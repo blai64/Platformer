@@ -26,7 +26,6 @@ public class Fade : MonoBehaviour {
 		else
 			targetColor = Color.black;
 
-
 		while (t < 1.0f) {
 			t += Time.deltaTime / duration;
 

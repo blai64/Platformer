@@ -33,6 +33,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private bool enableMove = false;
 	public float AnimTimer = 2f;
 	private float animTimer;
+	private WitchSoundScript wsm;
 
 	// Physics variables
 	public float JumpForce = 1.0f;
@@ -63,9 +64,14 @@ public class PlayerBehavior : MonoBehaviour {
 	public GameObject controller;
 	private bool isPaused;
 
+<<<<<<< HEAD
 	//Collecting energy
 	public GameObject chargeParticles;
 
+=======
+	// Lever Dialogue box collider
+	public GameObject leverbox;
+>>>>>>> 08f39bd49ef0955d05c41cafd5209eb758cf26c7
 
 	void Awake() {
 		
@@ -80,7 +86,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 			// Then destroy this. This enforces our singleton pattern,
 			// meaning there can only ever be one instance of a GameManager.
-			Destroy (gameObject); 
+			Destroy (gameObject);
 	}
 
 	void Start () {
@@ -88,6 +94,7 @@ public class PlayerBehavior : MonoBehaviour {
 		teleporterBody = Teleporter.GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
 		tb = Teleporter.GetComponent<TeleporterBehavior> ();
+		wsm = GetComponent<WitchSoundScript> ();
 
 		prevHeight = body.position.y;
 
@@ -115,10 +122,6 @@ public class PlayerBehavior : MonoBehaviour {
 		if (isExiting) {
 			transform.Translate(new Vector3(0f, 0f, 2f) * Time.deltaTime);
 		}
-
-
-
-
 	}
 
 	/**************************** ACCESS METHODS ****************************/
@@ -244,6 +247,7 @@ public class PlayerBehavior : MonoBehaviour {
 				isLeftOfTeleporter = true;
 			else
 				isLeftOfTeleporter = false;
+			wsm.PlayTeleport ();
 			AuraReset ();
 			teleporting = true;
 			xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
@@ -356,6 +360,7 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Switch") && 
 			(Input.GetKeyDown(KeyCode.LeftShift))) {
+			leverbox.SetActive (false);
 			if (other.gameObject.GetComponent<SwitchScript>().IsActive)
 				Pull(false);
 			else 
@@ -363,12 +368,14 @@ public class PlayerBehavior : MonoBehaviour {
 		}
 	}
 
+
+
 	/**************************** ANIMATION EVENTS ****************************/
 
 	private void Jump() {
 		anim.SetTrigger ("isJumping");
+		wsm.PlayJumpThrow ();
 		if (isGrounded) {
-			Debug.Log ("jumping");
 			body.AddForce (Vector3.up * jumpForce);
 			isGrounded = false;
 		}
@@ -446,6 +453,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 	private void Die() {
 		anim.SetTrigger ("isDead");
+		wsm.PlayDeath ();
 		canMove = false;
 		MainCamera.instance.transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (false);
 	}
@@ -453,6 +461,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private void Happy() {
 		anim.SetTrigger ("isHappy");
 		anim.SetBool ("isWalking", false);
+		wsm.PlayCrystalCollect ();
 		canMove = false;
 		enableMove = true;
 	}
