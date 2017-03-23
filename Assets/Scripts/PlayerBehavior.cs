@@ -319,12 +319,6 @@ public class PlayerBehavior : MonoBehaviour {
 		}
 	}
 
-	void OnCollisionExit(Collision col) {
-		if (col.gameObject.tag == "Ground") {
-			isGrounded = false;
-		}
-	}
-
 	//If player is colliding and presses button, then change switch
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Switch") && 
