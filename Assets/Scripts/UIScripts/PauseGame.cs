@@ -24,8 +24,9 @@ public class PauseGame : MonoBehaviour {
 			Time.timeScale = 0;
 		} else {
 			canvas.gameObject.SetActive (false);
-			Time.timeScale = 1;
 			paused = false;
+			Time.timeScale = 1;
+
 		}
 	}
 

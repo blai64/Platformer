@@ -64,6 +64,9 @@ public class PlayerBehavior : MonoBehaviour {
 	public GameObject controller;
 	private bool isPaused;
 
+	// Lever Dialogue box collider
+	public GameObject leverbox;
+
 	void Awake() {
 		
 		//Check if instance already exists
@@ -348,12 +351,15 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Switch") && 
 			(Input.GetKeyDown(KeyCode.LeftShift))) {
+			leverbox.SetActive (false);
 			if (other.gameObject.GetComponent<SwitchScript>().IsActive)
 				Pull(false);
 			else 
 				Pull(true);
 		}
 	}
+
+
 
 	/**************************** ANIMATION EVENTS ****************************/
 
