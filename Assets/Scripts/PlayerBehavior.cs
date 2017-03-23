@@ -98,13 +98,8 @@ public class PlayerBehavior : MonoBehaviour {
 	}
 		
 	void Update () {
-<<<<<<< HEAD
-		//isPaused = PauseButton.GetComponent<MainButton>().isPaused ();
-		//CheckGrounded();
-
-=======
 		isPaused = controller.GetComponent<PauseGame>().isPaused ();
->>>>>>> 8462ab45a3a11ef854be8b5ca0c0e47914bcf8cc
+
 		if (canMove) {
 			if(!isPaused)
 				InputManager ();
@@ -340,7 +335,7 @@ public class PlayerBehavior : MonoBehaviour {
 		}
 	}
 
-<<<<<<< HEAD
+
 	void OnCollisionExit(Collision col) {
 		if (col.gameObject.tag == "Ground") {
 			RaycastHit objectHit; 
@@ -352,9 +347,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 		}
 	}
-
-=======
->>>>>>> 8462ab45a3a11ef854be8b5ca0c0e47914bcf8cc
+		
 	//If player is colliding and presses button, then change switch
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Switch") && 
@@ -364,10 +357,6 @@ public class PlayerBehavior : MonoBehaviour {
 			else 
 				Pull(true);
 		}
-	}
-
-	private void CheckGrounded(){
-		
 	}
 
 	/**************************** ANIMATION EVENTS ****************************/
