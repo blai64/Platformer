@@ -39,6 +39,7 @@ public class PlayerBehavior : MonoBehaviour {
 	public float WalkingSpeed = 0.05f;
 	private float jumpForce;
 	private float speed;
+	private float colliderToGround; 
 
 	// Throwing variables
 	private bool attached = true;
@@ -93,10 +94,12 @@ public class PlayerBehavior : MonoBehaviour {
 		speed = WalkingSpeed;
 		animTimer = AnimTimer;
 		isPaused = false;
+		colliderToGround = GetComponent<BoxCollider> ().bounds.extents.y;
 	}
 		
 	void Update () {
-		//isPaused = PauseButton.GetComponent<MainButton>().isPaused ();
+		isPaused = controller.GetComponent<PauseGame>().isPaused ();
+
 		if (canMove) {
 			if(!isPaused)
 				InputManager ();
@@ -184,34 +187,41 @@ public class PlayerBehavior : MonoBehaviour {
 			Teleport ();
 		}
 
-		// While holding the mouse down, displays trajectory of throw
-		if (Input.GetMouseButtonDown (0) && attached) {
-			canUseArrows = false;
-			startX = Input.mousePosition.x;
-			projected = true;
-		}
-		if (projected) {
-			Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
+		if (!isPaused) {
+			
+			// While holding the mouse down, displays trajectory of throw
+			if (Input.GetMouseButtonDown (0) && attached) {
+				canUseArrows = false;
+				startX = Input.mousePosition.x;
+				projected = true;
+			}
+			if (projected) {
+				Vector3 screenPos = cam.WorldToScreenPoint (transform.position);
 
-			if ((Input.mousePosition.x > screenPos.x) && isLeft) {
-				ChangeDirection (false);
-			} else if ((Input.mousePosition.x < screenPos.x) && !isLeft) {
-				ChangeDirection (true);
+				if ((Input.mousePosition.x > screenPos.x) && isLeft) {
+					ChangeDirection (false);
+				} else if ((Input.mousePosition.x < screenPos.x) && !isLeft) {
+					ChangeDirection (true);
+				}
+		
+
+				DisplayThrowTrajectory ();
 			}
 
-			DisplayThrowTrajectory ();
-		}
+			if (Input.GetMouseButtonUp (0) && attached && projected) {
 
-		if (Input.GetMouseButtonUp (0) && attached && projected) {
-			ThrowTeleporter ();
-			DestroyProjectedPath ();
-		}
+				ThrowTeleporter ();
+				DestroyProjectedPath ();
 
-		// Cancels the throwing animation without throwing
-		if (Input.GetMouseButtonDown (1) && projected) {
-			projected = false;
-			canUseArrows = true;
-			DestroyProjectedPath ();
+
+			}
+
+			// Cancels the throwing animation without throwing
+			if (Input.GetMouseButtonDown (1) && projected) {
+				projected = false;
+				canUseArrows = true;
+				DestroyProjectedPath ();
+			}
 		}
 	}
 
@@ -305,7 +315,13 @@ public class PlayerBehavior : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.tag == "Ground") {
-			Land ();
+			RaycastHit objectHit; 
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround)) {
+				if (objectHit.transform.CompareTag("Ground")){
+					Land ();
+				}
+			}
+
 		} else if (col.gameObject.CompareTag ("Killer")) {
 			Die ();
 		}
@@ -319,6 +335,19 @@ public class PlayerBehavior : MonoBehaviour {
 		}
 	}
 
+
+	void OnCollisionExit(Collision col) {
+		if (col.gameObject.tag == "Ground") {
+			RaycastHit objectHit; 
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround)) {
+				if (!objectHit.transform.CompareTag("Ground")){
+					isGrounded = false;
+				}
+			}
+
+		}
+	}
+		
 	//If player is colliding and presses button, then change switch
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Switch") && 
@@ -335,6 +364,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private void Jump() {
 		anim.SetTrigger ("isJumping");
 		if (isGrounded) {
+			Debug.Log ("jumping");
 			body.AddForce (Vector3.up * jumpForce);
 			isGrounded = false;
 		}

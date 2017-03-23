@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f98c00c52595547258266a78df986a0b
+timeCreated: 1490298179
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Quill Sword Bold
+  fontNames:
+  - Quill Sword Bold
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
