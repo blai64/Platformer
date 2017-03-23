@@ -64,14 +64,14 @@ public class PlayerBehavior : MonoBehaviour {
 	public GameObject controller;
 	private bool isPaused;
 
-<<<<<<< HEAD
+
 	//Collecting energy
 	public GameObject chargeParticles;
 
-=======
+
 	// Lever Dialogue box collider
 	public GameObject leverbox;
->>>>>>> 08f39bd49ef0955d05c41cafd5209eb758cf26c7
+
 
 	void Awake() {
 		
