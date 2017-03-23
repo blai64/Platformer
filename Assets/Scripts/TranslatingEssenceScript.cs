@@ -13,7 +13,7 @@ public class TranslatingEssenceScript : MonoBehaviour {
 	void Update () {
 		limit = PlayerBehavior.instance.GetEndX ();
 		XDirection = PlayerBehavior.instance.GetXDistance ();
-		YDirection = PlayerBehavior.instance.GetYDistance ();
+		YDirection = PlayerBehavior.instance.GetYDistance () + 0.5f; //make the ball move slightly above teleporter
 
 		if (PlayerBehavior.instance.IsTeleporting ()) {
 			Translate ();
@@ -23,9 +23,9 @@ public class TranslatingEssenceScript : MonoBehaviour {
 
 	void Translate(){
 		transform.Translate (XDirection / 50, YDirection / 50, 0);
-		if (PlayerBehavior.instance.GetDirection() == 1 && transform.position.x > limit)
+		if (PlayerBehavior.instance.leftOfTeleporter() && transform.position.x > limit)
 			PlayerBehavior.instance.StopTeleporting ();
-		else if (PlayerBehavior.instance.GetDirection() == -1 && transform.position.x < limit)
+		else if (!PlayerBehavior.instance.leftOfTeleporter() && transform.position.x < limit)
 			PlayerBehavior.instance.StopTeleporting ();
 	}
 	// disables aura and re-enables player

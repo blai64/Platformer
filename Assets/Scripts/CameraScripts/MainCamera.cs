@@ -50,13 +50,13 @@ public class MainCamera : MonoBehaviour {
 		Vector3 destination = transform.position; 
 
 		Vector3 teleporterLocation = cam.WorldToViewportPoint (teleportTarget.position);
-		if (!(teleporterLocation.x > 0.1f && teleporterLocation.x < 0.9f &&
-		    teleporterLocation.y > 0.1f && teleporterLocation.y < 0.9f))
+		if (!(teleporterLocation.x > 0.05f && teleporterLocation.x < 0.95f &&
+		    teleporterLocation.y > 0.05f && teleporterLocation.y < 0.95f))
 			transform.position = destination - new Vector3 (0, 0, 0.05f);
-		else if (teleporterLocation.x > 0.25f && teleporterLocation.x < 0.75f &&
-			teleporterLocation.y > 0.25f && teleporterLocation.y < 0.75f && 
+		else if (teleporterLocation.x > 0.2f && teleporterLocation.x < 0.8f &&
+			teleporterLocation.y > 0.2f && teleporterLocation.y < 0.8f && 
 			destination.z < -8.5f)
-			transform.position = destination + new Vector3 (0, 0, 0.05f);
+			transform.position = destination + new Vector3 (0, 0, 0.15f);
 
 		if (PlayerBehavior.instance.IsTeleporting () && teleportTarget) {
 			Vector3 point = cam.WorldToViewportPoint(target.position);
