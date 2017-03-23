@@ -58,6 +58,12 @@ public class PlayerBehavior : MonoBehaviour {
 	private bool projected = false;
 	private bool isLeftOfTeleporter;
 
+	// Pause
+	public GameObject controller;
+	private bool isPaused;
+
+
+
 
 	void Awake() {
 		
@@ -86,21 +92,27 @@ public class PlayerBehavior : MonoBehaviour {
 		jumpForce = JumpForce;
 		speed = WalkingSpeed;
 		animTimer = AnimTimer;
+		isPaused = false;
 	}
 		
 	void Update () {
-
+		//isPaused = PauseButton.GetComponent<MainButton>().isPaused ();
 		if (canMove) {
-			InputManager ();
+			if(!isPaused)
+				InputManager ();
 		} else {
 			if (enableMove) {
 				EnableMove ();
 			}
 		}
-
+	
 		if (isExiting) {
 			transform.Translate(new Vector3(0f, 0f, 2f) * Time.deltaTime);
 		}
+
+
+
+
 	}
 
 	/**************************** ACCESS METHODS ****************************/

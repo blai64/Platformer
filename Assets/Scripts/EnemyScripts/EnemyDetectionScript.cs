@@ -3,52 +3,78 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class EnemyDetectionScript : MonoBehaviour {
-	private float MoveDistance = 5.0f;
-	private float MoveTime = 1.5f;
+
+	public Camera cam;
+
+	private Animator anim;
+
 	private bool moving;
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
+	private int direction;
+	private float speed = 0.05f;
+	private float chaseEndDelay = 1.5f;
+	private Transform eyes; // empty game object for raycasting 
+
+	void Start() {
+		anim = GetComponent<Animator> ();
+		eyes = transform.Find ("Eyes");
 	}
 
-	void OnTriggerStay (Collider other){
+	void Update(){
+		if (moving) {
+			//GetComponent<Rigidbody> ().AddForce (direction * speed * 1000, 0, 0);
+			transform.Translate (direction * speed, 0, 0);
+		}
+	}
+
+	void ChangeDirection(Transform playerTransform){
+		if (transform.position.x > playerTransform.position.x) {
+			anim.SetBool ("isLeft", true);
+			direction = 1;
+		} else {
+			Debug.Log ("right");
+			anim.SetBool ("isLeft", false);
+			direction = -1;
+		}
+	}
+
+	void OnTriggerEnter (Collider other) {
 		if (other.gameObject.CompareTag ("Player") && !moving) {
-			gameObject.GetComponent<Rigidbody> ().AddForce (0,3,0,ForceMode.Impulse);
-
-			int direction = 1; 
-
-			if (other.transform.position.x < transform.position.x)
-				direction *= -1; 
-
-			Vector3 curPos = transform.position;
-			Vector3 newPos = transform.position + new Vector3(direction * MoveDistance, 0, 0);
-
+//			gameObject.GetComponent<Rigidbody> ().AddForce (0,3,0,ForceMode.Impulse);
+			ChangeDirection(other.transform);
+			anim.SetBool ("isAttacking", true);
 			moving = true;
-			StartCoroutine (MoveEnemy(curPos, newPos, MoveTime));
-
-
+			StartCoroutine (MoveEnemy(other.transform));
 		}
 	}
+		
 
-	IEnumerator MoveEnemy(Vector3 oldPos, Vector3 newPos, float duration){
-		yield return new WaitForSeconds (1);
 
-		float t = 0.0f;
-		while (t < 1.0f) {
-			t += Time.deltaTime / duration;
-			transform.position = Vector3.Lerp (oldPos, newPos, t);
-
-			yield return 0;
-		}
-		yield return new WaitForSeconds (1);
+	IEnumerator StopAttacking(){
+		anim.SetBool ("isAttacking", false);
 		moving = false;
+		yield return 0;
 	}
 
+	IEnumerator MoveEnemy(Transform playerTransform) {
+		RaycastHit objectHit; 
+
+		while (true) {
+			eyes.LookAt (playerTransform);
+			if (Physics.Raycast (eyes.position, eyes.forward, out objectHit, 100.0f)) {
+				if (!objectHit.transform.CompareTag("Player")){
+					Debug.Log("Cant see player!!");
+					break;
+				}
+			}
+			ChangeDirection (playerTransform);
+
+			yield return new WaitForSeconds(0.5f);
+		}
+		yield return new WaitForSeconds (chaseEndDelay);
+		anim.SetBool ("isAttacking", false);
+		moving = false; 
+
+	}
 }
 
 

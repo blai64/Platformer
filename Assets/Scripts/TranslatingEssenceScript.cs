@@ -13,7 +13,7 @@ public class TranslatingEssenceScript : MonoBehaviour {
 	void Update () {
 		limit = PlayerBehavior.instance.GetEndX ();
 		XDirection = PlayerBehavior.instance.GetXDistance ();
-		YDirection = PlayerBehavior.instance.GetYDistance ();
+		YDirection = PlayerBehavior.instance.GetYDistance () + 0.5f; //make the ball move slightly above teleporter
 
 		if (PlayerBehavior.instance.IsTeleporting ()) {
 			Translate ();
