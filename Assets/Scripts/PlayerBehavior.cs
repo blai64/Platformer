@@ -41,6 +41,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private float jumpForce;
 	private float speed;
 	private float colliderToGround; 
+	private float colliderOffset; 
 
 	// Throwing variables
 	private bool attached = true;
@@ -136,6 +137,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 	public void StopTeleporting(){
 		teleporting = false;
+		EmitParticles (false);
 		tb.Disappear ();
 		attached = true;
 	}
@@ -250,6 +252,7 @@ public class PlayerBehavior : MonoBehaviour {
 			wsm.PlayTeleport ();
 			AuraReset ();
 			teleporting = true;
+			EmitParticles (true);
 			xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
 			yTeleportVector = teleporterBody.transform.position.y - transform.position.y;
 			transform.position = new Vector3 (teleporterBody.transform.position.x,
@@ -323,7 +326,7 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.tag == "Ground") {
 			RaycastHit objectHit; 
-			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround)) {
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround + colliderOffset)) {
 				if (objectHit.transform.CompareTag("Ground")){
 					Land ();
 				}
@@ -347,7 +350,7 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnCollisionExit(Collision col) {
 		if (col.gameObject.tag == "Ground") {
 			RaycastHit objectHit; 
-			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround)) {
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround + colliderOffset)) {
 				if (!objectHit.transform.CompareTag("Ground")){
 					isGrounded = false;
 				}
