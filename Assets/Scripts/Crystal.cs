@@ -43,6 +43,7 @@ public class Crystal : MonoBehaviour {
 	public void Die() {
 		Destroy (transform.parent.gameObject);
 	}
+		
 
 	void OnTriggerEnter(Collider col){
 		if(col.gameObject.tag == "Player"){
