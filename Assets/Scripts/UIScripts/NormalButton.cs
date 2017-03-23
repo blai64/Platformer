@@ -11,11 +11,11 @@ public class NormalButton : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
 		Button btn = yourButton.GetComponent<Button> ();
-		btn.onClick.AddListener (Update);
+		btn.onClick.AddListener (update);
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void update () {
 		Debug.Log ("Main is pressed????!!!!");
 		SceneManager.LoadScene (nextScene);
 	}
