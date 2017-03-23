@@ -63,7 +63,8 @@ public class PlayerBehavior : MonoBehaviour {
 	public GameObject controller;
 	private bool isPaused;
 
-
+	//Collecting energy
+	public GameObject chargeParticles;
 
 
 	void Awake() {
@@ -95,6 +96,8 @@ public class PlayerBehavior : MonoBehaviour {
 		animTimer = AnimTimer;
 		isPaused = false;
 		colliderToGround = GetComponent<BoxCollider> ().bounds.extents.y;
+
+		EmitParticles (false);
 	}
 		
 	void Update () {
@@ -329,6 +332,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col) {
 		if (col.gameObject.CompareTag ("Crystal")) {
+			StartCoroutine (Charge ());
 			Happy ();
 		} else if (col.gameObject.CompareTag ("Exit") && canExit) {
 			Leave ();
@@ -469,5 +473,25 @@ public class PlayerBehavior : MonoBehaviour {
 
 	public void CanExit() {
 		canExit = true;
+	}
+
+	private void EmitParticles(bool val){
+		GameObject particle;
+		ParticleSystem.EmissionModule em;
+		for (int i = 0; i < chargeParticles.transform.childCount; i++) {
+			particle = chargeParticles.transform.GetChild (i).gameObject; 
+			em = particle.GetComponent<ParticleSystem> ().emission;
+			em.enabled = val;
+		}
+
+	}
+
+	IEnumerator Charge(){
+		EmitParticles (true);
+
+		yield return new WaitForSeconds (1.5f);
+
+		EmitParticles (false);
+
 	}
 }
