@@ -190,8 +190,15 @@ public class PlayerBehavior : MonoBehaviour {
 			DisplayThrowTrajectory ();
 		}
 
-		if (Input.GetMouseButtonUp (0) && attached) {
+		if (Input.GetMouseButtonUp (0) && attached && projected) {
 			ThrowTeleporter ();
+			DestroyProjectedPath ();
+		}
+
+		// Cancels the throwing animation without throwing
+		if (Input.GetMouseButtonDown (1) && projected) {
+			projected = false;
+			canUseArrows = true;
 			DestroyProjectedPath ();
 		}
 	}
@@ -309,7 +316,7 @@ public class PlayerBehavior : MonoBehaviour {
 	//If player is colliding and presses button, then change switch
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Switch") && 
-			(Input.GetKeyDown (KeyCode.L) || Input.GetKeyDown(KeyCode.LeftShift))) {
+			(Input.GetKeyDown(KeyCode.LeftShift))) {
 			if (other.gameObject.GetComponent<SwitchScript>().IsActive)
 				Pull(false);
 			else 

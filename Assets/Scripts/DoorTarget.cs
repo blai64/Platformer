@@ -9,6 +9,7 @@ public class DoorTarget : SwitchTarget {
 	public int DefaultDirection = 1;
 
 	private PlayerBehavior pb;
+	private bool open = false;
 
 	override public void Start () {
 		base.Start ();
@@ -20,8 +21,10 @@ public class DoorTarget : SwitchTarget {
 	}
 
 	override public void Activate (bool activating) {
-		if (activating)
+		if (activating && !open){
 			StartCoroutine (RotateDoor (base.Duration));
+			open = true;}
+
 	}
 
 	IEnumerator RotateDoor(float duration){

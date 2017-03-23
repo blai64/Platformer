@@ -47,13 +47,24 @@ public class MainCamera : MonoBehaviour {
 	}
 
 	void Update ()  {
+		Vector3 destination = transform.position; 
+
+		Vector3 teleporterLocation = cam.WorldToViewportPoint (teleportTarget.position);
+		if (!(teleporterLocation.x > 0.1f && teleporterLocation.x < 0.9f &&
+		    teleporterLocation.y > 0.1f && teleporterLocation.y < 0.9f))
+			transform.position = destination - new Vector3 (0, 0, 0.05f);
+		else if (teleporterLocation.x > 0.25f && teleporterLocation.x < 0.75f &&
+			teleporterLocation.y > 0.25f && teleporterLocation.y < 0.75f && 
+			destination.z < -8.5f)
+			transform.position = destination + new Vector3 (0, 0, 0.05f);
+
 		if (PlayerBehavior.instance.IsTeleporting () && teleportTarget) {
 			Vector3 point = cam.WorldToViewportPoint(target.position);
 			float direction = (float) pb.GetDirection ();
 			Vector3 delta = teleportTarget.position - cam.ViewportToWorldPoint(new Vector3(0.5f - direction * xOffset,
 				0.5f + yOffset,
 				point.z));
-			Vector3 destination = transform.position + delta;
+			destination = transform.position + delta;
 			transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 		}
 
@@ -63,7 +74,7 @@ public class MainCamera : MonoBehaviour {
 			Vector3 delta = target.position - cam.ViewportToWorldPoint(new Vector3(0.5f - direction * xOffset,
 																				   0.5f + yOffset,
 																				   point.z));
-			Vector3 destination = transform.position + delta;
+			destination = transform.position + delta;
 			transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 		}
 
