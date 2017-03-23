@@ -96,7 +96,7 @@ public class PlayerBehavior : MonoBehaviour {
 	}
 		
 	void Update () {
-		//isPaused = PauseButton.GetComponent<MainButton>().isPaused ();
+		isPaused = controller.GetComponent<PauseGame>().isPaused ();
 		if (canMove) {
 			if(!isPaused)
 				InputManager ();
@@ -184,34 +184,41 @@ public class PlayerBehavior : MonoBehaviour {
 			Teleport ();
 		}
 
-		// While holding the mouse down, displays trajectory of throw
-		if (Input.GetMouseButtonDown (0) && attached) {
-			canUseArrows = false;
-			startX = Input.mousePosition.x;
-			projected = true;
-		}
-		if (projected) {
-			Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
+		if (!isPaused) {
+			
+			// While holding the mouse down, displays trajectory of throw
+			if (Input.GetMouseButtonDown (0) && attached) {
+				canUseArrows = false;
+				startX = Input.mousePosition.x;
+				projected = true;
+			}
+			if (projected) {
+				Vector3 screenPos = cam.WorldToScreenPoint (transform.position);
 
-			if ((Input.mousePosition.x > screenPos.x) && isLeft) {
-				ChangeDirection (false);
-			} else if ((Input.mousePosition.x < screenPos.x) && !isLeft) {
-				ChangeDirection (true);
+				if ((Input.mousePosition.x > screenPos.x) && isLeft) {
+					ChangeDirection (false);
+				} else if ((Input.mousePosition.x < screenPos.x) && !isLeft) {
+					ChangeDirection (true);
+				}
+		
+
+				DisplayThrowTrajectory ();
 			}
 
-			DisplayThrowTrajectory ();
-		}
+			if (Input.GetMouseButtonUp (0) && attached && projected) {
 
-		if (Input.GetMouseButtonUp (0) && attached && projected) {
-			ThrowTeleporter ();
-			DestroyProjectedPath ();
-		}
+				ThrowTeleporter ();
+				DestroyProjectedPath ();
 
-		// Cancels the throwing animation without throwing
-		if (Input.GetMouseButtonDown (1) && projected) {
-			projected = false;
-			canUseArrows = true;
-			DestroyProjectedPath ();
+
+			}
+
+			// Cancels the throwing animation without throwing
+			if (Input.GetMouseButtonDown (1) && projected) {
+				projected = false;
+				canUseArrows = true;
+				DestroyProjectedPath ();
+			}
 		}
 	}
 
