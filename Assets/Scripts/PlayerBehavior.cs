@@ -39,6 +39,7 @@ public class PlayerBehavior : MonoBehaviour {
 	public float WalkingSpeed = 0.05f;
 	private float jumpForce;
 	private float speed;
+	private float colliderToGround; 
 
 	// Throwing variables
 	private bool attached = true;
@@ -92,10 +93,13 @@ public class PlayerBehavior : MonoBehaviour {
 		speed = WalkingSpeed;
 		animTimer = AnimTimer;
 		isPaused = false;
+		colliderToGround = GetComponent<BoxCollider> ().bounds.extents.y;
 	}
 		
 	void Update () {
 		//isPaused = PauseButton.GetComponent<MainButton>().isPaused ();
+		//CheckGrounded();
+
 		if (canMove) {
 			if(!isPaused)
 				InputManager ();
@@ -289,7 +293,13 @@ public class PlayerBehavior : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.tag == "Ground") {
-			Land ();
+			RaycastHit objectHit; 
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround)) {
+				if (objectHit.transform.CompareTag("Ground")){
+					Land ();
+				}
+			}
+
 		} else if (col.gameObject.CompareTag ("Killer")) {
 			Die ();
 		}
@@ -305,7 +315,13 @@ public class PlayerBehavior : MonoBehaviour {
 
 	void OnCollisionExit(Collision col) {
 		if (col.gameObject.tag == "Ground") {
-			isGrounded = false;
+			RaycastHit objectHit; 
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround)) {
+				if (!objectHit.transform.CompareTag("Ground")){
+					isGrounded = false;
+				}
+			}
+
 		}
 	}
 
@@ -320,11 +336,16 @@ public class PlayerBehavior : MonoBehaviour {
 		}
 	}
 
+	private void CheckGrounded(){
+		
+	}
+
 	/**************************** ANIMATION EVENTS ****************************/
 
 	private void Jump() {
 		anim.SetTrigger ("isJumping");
 		if (isGrounded) {
+			Debug.Log ("jumping");
 			body.AddForce (Vector3.up * jumpForce);
 			isGrounded = false;
 		}
