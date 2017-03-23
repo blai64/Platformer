@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 88a19f4a168444500addce2865cab07e
+timeCreated: 1490298179
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Quill Sword Rotated
+  fontNames:
+  - Quill Sword Rotated
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

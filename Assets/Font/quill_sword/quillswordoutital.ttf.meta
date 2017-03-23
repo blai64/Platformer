@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: f5796bde795aa4ffca1486d48b433af3
+timeCreated: 1490298179
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Quill Sword Outline Italic
+  fontNames:
+  - Quill Sword Outline Italic
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -34,7 +34,7 @@ public class SwitchScript : MonoBehaviour {
 	//If player is colliding and presses button, then change switch
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Player") && 
-			Input.GetKeyDown (KeyCode.L) &&
+			Input.GetKeyDown (KeyCode.LeftShift) &&
 			disableTime < 0.0f) {
 			isActive = !isActive;
 			StartCoroutine (MoveSwitch ());

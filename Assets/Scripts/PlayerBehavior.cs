@@ -33,12 +33,14 @@ public class PlayerBehavior : MonoBehaviour {
 	private bool enableMove = false;
 	public float AnimTimer = 2f;
 	private float animTimer;
+	private WitchSoundScript wsm;
 
 	// Physics variables
 	public float JumpForce = 1.0f;
 	public float WalkingSpeed = 0.05f;
 	private float jumpForce;
 	private float speed;
+	private float colliderToGround; 
 
 	// Throwing variables
 	private bool attached = true;
@@ -56,13 +58,11 @@ public class PlayerBehavior : MonoBehaviour {
 	private List<GameObject> trajectoryBallList = new List<GameObject> ();
 	private bool listFilled = false;
 	private bool projected = false;
+	private bool isLeftOfTeleporter;
 
 	// Pause
 	public GameObject controller;
 	private bool isPaused;
-
-
-
 
 	void Awake() {
 		
@@ -77,7 +77,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 			// Then destroy this. This enforces our singleton pattern,
 			// meaning there can only ever be one instance of a GameManager.
-			Destroy (gameObject); 
+			Destroy (gameObject);
 	}
 
 	void Start () {
@@ -85,6 +85,7 @@ public class PlayerBehavior : MonoBehaviour {
 		teleporterBody = Teleporter.GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
 		tb = Teleporter.GetComponent<TeleporterBehavior> ();
+		wsm = GetComponent<WitchSoundScript> ();
 
 		prevHeight = body.position.y;
 
@@ -92,10 +93,12 @@ public class PlayerBehavior : MonoBehaviour {
 		speed = WalkingSpeed;
 		animTimer = AnimTimer;
 		isPaused = false;
+		colliderToGround = GetComponent<BoxCollider> ().bounds.extents.y;
 	}
 		
 	void Update () {
-		//isPaused = PauseButton.GetComponent<MainButton>().isPaused ();
+		isPaused = controller.GetComponent<PauseGame>().isPaused ();
+
 		if (canMove) {
 			if(!isPaused)
 				InputManager ();
@@ -108,10 +111,6 @@ public class PlayerBehavior : MonoBehaviour {
 		if (isExiting) {
 			transform.Translate(new Vector3(0f, 0f, 2f) * Time.deltaTime);
 		}
-
-
-
-
 	}
 
 	/**************************** ACCESS METHODS ****************************/
@@ -140,6 +139,10 @@ public class PlayerBehavior : MonoBehaviour {
 
 	public float GetEndX(){
 		return teleporterBody.transform.position.x;
+	}
+
+	public bool leftOfTeleporter(){
+		return isLeftOfTeleporter;
 	}
 
 	/**************************** INPUT MANAGER ****************************/
@@ -179,27 +182,41 @@ public class PlayerBehavior : MonoBehaviour {
 			Teleport ();
 		}
 
-		// While holding the mouse down, displays trajectory of throw
-		if (Input.GetMouseButtonDown (0) && attached) {
-			canUseArrows = false;
-			startX = Input.mousePosition.x;
-			projected = true;
-		}
-		if (projected) {
-			Vector3 screenPos = cam.WorldToScreenPoint(transform.position);
+		if (!isPaused) {
+			
+			// While holding the mouse down, displays trajectory of throw
+			if (Input.GetMouseButtonDown (0) && attached) {
+				canUseArrows = false;
+				startX = Input.mousePosition.x;
+				projected = true;
+			}
+			if (projected) {
+				Vector3 screenPos = cam.WorldToScreenPoint (transform.position);
 
-			if ((Input.mousePosition.x > screenPos.x) && isLeft) {
-				ChangeDirection (false);
-			} else if ((Input.mousePosition.x < screenPos.x) && !isLeft) {
-				ChangeDirection (true);
+				if ((Input.mousePosition.x > screenPos.x) && isLeft) {
+					ChangeDirection (false);
+				} else if ((Input.mousePosition.x < screenPos.x) && !isLeft) {
+					ChangeDirection (true);
+				}
+		
+
+				DisplayThrowTrajectory ();
 			}
 
-			DisplayThrowTrajectory ();
-		}
+			if (Input.GetMouseButtonUp (0) && attached && projected) {
 
-		if (Input.GetMouseButtonUp (0) && attached) {
-			ThrowTeleporter ();
-			DestroyProjectedPath ();
+				ThrowTeleporter ();
+				DestroyProjectedPath ();
+
+
+			}
+
+			// Cancels the throwing animation without throwing
+			if (Input.GetMouseButtonDown (1) && projected) {
+				projected = false;
+				canUseArrows = true;
+				DestroyProjectedPath ();
+			}
 		}
 	}
 
@@ -215,6 +232,11 @@ public class PlayerBehavior : MonoBehaviour {
 	// teleporting to the teleporter sphere
 	void Teleport() {
 		if (teleportCharges > 0) {
+			if (transform.position.x < Teleporter.transform.position.x)
+				isLeftOfTeleporter = true;
+			else
+				isLeftOfTeleporter = false;
+			wsm.PlayTeleport ();
 			AuraReset ();
 			teleporting = true;
 			xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
@@ -289,7 +311,13 @@ public class PlayerBehavior : MonoBehaviour {
 
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.tag == "Ground") {
-			Land ();
+			RaycastHit objectHit; 
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround)) {
+				if (objectHit.transform.CompareTag("Ground")){
+					Land ();
+				}
+			}
+
 		} else if (col.gameObject.CompareTag ("Killer")) {
 			Die ();
 		}
@@ -303,16 +331,23 @@ public class PlayerBehavior : MonoBehaviour {
 		}
 	}
 
+
 	void OnCollisionExit(Collision col) {
 		if (col.gameObject.tag == "Ground") {
-			isGrounded = false;
+			RaycastHit objectHit; 
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround)) {
+				if (!objectHit.transform.CompareTag("Ground")){
+					isGrounded = false;
+				}
+			}
+
 		}
 	}
-
+		
 	//If player is colliding and presses button, then change switch
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Switch") && 
-			(Input.GetKeyDown (KeyCode.L) || Input.GetKeyDown(KeyCode.LeftShift))) {
+			(Input.GetKeyDown(KeyCode.LeftShift))) {
 			if (other.gameObject.GetComponent<SwitchScript>().IsActive)
 				Pull(false);
 			else 
@@ -324,6 +359,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 	private void Jump() {
 		anim.SetTrigger ("isJumping");
+		wsm.PlayJumpThrow ();
 		if (isGrounded) {
 			body.AddForce (Vector3.up * jumpForce);
 			isGrounded = false;
@@ -402,6 +438,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 	private void Die() {
 		anim.SetTrigger ("isDead");
+		wsm.PlayDeath ();
 		canMove = false;
 		MainCamera.instance.transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (false);
 	}
@@ -409,6 +446,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private void Happy() {
 		anim.SetTrigger ("isHappy");
 		anim.SetBool ("isWalking", false);
+		wsm.PlayCrystalCollect ();
 		canMove = false;
 		enableMove = true;
 	}
