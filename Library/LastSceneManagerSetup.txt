@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Blai_Beta_Level1.unity
+- path: Assets/Scenes/Michelle_Sound_Tester.unity
   isLoaded: 1
   isActive: 1
