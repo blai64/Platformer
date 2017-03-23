@@ -33,6 +33,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private bool enableMove = false;
 	public float AnimTimer = 2f;
 	private float animTimer;
+	private WitchSoundScript wsm;
 
 	// Physics variables
 	public float JumpForce = 1.0f;
@@ -63,8 +64,16 @@ public class PlayerBehavior : MonoBehaviour {
 	public GameObject controller;
 	private bool isPaused;
 
+<<<<<<< HEAD
+=======
+
+	//Collecting energy
+	public GameObject chargeParticles;
+>>>>>>> 8f4d6b0e994fce576619aa5b29273a4dd181c6de
 
 
+	// Lever Dialogue box collider
+	public GameObject leverbox;
 
 
 	void Awake() {
@@ -80,7 +89,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 			// Then destroy this. This enforces our singleton pattern,
 			// meaning there can only ever be one instance of a GameManager.
-			Destroy (gameObject); 
+			Destroy (gameObject);
 	}
 
 	void Start () {
@@ -88,6 +97,7 @@ public class PlayerBehavior : MonoBehaviour {
 		teleporterBody = Teleporter.GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
 		tb = Teleporter.GetComponent<TeleporterBehavior> ();
+		wsm = GetComponent<WitchSoundScript> ();
 
 		prevHeight = body.position.y;
 
@@ -96,6 +106,8 @@ public class PlayerBehavior : MonoBehaviour {
 		animTimer = AnimTimer;
 		isPaused = false;
 		colliderToGround = GetComponent<BoxCollider> ().bounds.extents.y;
+
+		EmitParticles (false);
 	}
 		
 	void Update () {
@@ -113,10 +125,6 @@ public class PlayerBehavior : MonoBehaviour {
 		if (isExiting) {
 			transform.Translate(new Vector3(0f, 0f, 2f) * Time.deltaTime);
 		}
-
-
-
-
 	}
 
 	/**************************** ACCESS METHODS ****************************/
@@ -242,6 +250,7 @@ public class PlayerBehavior : MonoBehaviour {
 				isLeftOfTeleporter = true;
 			else
 				isLeftOfTeleporter = false;
+			wsm.PlayTeleport ();
 			AuraReset ();
 			teleporting = true;
 			xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
@@ -330,6 +339,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col) {
 		if (col.gameObject.CompareTag ("Crystal")) {
+			StartCoroutine (Charge ());
 			Happy ();
 		} else if (col.gameObject.CompareTag ("Exit") && canExit) {
 			Leave ();
@@ -366,8 +376,8 @@ public class PlayerBehavior : MonoBehaviour {
 
 	private void Jump() {
 		anim.SetTrigger ("isJumping");
+		wsm.PlayJumpThrow ();
 		if (isGrounded) {
-			Debug.Log ("jumping");
 			body.AddForce (Vector3.up * jumpForce);
 			isGrounded = false;
 		}
@@ -445,6 +455,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 	private void Die() {
 		anim.SetTrigger ("isDead");
+		wsm.PlayDeath ();
 		canMove = false;
 		MainCamera.instance.transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (false);
 	}
@@ -452,6 +463,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private void Happy() {
 		anim.SetTrigger ("isHappy");
 		anim.SetBool ("isWalking", false);
+		wsm.PlayCrystalCollect ();
 		canMove = false;
 		enableMove = true;
 	}
@@ -472,5 +484,25 @@ public class PlayerBehavior : MonoBehaviour {
 
 	public void CanExit() {
 		canExit = true;
+	}
+
+	private void EmitParticles(bool val){
+		GameObject particle;
+		ParticleSystem.EmissionModule em;
+		for (int i = 0; i < chargeParticles.transform.childCount; i++) {
+			particle = chargeParticles.transform.GetChild (i).gameObject; 
+			em = particle.GetComponent<ParticleSystem> ().emission;
+			em.enabled = val;
+		}
+
+	}
+
+	IEnumerator Charge(){
+		EmitParticles (true);
+
+		yield return new WaitForSeconds (1.5f);
+
+		EmitParticles (false);
+
 	}
 }

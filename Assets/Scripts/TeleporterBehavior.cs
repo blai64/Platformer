@@ -15,6 +15,12 @@ public class TeleporterBehavior : MonoBehaviour {
 
 	public bool isGrounded = false;
 
+	private SoundManager sm;
+
+	void Awake () {
+		sm = GameObject.Find ("SoundManager").GetComponent<SoundManager>();
+	}
+
 	void Start() {
 		instance = this;
 		rb = GetComponent<Rigidbody> ();
@@ -56,7 +62,8 @@ public class TeleporterBehavior : MonoBehaviour {
 	void OnCollisionEnter(Collision col){
 		if (col.gameObject.tag == "Ground") {
 				isGrounded = true;
-			}
+				sm.PlaySound ("stone-drop");
+		}
 		if (col.gameObject.name == "witch_char" && isGrounded)
 			PlayerBehavior.instance.pickUp ();
 	}

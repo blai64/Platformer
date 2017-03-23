@@ -46,8 +46,6 @@ public class EnemyDetectionScript : MonoBehaviour {
 			StartCoroutine (MoveEnemy(other.transform));
 		}
 	}
-		
-
 
 	IEnumerator StopAttacking(){
 		anim.SetBool ("isAttacking", false);
