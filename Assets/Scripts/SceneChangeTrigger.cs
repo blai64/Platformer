@@ -13,7 +13,7 @@ public class SceneChangeTrigger : MonoBehaviour {
 
 	void OnTriggerEnter(Collider col) {
 		if (col.gameObject.CompareTag ("Player")) {
-			fb.FadeInOut (false);
+			fb.FadeInOut (false, false);
 		}
 	}
 }

@@ -43,7 +43,7 @@ public class MainCamera : MonoBehaviour {
 
 	void Start(){
 		cam = gameObject.GetComponent<Camera> ();
-		transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (true);
+		transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (true, false);
 	}
 
 	void Update ()  {

@@ -7,14 +7,14 @@ public class Fade : MonoBehaviour {
 
 	private SpriteRenderer fadeoutSprite;
 
-	public string SceneName = "Michelle_Beta";
+	public string NextSceneName = "Michelle_Beta";
 	public int FadeDuration = 2;
 
-	public void FadeInOut(bool fadingIn){
-		StartCoroutine(StartFade(FadeDuration, fadingIn));
+	public void FadeInOut(bool fadingIn, bool isDead){
+		StartCoroutine(StartFade(FadeDuration, fadingIn, isDead));
 	}
 
-	IEnumerator StartFade(float duration, bool fadingIn){
+	IEnumerator StartFade(float duration, bool fadingIn, bool isDead){
 		float t = 0.0f;
 		fadeoutSprite = gameObject.GetComponent<SpriteRenderer> ();
 		Color temp = fadeoutSprite.color;
@@ -36,11 +36,15 @@ public class Fade : MonoBehaviour {
 		}
 
 		if (!fadingIn) {
-			NextScene ();
+			if (isDead) {
+				SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+			} else {
+				NextScene ();
+			}
 		}
 	}
 
 	private void NextScene() {
-		SceneManager.LoadScene(SceneName);
+		SceneManager.LoadScene(NextSceneName);
 	}
 }

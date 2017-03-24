@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerBehavior : MonoBehaviour {
 	
 	// Script
-	public static PlayerBehavior instance; 
+	public static PlayerBehavior instance;
 
 	// Public gameobjects
 	public GameObject Teleporter; 
@@ -18,9 +18,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private Rigidbody teleporterBody;
 	private Animator anim;
 	private TeleporterBehavior tb;
-
-	// Textbox
-	public GameObject text;
+	private WitchSoundScript wsm;
 
 	// Animation state variables
 	private bool isLeft = false;
@@ -33,7 +31,6 @@ public class PlayerBehavior : MonoBehaviour {
 	private bool enableMove = false;
 	public float AnimTimer = 2f;
 	private float animTimer;
-	private WitchSoundScript wsm;
 
 	// Physics variables
 	public float JumpForce = 1.0f;
@@ -41,7 +38,7 @@ public class PlayerBehavior : MonoBehaviour {
 	private float jumpForce;
 	private float speed;
 	private float colliderToGround; 
-	private float colliderOffset; 
+	private float colliderOffset = 0f; 
 
 	// Throwing variables
 	private bool attached = true;
@@ -65,28 +62,13 @@ public class PlayerBehavior : MonoBehaviour {
 	public GameObject controller;
 	private bool isPaused;
 
-
 	//Collecting energy
 	public GameObject chargeParticles;
 
-
-	// Lever Dialogue box collider
-	public GameObject leverbox;
-
-
 	void Awake() {
-		
-		//Check if instance already exists
 		if (instance == null)
-
-			//if not, set instance to this
 			instance = this;
-
-		//If instance already exists and it's not this:
 		else if (instance != this)
-
-			// Then destroy this. This enforces our singleton pattern,
-			// meaning there can only ever be one instance of a GameManager.
 			Destroy (gameObject);
 	}
 
@@ -343,6 +325,8 @@ public class PlayerBehavior : MonoBehaviour {
 			Happy ();
 		} else if (col.gameObject.CompareTag ("Exit") && canExit) {
 			Leave ();
+		} else if (col.gameObject.CompareTag ("Pit")) {
+			Die ();
 		}
 	}
 
@@ -363,16 +347,13 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Switch") && 
 			(Input.GetKeyDown(KeyCode.LeftShift))) {
-			leverbox.SetActive (false);
 			if (other.gameObject.GetComponent<SwitchScript>().IsActive)
 				Pull(false);
 			else 
 				Pull(true);
 		}
 	}
-
-
-
+		
 	/**************************** ANIMATION EVENTS ****************************/
 
 	private void Jump() {
@@ -458,7 +439,7 @@ public class PlayerBehavior : MonoBehaviour {
 		anim.SetTrigger ("isDead");
 		wsm.PlayDeath ();
 		canMove = false;
-		MainCamera.instance.transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (false);
+		MainCamera.instance.transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (false, true);
 	}
 
 	private void Happy() {
@@ -495,15 +476,13 @@ public class PlayerBehavior : MonoBehaviour {
 			em = particle.GetComponent<ParticleSystem> ().emission;
 			em.enabled = val;
 		}
-
 	}
 
-	IEnumerator Charge(){
+	IEnumerator Charge() {
 		EmitParticles (true);
 
 		yield return new WaitForSeconds (1.5f);
 
 		EmitParticles (false);
-
 	}
 }

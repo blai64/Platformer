@@ -4,18 +4,9 @@ using UnityEngine;
 
 public class GoalScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
-
 	void OnTriggerEnter(Collider other){
 		if (other.gameObject.CompareTag ("Player")) {
-			MainCamera.instance.transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (false);
+			MainCamera.instance.transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (false, false);
 		}
 	}
 }
