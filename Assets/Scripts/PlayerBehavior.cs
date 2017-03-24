@@ -131,6 +131,7 @@ public class PlayerBehavior : MonoBehaviour {
 	}
 
 	public void StopTeleporting(){
+		Debug.Log ("stop teleporting");
 		teleporting = false;
 		EmitParticles (false);
 		tb.Disappear ();
@@ -232,7 +233,8 @@ public class PlayerBehavior : MonoBehaviour {
 
 	// resets the position of the teleport aura 
 	void AuraReset() {
-		teleportAura.SetActive (true);
+		//teleportAura.SetActive (true);
+		teleportAura.GetComponent<TranslatingEssenceScript> ().Activate ();
 		teleportAura.transform.position = this.gameObject.transform.position;
 		this.gameObject.SetActive (false);
 	}
@@ -260,6 +262,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 	// throw the teleporter
 	void ThrowTeleporter() {
+		Debug.Log ("throwing telep.");
 		endX = Input.mousePosition.x;
 		endY = Input.mousePosition.y;
 		xThrowMagnitude = (endX - startX) * direction;
