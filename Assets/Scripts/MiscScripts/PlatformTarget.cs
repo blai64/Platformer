@@ -28,7 +28,7 @@ public class PlatformTarget : SwitchTarget {
 
 	IEnumerator MovePlatform(Vector3 oldPos, Vector3 newPos, float duration){
 		yield return new WaitForSeconds (0.5f);
-
+		duration = duration * 3;
 		float t = 0.0f;
 
 		while (t < 1.0f) {

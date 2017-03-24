@@ -14,7 +14,7 @@ public class LeverText : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		if(Input.GetKeyDown(KeyCode.LeftShift)){
-			leverbox.SetActive(false);
+//			leverbox.SetActive(false);
 		}
 	}
 }
