@@ -6,6 +6,8 @@ public class MainCamera : MonoBehaviour {
 
 	public static MainCamera instance = null;
 
+	public List<Transform> targetsOnScreen; 
+
 	public float dampTime = 0.3f;
 	public float xOffset = 0f;
 	public float yOffset = 0f;
@@ -43,19 +45,28 @@ public class MainCamera : MonoBehaviour {
 
 	void Start(){
 		cam = gameObject.GetComponent<Camera> ();
-		transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (true, false);
+		transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (true,false);
 	}
 
 	void Update ()  {
 		Vector3 destination = transform.position; 
+		Vector3 teleporterLocation;
+		int zoomIn = 0;
+		foreach (Transform t in targetsOnScreen) {
+			teleporterLocation = cam.WorldToViewportPoint (t.position);
+			if (!(teleporterLocation.x > 0.05f && teleporterLocation.x < 0.95f &&
+			    teleporterLocation.y > 0.05f && teleporterLocation.y < 0.95f)) {
+				transform.position = destination - new Vector3 (0, 0, 0.1f);
 
-		Vector3 teleporterLocation = cam.WorldToViewportPoint (teleportTarget.position);
-		if (!(teleporterLocation.x > 0.05f && teleporterLocation.x < 0.95f &&
-		    teleporterLocation.y > 0.05f && teleporterLocation.y < 0.95f))
-			transform.position = destination - new Vector3 (0, 0, 0.05f);
-		else if (teleporterLocation.x > 0.2f && teleporterLocation.x < 0.8f &&
-			teleporterLocation.y > 0.2f && teleporterLocation.y < 0.8f && 
-			destination.z < -8.5f)
+			} else if (teleporterLocation.x > 0.2f && teleporterLocation.x < 0.8f &&
+			         teleporterLocation.y > 0.2f && teleporterLocation.y < 0.8f &&
+			         destination.z < -8.5f) {
+				zoomIn++;
+
+			}
+		}
+
+		if (zoomIn >= targetsOnScreen.Count && zoomIn > 0)
 			transform.position = destination + new Vector3 (0, 0, 0.15f);
 
 		if (PlayerBehavior.instance.IsTeleporting () && teleportTarget) {
