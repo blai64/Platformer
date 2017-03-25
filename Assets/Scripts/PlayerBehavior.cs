@@ -37,7 +37,8 @@ public class PlayerBehavior : MonoBehaviour {
 	public float WalkingSpeed = 0.05f;
 	private float jumpForce;
 	private float speed;
-	private float colliderToGround; 
+	private float colliderToBottom; 
+	private float colliderToSide; 
 	private float colliderOffset = 0f; 
 
 	// Throwing variables
@@ -85,7 +86,8 @@ public class PlayerBehavior : MonoBehaviour {
 		speed = WalkingSpeed;
 		animTimer = AnimTimer;
 		isPaused = false;
-		colliderToGround = GetComponent<BoxCollider> ().bounds.extents.y;
+		colliderToBottom = GetComponent<BoxCollider> ().bounds.extents.y;
+		colliderToSide = GetComponent<BoxCollider> ().bounds.extents.x;
 
 		EmitParticles (false);
 	}
@@ -311,7 +313,17 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.tag == "Ground") {
 			RaycastHit objectHit; 
-			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround + colliderOffset)) {
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToBottom + colliderOffset)) {
+				if (objectHit.transform.CompareTag("Ground")){
+					Land ();
+				}
+			}
+			else if (Physics.Raycast (transform.position + new Vector3(colliderToSide,0,0), Vector3.down, out objectHit, colliderToBottom + colliderOffset)) {
+				if (objectHit.transform.CompareTag("Ground")){
+					Land ();
+				}
+			}
+			else if (Physics.Raycast (transform.position - new Vector3(colliderToSide,0,0), Vector3.down, out objectHit, colliderToBottom + colliderOffset)) {
 				if (objectHit.transform.CompareTag("Ground")){
 					Land ();
 				}
@@ -337,7 +349,7 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnCollisionExit(Collision col) {
 		if (col.gameObject.tag == "Ground") {
 			RaycastHit objectHit; 
-			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround + colliderOffset)) {
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToBottom + colliderOffset)) {
 				if (!objectHit.transform.CompareTag("Ground")){
 					isGrounded = false;
 				}
