@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Splash.unity
+=======
+- path: Assets/Scenes/BlaiLevel1PostBeta.unity
+>>>>>>> 9337081048663b158a55da9a737065741031addb
   isLoaded: 1
   isActive: 1

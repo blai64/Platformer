@@ -37,8 +37,10 @@ public class SoundManager : MonoBehaviour {
 	// Environment Audio
 	public AudioClip DoorOpenAudio;
 	public AudioClip LeverAudio;
+	public AudioClip PlatformAudio;
 	private AudioSource doorOpenAudio;
 	private AudioSource leverAudio;
+	private AudioSource platformAudio;
 
 	private Dictionary<string, AudioSource> sounds;
 
@@ -99,12 +101,23 @@ public class SoundManager : MonoBehaviour {
 		leverAudio = gameObject.AddComponent<AudioSource>();
 		leverAudio.clip = LeverAudio;
 		sounds ["lever"] = leverAudio;
+		platformAudio = gameObject.AddComponent<AudioSource>();
+		platformAudio.clip = PlatformAudio;
+		sounds ["platform"] = platformAudio;
+		platformAudio.loop = true;
 	}
 	
 	public void PlaySound(string soundName) {
 		AudioSource temp;
 		if (sounds.TryGetValue (soundName, out temp)) {
 			temp.Play ();
+		}
+	}
+
+	public void StopSound(string soundName) {
+		AudioSource temp;
+		if (sounds.TryGetValue (soundName, out temp)) {
+			temp.Stop ();
 		}
 	}
 }

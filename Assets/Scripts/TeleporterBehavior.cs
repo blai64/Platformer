@@ -6,6 +6,7 @@ public class TeleporterBehavior : MonoBehaviour {
 
 	public GameObject parentBone;
 	public static TeleporterBehavior instance;
+	public GameObject Projector;
 
 	// Components
 	private Rigidbody rb;
@@ -25,12 +26,14 @@ public class TeleporterBehavior : MonoBehaviour {
 		instance = this;
 		rb = GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
+		Projector.SetActive(false);
 
 		Reset ();
 	}
 
 	public void Disappear() {
 		anim.SetBool ("isVisible", false);
+		Projector.SetActive(false);
 	}
 
 	public void Reset() {
@@ -42,6 +45,7 @@ public class TeleporterBehavior : MonoBehaviour {
 
 	public void Summon() {
 		anim.SetBool ("isVisible", true);
+		Projector.SetActive(true);
 	}
 
 	public void Release() {
@@ -61,19 +65,27 @@ public class TeleporterBehavior : MonoBehaviour {
 	//Collisions
 	void OnCollisionEnter(Collision col){
 		if (col.gameObject.tag == "Ground") {
-				isGrounded = true;
-				sm.PlaySound ("stone-drop");
+			//transform.parent = col.transform;
+			transform.position = new Vector3(transform.position.x,
+											 transform.position.y + 0.01f,
+											 transform.position.z);
+			isGrounded = true;
+			sm.PlaySound ("stone-drop");
 		}
-		if (col.gameObject.name == "witch_char" && isGrounded)
+		if (col.gameObject.name == "witch_char" && isGrounded) {
 			PlayerBehavior.instance.pickUp ();
+		}
 	}
+
 	void OnCollisionExit(Collision col) {
 		if (col.gameObject.tag == "Ground") {
 			isGrounded = false;
 		}
 	}
 
-	void Update(){
-		//print (rb.velocity);
+	void Update() {
+		Projector.transform.position = new Vector3(transform.position.x,
+													transform.position.y,
+													Projector.transform.position.z);
 	}
 }

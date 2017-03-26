@@ -41,11 +41,12 @@ public class MainCamera : MonoBehaviour {
 
 		transform.Find ("FadeOut").gameObject.SetActive (true);
 		pb = target.gameObject.GetComponent<PlayerBehavior> ();
+
+		transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (true,false);
 	}
 
 	void Start(){
 		cam = gameObject.GetComponent<Camera> ();
-		transform.Find ("FadeOut").gameObject.GetComponent<Fade> ().FadeInOut (true,false);
 	}
 
 	void Update ()  {

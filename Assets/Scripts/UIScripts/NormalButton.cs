@@ -11,10 +11,15 @@ public class NormalButton : MonoBehaviour {
 
 	void Start () {
 		Button btn = yourButton.GetComponent<Button> ();
-		btn.onClick.AddListener (update);
+		btn.onClick.AddListener (ButtonEvent);
 	}
 
-	void update () {
-		SceneManager.LoadScene (nextScene);
+	void ButtonEvent () {
+		if (nextScene == "Quit") {
+			Application.Quit ();
+		} else {
+			SceneManager.LoadScene (nextScene);
+		}
+		
 	}
 }
