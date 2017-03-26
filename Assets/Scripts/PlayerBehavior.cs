@@ -37,7 +37,8 @@ public class PlayerBehavior : MonoBehaviour {
 	public float WalkingSpeed = 0.05f;
 	private float jumpForce;
 	private float speed;
-	private float colliderToGround; 
+	private float colliderToBottom; 
+	private float colliderToSide; 
 	private float colliderOffset = 0f; 
 
 	// Throwing variables
@@ -85,7 +86,8 @@ public class PlayerBehavior : MonoBehaviour {
 		speed = WalkingSpeed;
 		animTimer = AnimTimer;
 		isPaused = false;
-		colliderToGround = GetComponent<BoxCollider> ().bounds.extents.y;
+		colliderToBottom = GetComponent<BoxCollider> ().bounds.extents.y;
+		colliderToSide = GetComponent<BoxCollider> ().bounds.extents.x;
 
 		EmitParticles (false);
 	}
@@ -118,7 +120,6 @@ public class PlayerBehavior : MonoBehaviour {
 	}
 
 	public void StopTeleporting(){
-		Debug.Log ("stop teleporting");
 		teleporting = false;
 		EmitParticles (false);
 		tb.Disappear ();
@@ -170,7 +171,6 @@ public class PlayerBehavior : MonoBehaviour {
 		} else if (Input.GetKeyUp (KeyCode.RightArrow) || Input.GetKeyUp(KeyCode.D)) {
 			Walk (false);
 		}
-
 		// Falling
 		Fall ();
 
@@ -249,7 +249,6 @@ public class PlayerBehavior : MonoBehaviour {
 
 	// throw the teleporter
 	void ThrowTeleporter() {
-		Debug.Log ("throwing telep.");
 		endX = Input.mousePosition.x;
 		endY = Input.mousePosition.y;
 		xThrowMagnitude = (endX - startX) * direction;
@@ -266,14 +265,24 @@ public class PlayerBehavior : MonoBehaviour {
 											  ((Input.mousePosition.y - startY) / 2f) / teleporterBody.mass * Time.fixedDeltaTime,
 										   	   0f);
 		// fills list with 10 trajectory balls
-		if (!listFilled) {
+		/*if (!listFilled) {
 			for (int x = 0; x < 20; x++)
 				trajectoryBallList.Add (Instantiate (trajectoryBallPrefab));
 			listFilled = true;
-		}
+		}*/
 		// places balls on path of projected trajectory
 		int offset = 0;
-		for (int i = offset; i < 20 + offset; i++) {
+		RaycastHit objectHit; 
+		Vector3 prevPosition = transform.position;
+		Vector3 targetPosition;
+		GameObject targetBall; 
+		int numBallsValid = 0;
+		int i = 0;
+		while (trajectoryBallList.Count < 20) {
+			if (i >= trajectoryBallList.Count)
+				trajectoryBallList.Add (Instantiate (trajectoryBallPrefab));
+			
+				
 			xValue = teleporterBody.transform.position.x + (initialVelocity.x * (i * .1f));
 			yValue = teleporterBody.transform.position.y + (initialVelocity.y * (i * .1f) + (-4.9f)*((i *.1f)*(i *.1f)));
 
@@ -284,8 +293,27 @@ public class PlayerBehavior : MonoBehaviour {
 				xOffset = 0.7f;
 				yOffset = 0.8f;
 			}
-			trajectoryBallList [i - offset].transform.position = new Vector3 (xValue + xOffset,
-																			  yValue + yOffset, 0f);
+
+			targetBall = trajectoryBallList [i - offset];
+			targetBall.transform.position = new Vector3 (xValue + xOffset,
+														 yValue + yOffset, 0f);
+			
+			targetPosition = targetBall.transform.position;
+
+			if (Physics.Raycast (prevPosition, targetPosition - prevPosition, out objectHit, Vector3.Distance(targetPosition,prevPosition))) {
+				break;
+			}
+			prevPosition = targetPosition;
+			i++;
+			numBallsValid++;
+		}
+		Debug.Log (numBallsValid);
+		List<GameObject> toDelete = trajectoryBallList.GetRange (
+			Mathf.Min (numBallsValid, trajectoryBallList.Count - 1),
+			Mathf.Max (0, trajectoryBallList.Count - numBallsValid));
+		foreach (GameObject g in toDelete) {
+			trajectoryBallList.Remove (g); 
+			Destroy (g);
 		}
 	}
 		
@@ -311,7 +339,17 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnCollisionEnter(Collision col) {
 		if (col.gameObject.tag == "Ground") {
 			RaycastHit objectHit; 
-			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround + colliderOffset)) {
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToBottom + colliderOffset)) {
+				if (objectHit.transform.CompareTag("Ground")){
+					Land ();
+				}
+			}
+			else if (Physics.Raycast (transform.position + new Vector3(colliderToSide,0,0), Vector3.down, out objectHit, colliderToBottom + colliderOffset)) {
+				if (objectHit.transform.CompareTag("Ground")){
+					Land ();
+				}
+			}
+			else if (Physics.Raycast (transform.position - new Vector3(colliderToSide,0,0), Vector3.down, out objectHit, colliderToBottom + colliderOffset)) {
 				if (objectHit.transform.CompareTag("Ground")){
 					Land ();
 				}
@@ -337,11 +375,12 @@ public class PlayerBehavior : MonoBehaviour {
 	void OnCollisionExit(Collision col) {
 		if (col.gameObject.tag == "Ground") {
 			RaycastHit objectHit; 
-			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToGround + colliderOffset)) {
-				if (!objectHit.transform.CompareTag("Ground")){
+			if (Physics.Raycast (transform.position, Vector3.down, out objectHit, colliderToBottom + colliderOffset)) {
+				if (!objectHit.transform.CompareTag ("Ground")) {
 					isGrounded = false;
 				}
-			}
+			} else
+				isGrounded = false;
 
 		}
 	}
@@ -420,6 +459,10 @@ public class PlayerBehavior : MonoBehaviour {
 
 	public void EnableArrows() {
 		canUseArrows = true;
+	}
+
+	public void DisableArrows() {
+		canUseArrows = false;
 	}
 
 	private void ThrowSingle(float force) {

@@ -7,8 +7,11 @@ public class PlatformTarget : SwitchTarget {
 	public float MoveDistance = 1.0f; 
 	public int DefaultDirection = 1;
 
+	private SoundManager sm;
+
 	override public void Start () {
 		base.Start ();
+		sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
 	}
 
 	override public void Update () {
@@ -31,11 +34,15 @@ public class PlatformTarget : SwitchTarget {
 		duration = duration * 3;
 		float t = 0.0f;
 
+		sm.PlaySound("platform");
+
 		while (t < 1.0f) {
 			t += Time.deltaTime / duration;
 			transform.position = Vector3.Lerp (oldPos, newPos, t);
 
 			yield return 0;
 		}
+
+		sm.StopSound("platform");
 	}
 }

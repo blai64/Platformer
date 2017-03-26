@@ -47,4 +47,8 @@ public class DoorTarget : SwitchTarget {
 
 		pb.CanExit ();
 	}
+
+	public void PlaySound() {
+		sm.PlaySound("door-open");
+	}
 }
