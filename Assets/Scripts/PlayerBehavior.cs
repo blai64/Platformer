@@ -461,6 +461,10 @@ public class PlayerBehavior : MonoBehaviour {
 		canUseArrows = true;
 	}
 
+	public void DisableArrows() {
+		canUseArrows = false;
+	}
+
 	private void ThrowSingle(float force) {
 		attached = false;
 		anim.SetTrigger ("isThrowing");

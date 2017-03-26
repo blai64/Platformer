@@ -26,7 +26,7 @@ public class TranslatingEssenceScript : MonoBehaviour {
 			Disable ();
 	}
 
-	void Translate(){
+	void Translate() {
 		Debug.Log ("translating");
 		transform.Translate (XDirection / 100, YDirection / 100, 0);
 		if (PlayerBehavior.instance.leftOfTeleporter() && transform.position.x > limit)
@@ -43,12 +43,12 @@ public class TranslatingEssenceScript : MonoBehaviour {
 		//PlayerBehavior.instance.StopTeleporting ();
 	}
 
-	public void Activate(){
+	public void Activate() {
 		this.transform.GetChild (0).gameObject.SetActive (true);
 		EmitParticles (true);
 	}
 
-	private void EmitParticles(bool val){
+	private void EmitParticles(bool val) {
 		GameObject particle;
 		ParticleSystem.EmissionModule em;
 		for (int i = 0; i < chargeParticles.transform.childCount; i++) {

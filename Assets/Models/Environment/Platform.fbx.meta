@@ -1,0 +1,1413 @@
+fileFormatVersion: 2
+guid: 496a8c0ad991a4d40a76c0c04d69a052
+timeCreated: 1490503887
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: chain
+    100002: chain1
+    100004: chain2
+    100006: chain3
+    100008: chain_ends
+    100010: pCube2
+    100012: pCube3
+    100014: pCube4
+    100016: pCube5
+    100018: pCube6
+    100020: pCube7
+    100022: pCube8
+    100024: pCube9
+    100026: //RootNode
+    100028: platform
+    100030: pTorus1
+    100032: pTorus1 1
+    100034: pTorus1 2
+    100036: pTorus1 3
+    100038: pTorus10
+    100040: pTorus10 1
+    100042: pTorus10 2
+    100044: pTorus10 3
+    100046: pTorus11
+    100048: pTorus11 1
+    100050: pTorus11 2
+    100052: pTorus11 3
+    100054: pTorus12
+    100056: pTorus12 1
+    100058: pTorus12 2
+    100060: pTorus12 3
+    100062: pTorus13
+    100064: pTorus13 1
+    100066: pTorus13 2
+    100068: pTorus13 3
+    100070: pTorus14
+    100072: pTorus14 1
+    100074: pTorus14 2
+    100076: pTorus14 3
+    100078: pTorus15
+    100080: pTorus15 1
+    100082: pTorus15 2
+    100084: pTorus15 3
+    100086: pTorus16
+    100088: pTorus16 1
+    100090: pTorus16 2
+    100092: pTorus16 3
+    100094: pTorus17
+    100096: pTorus17 1
+    100098: pTorus17 2
+    100100: pTorus17 3
+    100102: pTorus18
+    100104: pTorus18 1
+    100106: pTorus18 2
+    100108: pTorus18 3
+    100110: pTorus19
+    100112: pTorus19 1
+    100114: pTorus19 2
+    100116: pTorus19 3
+    100118: pTorus2
+    100120: pTorus2 1
+    100122: pTorus2 2
+    100124: pTorus2 3
+    100126: pTorus20
+    100128: pTorus20 1
+    100130: pTorus20 2
+    100132: pTorus20 3
+    100134: pTorus21
+    100136: pTorus21 1
+    100138: pTorus21 2
+    100140: pTorus21 3
+    100142: pTorus22
+    100144: pTorus22 1
+    100146: pTorus22 2
+    100148: pTorus22 3
+    100150: pTorus23
+    100152: pTorus23 1
+    100154: pTorus23 2
+    100156: pTorus23 3
+    100158: pTorus24
+    100160: pTorus24 1
+    100162: pTorus24 2
+    100164: pTorus24 3
+    100166: pTorus25
+    100168: pTorus25 1
+    100170: pTorus25 2
+    100172: pTorus25 3
+    100174: pTorus26
+    100176: pTorus26 1
+    100178: pTorus26 2
+    100180: pTorus26 3
+    100182: pTorus27
+    100184: pTorus27 1
+    100186: pTorus27 2
+    100188: pTorus27 3
+    100190: pTorus28
+    100192: pTorus28 1
+    100194: pTorus28 2
+    100196: pTorus28 3
+    100198: pTorus29
+    100200: pTorus29 1
+    100202: pTorus29 2
+    100204: pTorus29 3
+    100206: pTorus3
+    100208: pTorus3 1
+    100210: pTorus3 2
+    100212: pTorus3 3
+    100214: pTorus30
+    100216: pTorus30 1
+    100218: pTorus30 2
+    100220: pTorus30 3
+    100222: pTorus31
+    100224: pTorus31 1
+    100226: pTorus31 2
+    100228: pTorus31 3
+    100230: pTorus32
+    100232: pTorus32 1
+    100234: pTorus32 2
+    100236: pTorus32 3
+    100238: pTorus33
+    100240: pTorus33 1
+    100242: pTorus33 2
+    100244: pTorus33 3
+    100246: pTorus34
+    100248: pTorus34 1
+    100250: pTorus34 2
+    100252: pTorus34 3
+    100254: pTorus35
+    100256: pTorus35 1
+    100258: pTorus35 2
+    100260: pTorus35 3
+    100262: pTorus36
+    100264: pTorus36 1
+    100266: pTorus36 2
+    100268: pTorus36 3
+    100270: pTorus37
+    100272: pTorus37 1
+    100274: pTorus37 2
+    100276: pTorus37 3
+    100278: pTorus38
+    100280: pTorus38 1
+    100282: pTorus38 2
+    100284: pTorus38 3
+    100286: pTorus39
+    100288: pTorus39 1
+    100290: pTorus39 2
+    100292: pTorus39 3
+    100294: pTorus4
+    100296: pTorus4 1
+    100298: pTorus4 2
+    100300: pTorus4 3
+    100302: pTorus40
+    100304: pTorus40 1
+    100306: pTorus40 2
+    100308: pTorus40 3
+    100310: pTorus41
+    100312: pTorus41 1
+    100314: pTorus41 2
+    100316: pTorus41 3
+    100318: pTorus42
+    100320: pTorus42 1
+    100322: pTorus42 2
+    100324: pTorus42 3
+    100326: pTorus43
+    100328: pTorus43 1
+    100330: pTorus43 2
+    100332: pTorus43 3
+    100334: pTorus44
+    100336: pTorus44 1
+    100338: pTorus44 2
+    100340: pTorus44 3
+    100342: pTorus45
+    100344: pTorus45 1
+    100346: pTorus45 2
+    100348: pTorus45 3
+    100350: pTorus46
+    100352: pTorus46 1
+    100354: pTorus46 2
+    100356: pTorus46 3
+    100358: pTorus47
+    100360: pTorus47 1
+    100362: pTorus47 2
+    100364: pTorus47 3
+    100366: pTorus48
+    100368: pTorus48 1
+    100370: pTorus48 2
+    100372: pTorus48 3
+    100374: pTorus49
+    100376: pTorus49 1
+    100378: pTorus49 2
+    100380: pTorus49 3
+    100382: pTorus5
+    100384: pTorus5 1
+    100386: pTorus5 2
+    100388: pTorus5 3
+    100390: pTorus50
+    100392: pTorus50 1
+    100394: pTorus50 2
+    100396: pTorus50 3
+    100398: pTorus51
+    100400: pTorus51 1
+    100402: pTorus51 2
+    100404: pTorus51 3
+    100406: pTorus52
+    100408: pTorus52 1
+    100410: pTorus52 2
+    100412: pTorus52 3
+    100414: pTorus53
+    100416: pTorus53 1
+    100418: pTorus53 2
+    100420: pTorus53 3
+    100422: pTorus54
+    100424: pTorus54 1
+    100426: pTorus54 2
+    100428: pTorus54 3
+    100430: pTorus55
+    100432: pTorus55 1
+    100434: pTorus55 2
+    100436: pTorus55 3
+    100438: pTorus56
+    100440: pTorus56 1
+    100442: pTorus56 2
+    100444: pTorus56 3
+    100446: pTorus57
+    100448: pTorus57 1
+    100450: pTorus57 2
+    100452: pTorus57 3
+    100454: pTorus58
+    100456: pTorus58 1
+    100458: pTorus58 2
+    100460: pTorus58 3
+    100462: pTorus59
+    100464: pTorus59 1
+    100466: pTorus59 2
+    100468: pTorus59 3
+    100470: pTorus6
+    100472: pTorus6 1
+    100474: pTorus6 2
+    100476: pTorus6 3
+    100478: pTorus60
+    100480: pTorus60 1
+    100482: pTorus60 2
+    100484: pTorus60 3
+    100486: pTorus61
+    100488: pTorus61 1
+    100490: pTorus61 2
+    100492: pTorus61 3
+    100494: pTorus62
+    100496: pTorus62 1
+    100498: pTorus62 2
+    100500: pTorus62 3
+    100502: pTorus63
+    100504: pTorus63 1
+    100506: pTorus63 2
+    100508: pTorus63 3
+    100510: pTorus64
+    100512: pTorus64 1
+    100514: pTorus64 2
+    100516: pTorus64 3
+    100518: pTorus7
+    100520: pTorus7 1
+    100522: pTorus7 2
+    100524: pTorus7 3
+    100526: pTorus8
+    100528: pTorus8 1
+    100530: pTorus8 2
+    100532: pTorus8 3
+    100534: pTorus9
+    100536: pTorus9 1
+    100538: pTorus9 2
+    100540: pTorus9 3
+    400000: chain
+    400002: chain1
+    400004: chain2
+    400006: chain3
+    400008: chain_ends
+    400010: pCube2
+    400012: pCube3
+    400014: pCube4
+    400016: pCube5
+    400018: pCube6
+    400020: pCube7
+    400022: pCube8
+    400024: pCube9
+    400026: //RootNode
+    400028: platform
+    400030: pTorus1
+    400032: pTorus1 1
+    400034: pTorus1 2
+    400036: pTorus1 3
+    400038: pTorus10
+    400040: pTorus10 1
+    400042: pTorus10 2
+    400044: pTorus10 3
+    400046: pTorus11
+    400048: pTorus11 1
+    400050: pTorus11 2
+    400052: pTorus11 3
+    400054: pTorus12
+    400056: pTorus12 1
+    400058: pTorus12 2
+    400060: pTorus12 3
+    400062: pTorus13
+    400064: pTorus13 1
+    400066: pTorus13 2
+    400068: pTorus13 3
+    400070: pTorus14
+    400072: pTorus14 1
+    400074: pTorus14 2
+    400076: pTorus14 3
+    400078: pTorus15
+    400080: pTorus15 1
+    400082: pTorus15 2
+    400084: pTorus15 3
+    400086: pTorus16
+    400088: pTorus16 1
+    400090: pTorus16 2
+    400092: pTorus16 3
+    400094: pTorus17
+    400096: pTorus17 1
+    400098: pTorus17 2
+    400100: pTorus17 3
+    400102: pTorus18
+    400104: pTorus18 1
+    400106: pTorus18 2
+    400108: pTorus18 3
+    400110: pTorus19
+    400112: pTorus19 1
+    400114: pTorus19 2
+    400116: pTorus19 3
+    400118: pTorus2
+    400120: pTorus2 1
+    400122: pTorus2 2
+    400124: pTorus2 3
+    400126: pTorus20
+    400128: pTorus20 1
+    400130: pTorus20 2
+    400132: pTorus20 3
+    400134: pTorus21
+    400136: pTorus21 1
+    400138: pTorus21 2
+    400140: pTorus21 3
+    400142: pTorus22
+    400144: pTorus22 1
+    400146: pTorus22 2
+    400148: pTorus22 3
+    400150: pTorus23
+    400152: pTorus23 1
+    400154: pTorus23 2
+    400156: pTorus23 3
+    400158: pTorus24
+    400160: pTorus24 1
+    400162: pTorus24 2
+    400164: pTorus24 3
+    400166: pTorus25
+    400168: pTorus25 1
+    400170: pTorus25 2
+    400172: pTorus25 3
+    400174: pTorus26
+    400176: pTorus26 1
+    400178: pTorus26 2
+    400180: pTorus26 3
+    400182: pTorus27
+    400184: pTorus27 1
+    400186: pTorus27 2
+    400188: pTorus27 3
+    400190: pTorus28
+    400192: pTorus28 1
+    400194: pTorus28 2
+    400196: pTorus28 3
+    400198: pTorus29
+    400200: pTorus29 1
+    400202: pTorus29 2
+    400204: pTorus29 3
+    400206: pTorus3
+    400208: pTorus3 1
+    400210: pTorus3 2
+    400212: pTorus3 3
+    400214: pTorus30
+    400216: pTorus30 1
+    400218: pTorus30 2
+    400220: pTorus30 3
+    400222: pTorus31
+    400224: pTorus31 1
+    400226: pTorus31 2
+    400228: pTorus31 3
+    400230: pTorus32
+    400232: pTorus32 1
+    400234: pTorus32 2
+    400236: pTorus32 3
+    400238: pTorus33
+    400240: pTorus33 1
+    400242: pTorus33 2
+    400244: pTorus33 3
+    400246: pTorus34
+    400248: pTorus34 1
+    400250: pTorus34 2
+    400252: pTorus34 3
+    400254: pTorus35
+    400256: pTorus35 1
+    400258: pTorus35 2
+    400260: pTorus35 3
+    400262: pTorus36
+    400264: pTorus36 1
+    400266: pTorus36 2
+    400268: pTorus36 3
+    400270: pTorus37
+    400272: pTorus37 1
+    400274: pTorus37 2
+    400276: pTorus37 3
+    400278: pTorus38
+    400280: pTorus38 1
+    400282: pTorus38 2
+    400284: pTorus38 3
+    400286: pTorus39
+    400288: pTorus39 1
+    400290: pTorus39 2
+    400292: pTorus39 3
+    400294: pTorus4
+    400296: pTorus4 1
+    400298: pTorus4 2
+    400300: pTorus4 3
+    400302: pTorus40
+    400304: pTorus40 1
+    400306: pTorus40 2
+    400308: pTorus40 3
+    400310: pTorus41
+    400312: pTorus41 1
+    400314: pTorus41 2
+    400316: pTorus41 3
+    400318: pTorus42
+    400320: pTorus42 1
+    400322: pTorus42 2
+    400324: pTorus42 3
+    400326: pTorus43
+    400328: pTorus43 1
+    400330: pTorus43 2
+    400332: pTorus43 3
+    400334: pTorus44
+    400336: pTorus44 1
+    400338: pTorus44 2
+    400340: pTorus44 3
+    400342: pTorus45
+    400344: pTorus45 1
+    400346: pTorus45 2
+    400348: pTorus45 3
+    400350: pTorus46
+    400352: pTorus46 1
+    400354: pTorus46 2
+    400356: pTorus46 3
+    400358: pTorus47
+    400360: pTorus47 1
+    400362: pTorus47 2
+    400364: pTorus47 3
+    400366: pTorus48
+    400368: pTorus48 1
+    400370: pTorus48 2
+    400372: pTorus48 3
+    400374: pTorus49
+    400376: pTorus49 1
+    400378: pTorus49 2
+    400380: pTorus49 3
+    400382: pTorus5
+    400384: pTorus5 1
+    400386: pTorus5 2
+    400388: pTorus5 3
+    400390: pTorus50
+    400392: pTorus50 1
+    400394: pTorus50 2
+    400396: pTorus50 3
+    400398: pTorus51
+    400400: pTorus51 1
+    400402: pTorus51 2
+    400404: pTorus51 3
+    400406: pTorus52
+    400408: pTorus52 1
+    400410: pTorus52 2
+    400412: pTorus52 3
+    400414: pTorus53
+    400416: pTorus53 1
+    400418: pTorus53 2
+    400420: pTorus53 3
+    400422: pTorus54
+    400424: pTorus54 1
+    400426: pTorus54 2
+    400428: pTorus54 3
+    400430: pTorus55
+    400432: pTorus55 1
+    400434: pTorus55 2
+    400436: pTorus55 3
+    400438: pTorus56
+    400440: pTorus56 1
+    400442: pTorus56 2
+    400444: pTorus56 3
+    400446: pTorus57
+    400448: pTorus57 1
+    400450: pTorus57 2
+    400452: pTorus57 3
+    400454: pTorus58
+    400456: pTorus58 1
+    400458: pTorus58 2
+    400460: pTorus58 3
+    400462: pTorus59
+    400464: pTorus59 1
+    400466: pTorus59 2
+    400468: pTorus59 3
+    400470: pTorus6
+    400472: pTorus6 1
+    400474: pTorus6 2
+    400476: pTorus6 3
+    400478: pTorus60
+    400480: pTorus60 1
+    400482: pTorus60 2
+    400484: pTorus60 3
+    400486: pTorus61
+    400488: pTorus61 1
+    400490: pTorus61 2
+    400492: pTorus61 3
+    400494: pTorus62
+    400496: pTorus62 1
+    400498: pTorus62 2
+    400500: pTorus62 3
+    400502: pTorus63
+    400504: pTorus63 1
+    400506: pTorus63 2
+    400508: pTorus63 3
+    400510: pTorus64
+    400512: pTorus64 1
+    400514: pTorus64 2
+    400516: pTorus64 3
+    400518: pTorus7
+    400520: pTorus7 1
+    400522: pTorus7 2
+    400524: pTorus7 3
+    400526: pTorus8
+    400528: pTorus8 1
+    400530: pTorus8 2
+    400532: pTorus8 3
+    400534: pTorus9
+    400536: pTorus9 1
+    400538: pTorus9 2
+    400540: pTorus9 3
+    2300000: pCube2
+    2300002: pCube3
+    2300004: pCube4
+    2300006: pCube5
+    2300008: pCube6
+    2300010: pCube7
+    2300012: pCube8
+    2300014: pCube9
+    2300016: platform
+    2300018: pTorus1
+    2300020: pTorus1 1
+    2300022: pTorus1 2
+    2300024: pTorus1 3
+    2300026: pTorus10
+    2300028: pTorus10 1
+    2300030: pTorus10 2
+    2300032: pTorus10 3
+    2300034: pTorus11
+    2300036: pTorus11 1
+    2300038: pTorus11 2
+    2300040: pTorus11 3
+    2300042: pTorus12
+    2300044: pTorus12 1
+    2300046: pTorus12 2
+    2300048: pTorus12 3
+    2300050: pTorus13
+    2300052: pTorus13 1
+    2300054: pTorus13 2
+    2300056: pTorus13 3
+    2300058: pTorus14
+    2300060: pTorus14 1
+    2300062: pTorus14 2
+    2300064: pTorus14 3
+    2300066: pTorus15
+    2300068: pTorus15 1
+    2300070: pTorus15 2
+    2300072: pTorus15 3
+    2300074: pTorus16
+    2300076: pTorus16 1
+    2300078: pTorus16 2
+    2300080: pTorus16 3
+    2300082: pTorus17
+    2300084: pTorus17 1
+    2300086: pTorus17 2
+    2300088: pTorus17 3
+    2300090: pTorus18
+    2300092: pTorus18 1
+    2300094: pTorus18 2
+    2300096: pTorus18 3
+    2300098: pTorus19
+    2300100: pTorus19 1
+    2300102: pTorus19 2
+    2300104: pTorus19 3
+    2300106: pTorus2
+    2300108: pTorus2 1
+    2300110: pTorus2 2
+    2300112: pTorus2 3
+    2300114: pTorus20
+    2300116: pTorus20 1
+    2300118: pTorus20 2
+    2300120: pTorus20 3
+    2300122: pTorus21
+    2300124: pTorus21 1
+    2300126: pTorus21 2
+    2300128: pTorus21 3
+    2300130: pTorus22
+    2300132: pTorus22 1
+    2300134: pTorus22 2
+    2300136: pTorus22 3
+    2300138: pTorus23
+    2300140: pTorus23 1
+    2300142: pTorus23 2
+    2300144: pTorus23 3
+    2300146: pTorus24
+    2300148: pTorus24 1
+    2300150: pTorus24 2
+    2300152: pTorus24 3
+    2300154: pTorus25
+    2300156: pTorus25 1
+    2300158: pTorus25 2
+    2300160: pTorus25 3
+    2300162: pTorus26
+    2300164: pTorus26 1
+    2300166: pTorus26 2
+    2300168: pTorus26 3
+    2300170: pTorus27
+    2300172: pTorus27 1
+    2300174: pTorus27 2
+    2300176: pTorus27 3
+    2300178: pTorus28
+    2300180: pTorus28 1
+    2300182: pTorus28 2
+    2300184: pTorus28 3
+    2300186: pTorus29
+    2300188: pTorus29 1
+    2300190: pTorus29 2
+    2300192: pTorus29 3
+    2300194: pTorus3
+    2300196: pTorus3 1
+    2300198: pTorus3 2
+    2300200: pTorus3 3
+    2300202: pTorus30
+    2300204: pTorus30 1
+    2300206: pTorus30 2
+    2300208: pTorus30 3
+    2300210: pTorus31
+    2300212: pTorus31 1
+    2300214: pTorus31 2
+    2300216: pTorus31 3
+    2300218: pTorus32
+    2300220: pTorus32 1
+    2300222: pTorus32 2
+    2300224: pTorus32 3
+    2300226: pTorus33
+    2300228: pTorus33 1
+    2300230: pTorus33 2
+    2300232: pTorus33 3
+    2300234: pTorus34
+    2300236: pTorus34 1
+    2300238: pTorus34 2
+    2300240: pTorus34 3
+    2300242: pTorus35
+    2300244: pTorus35 1
+    2300246: pTorus35 2
+    2300248: pTorus35 3
+    2300250: pTorus36
+    2300252: pTorus36 1
+    2300254: pTorus36 2
+    2300256: pTorus36 3
+    2300258: pTorus37
+    2300260: pTorus37 1
+    2300262: pTorus37 2
+    2300264: pTorus37 3
+    2300266: pTorus38
+    2300268: pTorus38 1
+    2300270: pTorus38 2
+    2300272: pTorus38 3
+    2300274: pTorus39
+    2300276: pTorus39 1
+    2300278: pTorus39 2
+    2300280: pTorus39 3
+    2300282: pTorus4
+    2300284: pTorus4 1
+    2300286: pTorus4 2
+    2300288: pTorus4 3
+    2300290: pTorus40
+    2300292: pTorus40 1
+    2300294: pTorus40 2
+    2300296: pTorus40 3
+    2300298: pTorus41
+    2300300: pTorus41 1
+    2300302: pTorus41 2
+    2300304: pTorus41 3
+    2300306: pTorus42
+    2300308: pTorus42 1
+    2300310: pTorus42 2
+    2300312: pTorus42 3
+    2300314: pTorus43
+    2300316: pTorus43 1
+    2300318: pTorus43 2
+    2300320: pTorus43 3
+    2300322: pTorus44
+    2300324: pTorus44 1
+    2300326: pTorus44 2
+    2300328: pTorus44 3
+    2300330: pTorus45
+    2300332: pTorus45 1
+    2300334: pTorus45 2
+    2300336: pTorus45 3
+    2300338: pTorus46
+    2300340: pTorus46 1
+    2300342: pTorus46 2
+    2300344: pTorus46 3
+    2300346: pTorus47
+    2300348: pTorus47 1
+    2300350: pTorus47 2
+    2300352: pTorus47 3
+    2300354: pTorus48
+    2300356: pTorus48 1
+    2300358: pTorus48 2
+    2300360: pTorus48 3
+    2300362: pTorus49
+    2300364: pTorus49 1
+    2300366: pTorus49 2
+    2300368: pTorus49 3
+    2300370: pTorus5
+    2300372: pTorus5 1
+    2300374: pTorus5 2
+    2300376: pTorus5 3
+    2300378: pTorus50
+    2300380: pTorus50 1
+    2300382: pTorus50 2
+    2300384: pTorus50 3
+    2300386: pTorus51
+    2300388: pTorus51 1
+    2300390: pTorus51 2
+    2300392: pTorus51 3
+    2300394: pTorus52
+    2300396: pTorus52 1
+    2300398: pTorus52 2
+    2300400: pTorus52 3
+    2300402: pTorus53
+    2300404: pTorus53 1
+    2300406: pTorus53 2
+    2300408: pTorus53 3
+    2300410: pTorus54
+    2300412: pTorus54 1
+    2300414: pTorus54 2
+    2300416: pTorus54 3
+    2300418: pTorus55
+    2300420: pTorus55 1
+    2300422: pTorus55 2
+    2300424: pTorus55 3
+    2300426: pTorus56
+    2300428: pTorus56 1
+    2300430: pTorus56 2
+    2300432: pTorus56 3
+    2300434: pTorus57
+    2300436: pTorus57 1
+    2300438: pTorus57 2
+    2300440: pTorus57 3
+    2300442: pTorus58
+    2300444: pTorus58 1
+    2300446: pTorus58 2
+    2300448: pTorus58 3
+    2300450: pTorus59
+    2300452: pTorus59 1
+    2300454: pTorus59 2
+    2300456: pTorus59 3
+    2300458: pTorus6
+    2300460: pTorus6 1
+    2300462: pTorus6 2
+    2300464: pTorus6 3
+    2300466: pTorus60
+    2300468: pTorus60 1
+    2300470: pTorus60 2
+    2300472: pTorus60 3
+    2300474: pTorus61
+    2300476: pTorus61 1
+    2300478: pTorus61 2
+    2300480: pTorus61 3
+    2300482: pTorus62
+    2300484: pTorus62 1
+    2300486: pTorus62 2
+    2300488: pTorus62 3
+    2300490: pTorus63
+    2300492: pTorus63 1
+    2300494: pTorus63 2
+    2300496: pTorus63 3
+    2300498: pTorus64
+    2300500: pTorus64 1
+    2300502: pTorus64 2
+    2300504: pTorus64 3
+    2300506: pTorus7
+    2300508: pTorus7 1
+    2300510: pTorus7 2
+    2300512: pTorus7 3
+    2300514: pTorus8
+    2300516: pTorus8 1
+    2300518: pTorus8 2
+    2300520: pTorus8 3
+    2300522: pTorus9
+    2300524: pTorus9 1
+    2300526: pTorus9 2
+    2300528: pTorus9 3
+    3300000: pCube2
+    3300002: pCube3
+    3300004: pCube4
+    3300006: pCube5
+    3300008: pCube6
+    3300010: pCube7
+    3300012: pCube8
+    3300014: pCube9
+    3300016: platform
+    3300018: pTorus1
+    3300020: pTorus1 1
+    3300022: pTorus1 2
+    3300024: pTorus1 3
+    3300026: pTorus10
+    3300028: pTorus10 1
+    3300030: pTorus10 2
+    3300032: pTorus10 3
+    3300034: pTorus11
+    3300036: pTorus11 1
+    3300038: pTorus11 2
+    3300040: pTorus11 3
+    3300042: pTorus12
+    3300044: pTorus12 1
+    3300046: pTorus12 2
+    3300048: pTorus12 3
+    3300050: pTorus13
+    3300052: pTorus13 1
+    3300054: pTorus13 2
+    3300056: pTorus13 3
+    3300058: pTorus14
+    3300060: pTorus14 1
+    3300062: pTorus14 2
+    3300064: pTorus14 3
+    3300066: pTorus15
+    3300068: pTorus15 1
+    3300070: pTorus15 2
+    3300072: pTorus15 3
+    3300074: pTorus16
+    3300076: pTorus16 1
+    3300078: pTorus16 2
+    3300080: pTorus16 3
+    3300082: pTorus17
+    3300084: pTorus17 1
+    3300086: pTorus17 2
+    3300088: pTorus17 3
+    3300090: pTorus18
+    3300092: pTorus18 1
+    3300094: pTorus18 2
+    3300096: pTorus18 3
+    3300098: pTorus19
+    3300100: pTorus19 1
+    3300102: pTorus19 2
+    3300104: pTorus19 3
+    3300106: pTorus2
+    3300108: pTorus2 1
+    3300110: pTorus2 2
+    3300112: pTorus2 3
+    3300114: pTorus20
+    3300116: pTorus20 1
+    3300118: pTorus20 2
+    3300120: pTorus20 3
+    3300122: pTorus21
+    3300124: pTorus21 1
+    3300126: pTorus21 2
+    3300128: pTorus21 3
+    3300130: pTorus22
+    3300132: pTorus22 1
+    3300134: pTorus22 2
+    3300136: pTorus22 3
+    3300138: pTorus23
+    3300140: pTorus23 1
+    3300142: pTorus23 2
+    3300144: pTorus23 3
+    3300146: pTorus24
+    3300148: pTorus24 1
+    3300150: pTorus24 2
+    3300152: pTorus24 3
+    3300154: pTorus25
+    3300156: pTorus25 1
+    3300158: pTorus25 2
+    3300160: pTorus25 3
+    3300162: pTorus26
+    3300164: pTorus26 1
+    3300166: pTorus26 2
+    3300168: pTorus26 3
+    3300170: pTorus27
+    3300172: pTorus27 1
+    3300174: pTorus27 2
+    3300176: pTorus27 3
+    3300178: pTorus28
+    3300180: pTorus28 1
+    3300182: pTorus28 2
+    3300184: pTorus28 3
+    3300186: pTorus29
+    3300188: pTorus29 1
+    3300190: pTorus29 2
+    3300192: pTorus29 3
+    3300194: pTorus3
+    3300196: pTorus3 1
+    3300198: pTorus3 2
+    3300200: pTorus3 3
+    3300202: pTorus30
+    3300204: pTorus30 1
+    3300206: pTorus30 2
+    3300208: pTorus30 3
+    3300210: pTorus31
+    3300212: pTorus31 1
+    3300214: pTorus31 2
+    3300216: pTorus31 3
+    3300218: pTorus32
+    3300220: pTorus32 1
+    3300222: pTorus32 2
+    3300224: pTorus32 3
+    3300226: pTorus33
+    3300228: pTorus33 1
+    3300230: pTorus33 2
+    3300232: pTorus33 3
+    3300234: pTorus34
+    3300236: pTorus34 1
+    3300238: pTorus34 2
+    3300240: pTorus34 3
+    3300242: pTorus35
+    3300244: pTorus35 1
+    3300246: pTorus35 2
+    3300248: pTorus35 3
+    3300250: pTorus36
+    3300252: pTorus36 1
+    3300254: pTorus36 2
+    3300256: pTorus36 3
+    3300258: pTorus37
+    3300260: pTorus37 1
+    3300262: pTorus37 2
+    3300264: pTorus37 3
+    3300266: pTorus38
+    3300268: pTorus38 1
+    3300270: pTorus38 2
+    3300272: pTorus38 3
+    3300274: pTorus39
+    3300276: pTorus39 1
+    3300278: pTorus39 2
+    3300280: pTorus39 3
+    3300282: pTorus4
+    3300284: pTorus4 1
+    3300286: pTorus4 2
+    3300288: pTorus4 3
+    3300290: pTorus40
+    3300292: pTorus40 1
+    3300294: pTorus40 2
+    3300296: pTorus40 3
+    3300298: pTorus41
+    3300300: pTorus41 1
+    3300302: pTorus41 2
+    3300304: pTorus41 3
+    3300306: pTorus42
+    3300308: pTorus42 1
+    3300310: pTorus42 2
+    3300312: pTorus42 3
+    3300314: pTorus43
+    3300316: pTorus43 1
+    3300318: pTorus43 2
+    3300320: pTorus43 3
+    3300322: pTorus44
+    3300324: pTorus44 1
+    3300326: pTorus44 2
+    3300328: pTorus44 3
+    3300330: pTorus45
+    3300332: pTorus45 1
+    3300334: pTorus45 2
+    3300336: pTorus45 3
+    3300338: pTorus46
+    3300340: pTorus46 1
+    3300342: pTorus46 2
+    3300344: pTorus46 3
+    3300346: pTorus47
+    3300348: pTorus47 1
+    3300350: pTorus47 2
+    3300352: pTorus47 3
+    3300354: pTorus48
+    3300356: pTorus48 1
+    3300358: pTorus48 2
+    3300360: pTorus48 3
+    3300362: pTorus49
+    3300364: pTorus49 1
+    3300366: pTorus49 2
+    3300368: pTorus49 3
+    3300370: pTorus5
+    3300372: pTorus5 1
+    3300374: pTorus5 2
+    3300376: pTorus5 3
+    3300378: pTorus50
+    3300380: pTorus50 1
+    3300382: pTorus50 2
+    3300384: pTorus50 3
+    3300386: pTorus51
+    3300388: pTorus51 1
+    3300390: pTorus51 2
+    3300392: pTorus51 3
+    3300394: pTorus52
+    3300396: pTorus52 1
+    3300398: pTorus52 2
+    3300400: pTorus52 3
+    3300402: pTorus53
+    3300404: pTorus53 1
+    3300406: pTorus53 2
+    3300408: pTorus53 3
+    3300410: pTorus54
+    3300412: pTorus54 1
+    3300414: pTorus54 2
+    3300416: pTorus54 3
+    3300418: pTorus55
+    3300420: pTorus55 1
+    3300422: pTorus55 2
+    3300424: pTorus55 3
+    3300426: pTorus56
+    3300428: pTorus56 1
+    3300430: pTorus56 2
+    3300432: pTorus56 3
+    3300434: pTorus57
+    3300436: pTorus57 1
+    3300438: pTorus57 2
+    3300440: pTorus57 3
+    3300442: pTorus58
+    3300444: pTorus58 1
+    3300446: pTorus58 2
+    3300448: pTorus58 3
+    3300450: pTorus59
+    3300452: pTorus59 1
+    3300454: pTorus59 2
+    3300456: pTorus59 3
+    3300458: pTorus6
+    3300460: pTorus6 1
+    3300462: pTorus6 2
+    3300464: pTorus6 3
+    3300466: pTorus60
+    3300468: pTorus60 1
+    3300470: pTorus60 2
+    3300472: pTorus60 3
+    3300474: pTorus61
+    3300476: pTorus61 1
+    3300478: pTorus61 2
+    3300480: pTorus61 3
+    3300482: pTorus62
+    3300484: pTorus62 1
+    3300486: pTorus62 2
+    3300488: pTorus62 3
+    3300490: pTorus63
+    3300492: pTorus63 1
+    3300494: pTorus63 2
+    3300496: pTorus63 3
+    3300498: pTorus64
+    3300500: pTorus64 1
+    3300502: pTorus64 2
+    3300504: pTorus64 3
+    3300506: pTorus7
+    3300508: pTorus7 1
+    3300510: pTorus7 2
+    3300512: pTorus7 3
+    3300514: pTorus8
+    3300516: pTorus8 1
+    3300518: pTorus8 2
+    3300520: pTorus8 3
+    3300522: pTorus9
+    3300524: pTorus9 1
+    3300526: pTorus9 2
+    3300528: pTorus9 3
+    4300000: platform
+    4300002: pCube2
+    4300004: pCube3
+    4300006: pCube4
+    4300008: pCube5
+    4300010: pTorus1
+    4300012: pTorus2
+    4300014: pTorus3
+    4300016: pTorus4
+    4300018: pTorus5
+    4300020: pTorus6
+    4300022: pTorus7
+    4300024: pTorus8
+    4300026: pTorus9
+    4300028: pTorus10
+    4300030: pTorus11
+    4300032: pTorus12
+    4300034: pTorus13
+    4300036: pTorus14
+    4300038: pTorus15
+    4300040: pTorus16
+    4300042: pTorus17
+    4300044: pTorus18
+    4300046: pTorus19
+    4300048: pTorus20
+    4300050: pTorus21
+    4300052: pTorus22
+    4300054: pTorus23
+    4300056: pTorus24
+    4300058: pTorus25
+    4300060: pTorus26
+    4300062: pTorus27
+    4300064: pTorus28
+    4300066: pTorus29
+    4300068: pTorus30
+    4300070: pTorus31
+    4300072: pTorus32
+    4300074: pTorus33
+    4300076: pTorus34
+    4300078: pTorus35
+    4300080: pTorus36
+    4300082: pTorus37
+    4300084: pTorus38
+    4300086: pTorus39
+    4300088: pTorus40
+    4300090: pTorus41
+    4300092: pTorus42
+    4300094: pTorus43
+    4300096: pTorus44
+    4300098: pTorus45
+    4300100: pTorus46
+    4300102: pTorus47
+    4300104: pTorus48
+    4300106: pTorus49
+    4300108: pTorus50
+    4300110: pTorus51
+    4300112: pTorus52
+    4300114: pTorus53
+    4300116: pTorus54
+    4300118: pTorus55
+    4300120: pTorus56
+    4300122: pTorus57
+    4300124: pTorus58
+    4300126: pTorus59
+    4300128: pTorus60
+    4300130: pTorus61
+    4300132: pTorus62
+    4300134: pTorus63
+    4300136: pTorus64
+    4300138: pTorus1
+    4300140: pTorus2
+    4300142: pTorus3
+    4300144: pTorus4
+    4300146: pTorus5
+    4300148: pTorus6
+    4300150: pTorus7
+    4300152: pTorus8
+    4300154: pTorus9
+    4300156: pTorus10
+    4300158: pTorus11
+    4300160: pTorus12
+    4300162: pTorus13
+    4300164: pTorus14
+    4300166: pTorus15
+    4300168: pTorus16
+    4300170: pTorus17
+    4300172: pTorus18
+    4300174: pTorus19
+    4300176: pTorus20
+    4300178: pTorus21
+    4300180: pTorus22
+    4300182: pTorus23
+    4300184: pTorus24
+    4300186: pTorus25
+    4300188: pTorus26
+    4300190: pTorus27
+    4300192: pTorus28
+    4300194: pTorus29
+    4300196: pTorus30
+    4300198: pTorus31
+    4300200: pTorus32
+    4300202: pTorus33
+    4300204: pTorus34
+    4300206: pTorus35
+    4300208: pTorus36
+    4300210: pTorus37
+    4300212: pTorus38
+    4300214: pTorus39
+    4300216: pTorus40
+    4300218: pTorus41
+    4300220: pTorus42
+    4300222: pTorus43
+    4300224: pTorus44
+    4300226: pTorus45
+    4300228: pTorus46
+    4300230: pTorus47
+    4300232: pTorus48
+    4300234: pTorus49
+    4300236: pTorus50
+    4300238: pTorus51
+    4300240: pTorus52
+    4300242: pTorus53
+    4300244: pTorus54
+    4300246: pTorus55
+    4300248: pTorus56
+    4300250: pTorus57
+    4300252: pTorus58
+    4300254: pTorus59
+    4300256: pTorus60
+    4300258: pTorus61
+    4300260: pTorus62
+    4300262: pTorus63
+    4300264: pTorus64
+    4300266: pTorus1
+    4300268: pTorus2
+    4300270: pTorus3
+    4300272: pTorus4
+    4300274: pTorus5
+    4300276: pTorus6
+    4300278: pTorus7
+    4300280: pTorus8
+    4300282: pTorus9
+    4300284: pTorus10
+    4300286: pTorus11
+    4300288: pTorus12
+    4300290: pTorus13
+    4300292: pTorus14
+    4300294: pTorus15
+    4300296: pTorus16
+    4300298: pTorus17
+    4300300: pTorus18
+    4300302: pTorus19
+    4300304: pTorus20
+    4300306: pTorus21
+    4300308: pTorus22
+    4300310: pTorus23
+    4300312: pTorus24
+    4300314: pTorus25
+    4300316: pTorus26
+    4300318: pTorus27
+    4300320: pTorus28
+    4300322: pTorus29
+    4300324: pTorus30
+    4300326: pTorus31
+    4300328: pTorus32
+    4300330: pTorus33
+    4300332: pTorus34
+    4300334: pTorus35
+    4300336: pTorus36
+    4300338: pTorus37
+    4300340: pTorus38
+    4300342: pTorus39
+    4300344: pTorus40
+    4300346: pTorus41
+    4300348: pTorus42
+    4300350: pTorus43
+    4300352: pTorus44
+    4300354: pTorus45
+    4300356: pTorus46
+    4300358: pTorus47
+    4300360: pTorus48
+    4300362: pTorus49
+    4300364: pTorus50
+    4300366: pTorus51
+    4300368: pTorus52
+    4300370: pTorus53
+    4300372: pTorus54
+    4300374: pTorus55
+    4300376: pTorus56
+    4300378: pTorus57
+    4300380: pTorus58
+    4300382: pTorus59
+    4300384: pTorus60
+    4300386: pTorus61
+    4300388: pTorus62
+    4300390: pTorus63
+    4300392: pTorus64
+    4300394: pTorus1
+    4300396: pTorus2
+    4300398: pTorus3
+    4300400: pTorus4
+    4300402: pTorus5
+    4300404: pTorus6
+    4300406: pTorus7
+    4300408: pTorus8
+    4300410: pTorus9
+    4300412: pTorus10
+    4300414: pTorus11
+    4300416: pTorus12
+    4300418: pTorus13
+    4300420: pTorus14
+    4300422: pTorus15
+    4300424: pTorus16
+    4300426: pTorus17
+    4300428: pTorus18
+    4300430: pTorus19
+    4300432: pTorus20
+    4300434: pTorus21
+    4300436: pTorus22
+    4300438: pTorus23
+    4300440: pTorus24
+    4300442: pTorus25
+    4300444: pTorus26
+    4300446: pTorus27
+    4300448: pTorus28
+    4300450: pTorus29
+    4300452: pTorus30
+    4300454: pTorus31
+    4300456: pTorus32
+    4300458: pTorus33
+    4300460: pTorus34
+    4300462: pTorus35
+    4300464: pTorus36
+    4300466: pTorus37
+    4300468: pTorus38
+    4300470: pTorus39
+    4300472: pTorus40
+    4300474: pTorus41
+    4300476: pTorus42
+    4300478: pTorus43
+    4300480: pTorus44
+    4300482: pTorus45
+    4300484: pTorus46
+    4300486: pTorus47
+    4300488: pTorus48
+    4300490: pTorus49
+    4300492: pTorus50
+    4300494: pTorus51
+    4300496: pTorus52
+    4300498: pTorus53
+    4300500: pTorus54
+    4300502: pTorus55
+    4300504: pTorus56
+    4300506: pTorus57
+    4300508: pTorus58
+    4300510: pTorus59
+    4300512: pTorus60
+    4300514: pTorus61
+    4300516: pTorus62
+    4300518: pTorus63
+    4300520: pTorus64
+    4300522: pCube6
+    4300524: pCube7
+    4300526: pCube8
+    4300528: pCube9
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

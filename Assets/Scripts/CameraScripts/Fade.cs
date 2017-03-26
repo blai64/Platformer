@@ -7,14 +7,19 @@ public class Fade : MonoBehaviour {
 
 	private SpriteRenderer fadeoutSprite;
 
-	public string NextSceneName = "Michelle_Beta";
+	public string NextSceneName = "Splash";
 	public int FadeDuration = 2;
 
-	public void FadeInOut(bool fadingIn, bool isDead){
+	public void FadeInOut(bool fadingIn, bool isDead) {
 		StartCoroutine(StartFade(FadeDuration, fadingIn, isDead));
 	}
 
-	IEnumerator StartFade(float duration, bool fadingIn, bool isDead){
+	public void FadeMenu() {
+		NextSceneName = "Splash";
+		StartCoroutine(StartFade(FadeDuration, false, false));
+	}
+
+	IEnumerator StartFade(float duration, bool fadingIn, bool isDead) {
 		float t = 0.0f;
 		fadeoutSprite = gameObject.GetComponent<SpriteRenderer> ();
 		Color temp = fadeoutSprite.color;
