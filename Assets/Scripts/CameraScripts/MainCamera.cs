@@ -18,6 +18,7 @@ public class MainCamera : MonoBehaviour {
 	}
 		
 	private Vector3 velocity = Vector3.zero;
+	private Vector3 destination;
 	public Transform target;
 	public Transform teleportTarget;
 	private PlayerBehavior pb;
@@ -47,8 +48,10 @@ public class MainCamera : MonoBehaviour {
 
 	void Start(){
 		cam = gameObject.GetComponent<Camera> ();
+		destination = transform.position; 
 	}
 
+	/*
 	void Update ()  {
 		Vector3 destination = transform.position; 
 		Vector3 teleporterLocation;
@@ -89,6 +92,17 @@ public class MainCamera : MonoBehaviour {
 			destination = transform.position + delta;
 			transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 		}
+
+	}
+	*/
+
+	void Update(){
+		transform.position = Vector3.SmoothDamp (transform.position, destination, ref velocity, dampTime);
+	}
+
+	public void MoveCamera(Vector3 delta){
+		//transform.position = Vector3.SmoothDamp (transform.position, transform.position + delta, ref velocity, dampTime);
+		destination += delta; 
 
 	}
 }

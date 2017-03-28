@@ -238,9 +238,6 @@ public class PlayerBehavior : MonoBehaviour {
 			EmitParticles (true);
 			xPreviusPos = transform.position.x;
 			yPreviusPos = transform.position.y;
-			transform.position = new Vector3 (teleporterBody.transform.position.x,
-				teleporterBody.transform.position.y + .6f,
-				transform.position.z);
 			teleportCharges -= 1;
 			TeleporterBehavior.instance.isGrounded = false;
 		}

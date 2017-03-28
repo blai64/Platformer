@@ -28,16 +28,27 @@ public class TranslatingEssenceScript : MonoBehaviour {
 
 	void Translate() {
 		transform.Translate (XDirection / 100, YDirection / 100, 0);
-		if (PlayerBehavior.instance.leftOfTeleporter() && transform.position.x > limit)
+		if (PlayerBehavior.instance.leftOfTeleporter () && transform.position.x > limit) {
 			PlayerBehavior.instance.StopTeleporting ();
-		else if (!PlayerBehavior.instance.leftOfTeleporter() && transform.position.x < limit)
+			resetPlayerPosition ();
+		} else if (!PlayerBehavior.instance.leftOfTeleporter () && transform.position.x < limit) {
 			PlayerBehavior.instance.StopTeleporting ();
+			resetPlayerPosition ();
+		}
 	}
 	// disables aura and re-enables player
 	void Disable() {
 		this.transform.GetChild (0).gameObject.SetActive (false);
 		EmitParticles (false);
 		Player.SetActive (true);
+
+	}
+
+	// sets player's position to wherever the crystal is
+	void resetPlayerPosition(){
+		PlayerBehavior.instance.transform.position = new Vector3 (TeleporterBehavior.instance.transform.position.x,
+			TeleporterBehavior.instance.transform.position.y + .6f,
+			TeleporterBehavior.instance.transform.position.z);
 	}
 
 	public void Activate() {
