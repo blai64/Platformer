@@ -10,7 +10,7 @@ public class CameraMoveTrigger : MonoBehaviour {
 	public float camXRight;
 	public float camYDown;
 
-	public bool availableFromLeft;
+	public bool availableFromLeft = true;
 
 	void OnTriggerEnter(Collider other){
 		translation = new Vector3 (camXRight, camYDown, zoomZ);
