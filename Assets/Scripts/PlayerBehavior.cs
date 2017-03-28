@@ -45,8 +45,8 @@ public class PlayerBehavior : MonoBehaviour {
 	private bool attached = true;
 	private float xThrowMagnitude;
 	private float yThrowMagnitude;
-	private float xTeleportVector;
-	private float yTeleportVector;
+	private float xPreviusPos;
+	private float yPreviusPos;
 	private float startX = 0f;
 	private float startY = -100f;
 	private float endX;
@@ -127,11 +127,11 @@ public class PlayerBehavior : MonoBehaviour {
 	}
 
 	public float GetXDistance(){
-		return xTeleportVector;
+		return xPreviusPos;
 	}
 
 	public float GetYDistance(){
-		return yTeleportVector;
+		return yPreviusPos;
 	}
 
 	public float GetEndX(){
@@ -179,7 +179,6 @@ public class PlayerBehavior : MonoBehaviour {
 		}
 
 		if (!isPaused) {
-			
 			// While holding the mouse down, displays trajectory of throw
 			if (Input.GetMouseButtonDown (0) && attached) {
 				canUseArrows = false;
@@ -237,8 +236,8 @@ public class PlayerBehavior : MonoBehaviour {
 			AuraReset ();
 			teleporting = true;
 			EmitParticles (true);
-			xTeleportVector = teleporterBody.transform.position.x - transform.position.x;
-			yTeleportVector = teleporterBody.transform.position.y - transform.position.y;
+			xPreviusPos = transform.position.x;
+			yPreviusPos = transform.position.y;
 			transform.position = new Vector3 (teleporterBody.transform.position.x,
 				teleporterBody.transform.position.y + .6f,
 				transform.position.z);
@@ -265,12 +264,6 @@ public class PlayerBehavior : MonoBehaviour {
 											  ((Input.mousePosition.y - startY) / 2f) / teleporterBody.mass * Time.fixedDeltaTime,
 										   	   0f);
 		// fills list with 10 trajectory balls
-		/*if (!listFilled) {
-			for (int x = 0; x < 20; x++)
-				trajectoryBallList.Add (Instantiate (trajectoryBallPrefab));
-			listFilled = true;
-		}*/
-		// places balls on path of projected trajectory
 		int offset = 0;
 		RaycastHit objectHit; 
 		Vector3 prevPosition = transform.position;
@@ -307,7 +300,6 @@ public class PlayerBehavior : MonoBehaviour {
 			i++;
 			numBallsValid++;
 		}
-		Debug.Log (numBallsValid);
 		List<GameObject> toDelete = trajectoryBallList.GetRange (
 			Mathf.Min (numBallsValid, trajectoryBallList.Count - 1),
 			Mathf.Max (0, trajectoryBallList.Count - numBallsValid));
