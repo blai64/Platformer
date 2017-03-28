@@ -1,0 +1,230 @@
+fileFormatVersion: 2
+guid: 431f45d7502e4408aa541fad510e21db
+timeCreated: 1490652531
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: armor
+    100002: body
+    100004: cape
+    100006: crown
+    100008: crown 1
+    100010: crown_rim
+    100012: crown_top
+    100014: crystal
+    100016: crystal1
+    100018: crystal1 1
+    100020: crystal2
+    100022: crystal2 1
+    100024: crystal3
+    100026: crystal3 1
+    100028: crystal7
+    100030: crystal7 1
+    100032: crystal8
+    100034: crystal8 1
+    100036: crystal9
+    100038: crystal9 1
+    100040: crystal_grp_back
+    100042: crystal_grp_front
+    100044: crystal_grp_l
+    100046: crystal_grp_r
+    100048: head
+    100050: //RootNode
+    100052: l_arm
+    100054: l_eye
+    100056: l_shoulder
+    100058: mustache
+    100060: r_arm
+    100062: r_eye
+    100064: r_shoulder
+    100066: root
+    100068: sword
+    400000: armor
+    400002: body
+    400004: cape
+    400006: crown
+    400008: crown 1
+    400010: crown_rim
+    400012: crown_top
+    400014: crystal
+    400016: crystal1
+    400018: crystal1 1
+    400020: crystal2
+    400022: crystal2 1
+    400024: crystal3
+    400026: crystal3 1
+    400028: crystal7
+    400030: crystal7 1
+    400032: crystal8
+    400034: crystal8 1
+    400036: crystal9
+    400038: crystal9 1
+    400040: crystal_grp_back
+    400042: crystal_grp_front
+    400044: crystal_grp_l
+    400046: crystal_grp_r
+    400048: head
+    400050: //RootNode
+    400052: l_arm
+    400054: l_eye
+    400056: l_shoulder
+    400058: mustache
+    400060: r_arm
+    400062: r_eye
+    400064: r_shoulder
+    400066: root
+    400068: sword
+    2300000: armor
+    2300002: body
+    2300004: cape
+    2300006: crown 1
+    2300008: crown_rim
+    2300010: crown_top
+    2300012: crystal
+    2300014: crystal1
+    2300016: crystal1 1
+    2300018: crystal2
+    2300020: crystal2 1
+    2300022: crystal3
+    2300024: crystal3 1
+    2300026: crystal7
+    2300028: crystal7 1
+    2300030: crystal8
+    2300032: crystal8 1
+    2300034: crystal9
+    2300036: crystal9 1
+    2300038: head
+    2300040: l_arm
+    2300042: l_eye
+    2300044: l_shoulder
+    2300046: mustache
+    2300048: r_arm
+    2300050: r_eye
+    2300052: r_shoulder
+    2300054: sword
+    3300000: armor
+    3300002: body
+    3300004: cape
+    3300006: crown 1
+    3300008: crown_rim
+    3300010: crown_top
+    3300012: crystal
+    3300014: crystal1
+    3300016: crystal1 1
+    3300018: crystal2
+    3300020: crystal2 1
+    3300022: crystal3
+    3300024: crystal3 1
+    3300026: crystal7
+    3300028: crystal7 1
+    3300030: crystal8
+    3300032: crystal8 1
+    3300034: crystal9
+    3300036: crystal9 1
+    3300038: head
+    3300040: l_arm
+    3300042: l_eye
+    3300044: l_shoulder
+    3300046: mustache
+    3300048: r_arm
+    3300050: r_eye
+    3300052: r_shoulder
+    3300054: sword
+    4300000: armor
+    4300002: body
+    4300004: head
+    4300006: l_eye
+    4300008: r_eye
+    4300010: mustache
+    4300012: crown_top
+    4300014: crown
+    4300016: crown_rim
+    4300018: crystal7
+    4300020: crystal8
+    4300022: crystal9
+    4300024: crystal1
+    4300026: crystal2
+    4300028: crystal3
+    4300030: crystal1
+    4300032: crystal2
+    4300034: crystal3
+    4300036: crystal7
+    4300038: crystal8
+    4300040: crystal9
+    4300042: crystal
+    4300044: l_shoulder
+    4300046: l_arm
+    4300048: r_shoulder
+    4300050: r_arm
+    4300052: sword
+    4300054: cape
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

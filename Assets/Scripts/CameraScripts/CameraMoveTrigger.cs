@@ -4,10 +4,17 @@ using UnityEngine;
 
 public class CameraMoveTrigger : MonoBehaviour {
 
-	public Vector3 translation;
+	private Vector3 translation;
+	public float zoomZ;
+
+	public float camXRight;
+	public float camYDown;
+
 	public bool availableFromLeft;
 
 	void OnTriggerEnter(Collider other){
+		translation = new Vector3 (camXRight, camYDown, zoomZ);
+
 		if (other.gameObject.CompareTag ("Player")) {
 			if (other.transform.position.x < transform.position.x && availableFromLeft) {
 				MainCamera.instance.MoveCamera (translation);
