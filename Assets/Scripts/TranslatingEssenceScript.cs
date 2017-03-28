@@ -48,7 +48,7 @@ public class TranslatingEssenceScript : MonoBehaviour {
 	void resetPlayerPosition(){
 		PlayerBehavior.instance.transform.position = new Vector3 (TeleporterBehavior.instance.transform.position.x,
 			TeleporterBehavior.instance.transform.position.y + .6f,
-			TeleporterBehavior.instance.transform.position.z);
+			PlayerBehavior.instance.transform.position.z);
 	}
 
 	public void Activate() {
