@@ -1,8 +1,4 @@
 sceneSetups:
-<<<<<<< HEAD
-- path: Assets/Scenes/LevelC.unity
-=======
-- path: Assets/Scenes/Level 2 Test Scene.unity
->>>>>>> 940af6052da11afc7c913194050ffc6da7687eb7
+- path: Assets/Scenes/LevelTeachLeaveTeleporter.unity
   isLoaded: 1
   isActive: 1
