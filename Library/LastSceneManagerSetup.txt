@@ -1,4 +1,12 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Splash.unity
+=======
+<<<<<<< HEAD
+- path: Assets/Scenes/LevelC.unity
+=======
+- path: Assets/Scenes/Level 2 Test Scene.unity
+>>>>>>> 940af6052da11afc7c913194050ffc6da7687eb7
+>>>>>>> ae0ae3762c9bb114c5625151701a359102745750
   isLoaded: 1
   isActive: 1
