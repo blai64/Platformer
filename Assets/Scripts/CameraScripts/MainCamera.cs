@@ -11,14 +11,14 @@ public class MainCamera : MonoBehaviour {
 	public float dampTime = 0.3f;
 	public float xOffset = 0f;
 	public float yOffset = 0f;
+	public float destinationZ;
 
 	public float DampTime {
 		get { return dampTime; } 
 		set { dampTime = value; } 
 	}
-		
+
 	private Vector3 velocity = Vector3.zero;
-	private Vector3 destination;
 	public Transform target;
 	public Transform teleportTarget;
 	private PlayerBehavior pb;
@@ -48,23 +48,23 @@ public class MainCamera : MonoBehaviour {
 
 	void Start(){
 		cam = gameObject.GetComponent<Camera> ();
-		destination = transform.position; 
+		destinationZ = transform.position.z; 
 	}
 
-	/*
 	void Update ()  {
 		Vector3 destination = transform.position; 
+		/*
 		Vector3 teleporterLocation;
 		int zoomIn = 0;
 		foreach (Transform t in targetsOnScreen) {
 			teleporterLocation = cam.WorldToViewportPoint (t.position);
 			if (!(teleporterLocation.x > 0.05f && teleporterLocation.x < 0.95f &&
-			    teleporterLocation.y > 0.05f && teleporterLocation.y < 0.95f)) {
+				teleporterLocation.y > 0.05f && teleporterLocation.y < 0.95f)) {
 				transform.position = destination - new Vector3 (0, 0, 0.1f);
 
 			} else if (teleporterLocation.x > 0.2f && teleporterLocation.x < 0.8f &&
-			         teleporterLocation.y > 0.2f && teleporterLocation.y < 0.8f &&
-			         destination.z < -8.5f) {
+				teleporterLocation.y > 0.2f && teleporterLocation.y < 0.8f &&
+				destination.z < -8.5f) {
 				zoomIn++;
 
 			}
@@ -72,6 +72,7 @@ public class MainCamera : MonoBehaviour {
 
 		if (zoomIn >= targetsOnScreen.Count && zoomIn > 0)
 			transform.position = destination + new Vector3 (0, 0, 0.1f);
+		*/
 
 		if (PlayerBehavior.instance.IsTeleporting () && teleportTarget) {
 			Vector3 point = cam.WorldToViewportPoint(target.position);
@@ -80,29 +81,29 @@ public class MainCamera : MonoBehaviour {
 				0.5f + yOffset,
 				point.z));
 			destination = transform.position + delta;
+			destination.z = destinationZ; 
 			transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 		}
+
 
 		else if (target && !PlayerBehavior.instance.IsTeleporting ()) {
 			Vector3 point = cam.WorldToViewportPoint(target.position);
 			float direction = (float) pb.GetDirection ();
 			Vector3 delta = target.position - cam.ViewportToWorldPoint(new Vector3(0.5f - direction * xOffset,
-																				   0.5f + yOffset,
-																				   point.z));
+				0.5f + yOffset,
+				point.z));
 			destination = transform.position + delta;
+			destination.z = destinationZ; 
 			transform.position = Vector3.SmoothDamp(transform.position, destination, ref velocity, dampTime);
 		}
 
 	}
-	*/
-
-	void Update(){
-		transform.position = Vector3.SmoothDamp (transform.position, destination, ref velocity, dampTime);
-	}
+		
 
 	public void MoveCamera(Vector3 delta){
 		//transform.position = Vector3.SmoothDamp (transform.position, transform.position + delta, ref velocity, dampTime);
-		destination += delta; 
-
+		destinationZ = transform.position.z + delta.z;
+		xOffset = xOffset + delta.x;
+		yOffset = yOffset + delta.y;
 	}
 }
