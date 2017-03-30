@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.EventSystems;
 
 public class PlayerBehavior : MonoBehaviour {
 	
@@ -180,7 +181,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 		if (!isPaused) {
 			// While holding the mouse down, displays trajectory of throw
-			if (Input.GetMouseButtonDown (0) && attached) {
+			if (Input.GetMouseButtonDown (0) && attached && !EventSystem.current.IsPointerOverGameObject()) {
 				canUseArrows = false;
 				startX = Input.mousePosition.x;
 				projected = true;
