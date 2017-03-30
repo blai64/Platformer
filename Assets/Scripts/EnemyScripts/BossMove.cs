@@ -33,7 +33,7 @@ public class BossMove : MonoBehaviour {
 			transform.position = Vector3.MoveTowards (transform.position, p2.position, step);
 		}*/
 
-		alpha += 10;
+		alpha += 5;
 		x = centerx + (float)(semimajor * Mathf.Cos(alpha*.005f));
 		y = centery + (float)(semiminor * Mathf.Sin(alpha*.005f));
 		this.gameObject.transform.position = new Vector3 (x, y, 0);
