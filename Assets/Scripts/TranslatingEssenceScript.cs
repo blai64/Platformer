@@ -11,6 +11,13 @@ public class TranslatingEssenceScript : MonoBehaviour {
 	private float YDirection;
 	private float limit;
 
+	private float transSpeed = 0.05f;
+
+	public float TransSpeed{
+		get{ return transSpeed;}
+		set{ transSpeed = value;}
+	}
+
 	void Start(){
 		EmitParticles (false);
 	}
@@ -27,7 +34,7 @@ public class TranslatingEssenceScript : MonoBehaviour {
 	}
 
 	void Translate() {
-		transform.Translate (XDirection / 100, YDirection / 100, 0);
+		transform.Translate (Vector3.Normalize(new Vector3(XDirection, YDirection, 0)) * transSpeed);
 		if (PlayerBehavior.instance.leftOfTeleporter () && transform.position.x > limit) {
 			PlayerBehavior.instance.StopTeleporting ();
 			resetPlayerPosition ();
