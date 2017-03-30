@@ -44,5 +44,6 @@ public class PlatformTarget : SwitchTarget {
 		}
 
 		sm.StopSound("platform");
+		base.MakeSwitchAvailable ();
 	}
 }

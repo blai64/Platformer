@@ -257,8 +257,8 @@ public class PlayerBehavior : MonoBehaviour {
 		projected = true;
 		float xValue, yValue, xOffset, yOffset;
 
-		Vector3 initialVelocity = new Vector3(((Input.mousePosition.x - startX) / 2f) / teleporterBody.mass * Time.fixedDeltaTime,
-											  ((Input.mousePosition.y - startY) / 2f) / teleporterBody.mass * Time.fixedDeltaTime,
+		Vector3 initialVelocity = new Vector3(((Input.mousePosition.x - startX)/2) / teleporterBody.mass * Time.fixedDeltaTime,
+											  ((Input.mousePosition.y - startY)/2) / teleporterBody.mass * Time.fixedDeltaTime,
 										   	   0f);
 		// fills list with 10 trajectory balls
 		int offset = 0;
@@ -377,7 +377,9 @@ public class PlayerBehavior : MonoBehaviour {
 	//If player is colliding and presses button, then change switch
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Switch") && 
-			(Input.GetKeyDown(KeyCode.LeftShift))) {
+			(Input.GetKeyDown(KeyCode.LeftShift)) && 
+			other.gameObject.GetComponent<SwitchScript>().IsAvailable) {
+			other.gameObject.GetComponent<SwitchScript> ().makeUnavailable ();
 			if (other.gameObject.GetComponent<SwitchScript>().IsActive)
 				Pull(false);
 			else 

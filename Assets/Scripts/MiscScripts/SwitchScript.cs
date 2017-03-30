@@ -5,12 +5,22 @@ using UnityEngine;
 public class SwitchScript : MonoBehaviour {
 
 	private bool isActive;
+	public bool isAvailable;
 
 	private GameObject handle; 
 
 	public bool IsActive{
 		get{ return isActive;}
 		set{ isActive = value;}
+	}
+
+	public bool IsAvailable{
+		get{ return isAvailable;}
+		set{ isAvailable = value;}
+	}
+
+	public void makeUnavailable(){
+		isAvailable = false;
 	}
 
 	private float duration = 1.0f;
@@ -24,6 +34,7 @@ public class SwitchScript : MonoBehaviour {
 
 	void Start () {
 		isActive = false;
+		isAvailable = true;
 		handle = transform.Find ("lever_handle").gameObject;
 	}
 
@@ -35,7 +46,9 @@ public class SwitchScript : MonoBehaviour {
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Player") && 
 			Input.GetKeyDown (KeyCode.LeftShift) &&
-			disableTime < 0.0f) {
+			disableTime < 0.0f &&
+			isAvailable) {
+			//isAvailable = !isAvailable;
 			isActive = !isActive;
 			StartCoroutine (MoveSwitch ());
 			StartCoroutine (MovePlayer ());
