@@ -20,7 +20,7 @@ public class EnemyDetectionScript : MonoBehaviour {
 	}
 
 	void Update(){
-		if (moving) {
+		if (moving && !gameObject.CompareTag("Dead")) {
 			//GetComponent<Rigidbody> ().AddForce (direction * speed * 1000, 0, 0);
 			transform.Translate (direction * speed, 0, 0);
 		}
@@ -38,7 +38,7 @@ public class EnemyDetectionScript : MonoBehaviour {
 	}
 
 	void OnTriggerEnter (Collider other) {
-		if (other.gameObject.CompareTag ("Player") && !moving) {
+		if (other.gameObject.CompareTag ("Player") && !moving && !gameObject.CompareTag("Dead")) {
 //			gameObject.GetComponent<Rigidbody> ().AddForce (0,3,0,ForceMode.Impulse);
 			ChangeDirection(other.transform);
 			anim.SetBool ("isAttacking", true);

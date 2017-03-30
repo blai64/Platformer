@@ -22,9 +22,6 @@ public class ChandelierTarget : SwitchTarget {
 	}
 
 	override public void Activate(bool activating){
-		
-
-
 		StartCoroutine (DropChandelier());
 
 		StartCoroutine (ReturnChandelier (originalPosition, base.Duration));
@@ -41,23 +38,28 @@ public class ChandelierTarget : SwitchTarget {
 
 		gameObject.tag = "Untagged";
 		GetComponent<Rigidbody> ().useGravity = false;
+
+		yield return new WaitForSeconds (0.5f);
+
 		Vector3 oldPos = transform.position;
+
+
 
 		duration = duration * 3;
 		float t = 0.0f;
 
 		sm.PlaySound("platform");
-
+	
 		while (t < 1.0f) {
 			t += Time.deltaTime / duration;
 			transform.position = Vector3.Lerp (oldPos, newPos, t);
 
 			yield return 0;
 		}
-
 		transform.position = newPos;
-
+		GetComponent<Rigidbody> ().velocity = Vector3.zero;
 		sm.StopSound("platform");
 		base.MakeSwitchAvailable ();
+
 	}
 }
