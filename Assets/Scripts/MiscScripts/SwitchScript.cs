@@ -14,6 +14,15 @@ public class SwitchScript : MonoBehaviour {
 		set{ isActive = value;}
 	}
 
+	public bool IsAvailable{
+		get{ return isAvailable;}
+		set{ isAvailable = value;}
+	}
+
+	public void makeUnavailable(){
+		isAvailable = false;
+	}
+
 	private float duration = 1.0f;
 	private float snapToSwitchDuration = 0.25f;
 	public float Duration{
@@ -39,6 +48,7 @@ public class SwitchScript : MonoBehaviour {
 			Input.GetKeyDown (KeyCode.LeftShift) &&
 			disableTime < 0.0f &&
 			isAvailable) {
+			//isAvailable = !isAvailable;
 			isActive = !isActive;
 			StartCoroutine (MoveSwitch ());
 			StartCoroutine (MovePlayer ());
