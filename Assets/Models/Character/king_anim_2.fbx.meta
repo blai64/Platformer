@@ -1,0 +1,1738 @@
+fileFormatVersion: 2
+guid: 7beab0244717449c89a78280c161c8a2
+timeCreated: 1490899352
+licenseType: Free
+ModelImporter:
+  serializedVersion: 19
+  fileIDToRecycleName:
+    100000: armor
+    100002: body
+    100004: cape
+    100006: crown
+    100008: crown 1
+    100010: crown 2
+    100012: crown_rim
+    100014: crown_rim1
+    100016: crown_top
+    100018: crown_top 1
+    100020: crystal
+    100022: crystal 1
+    100024: crystal1
+    100026: crystal1 1
+    100028: crystal1 2
+    100030: crystal1 3
+    100032: crystal2
+    100034: crystal2 1
+    100036: crystal2 2
+    100038: crystal2 3
+    100040: crystal3
+    100042: crystal3 1
+    100044: crystal3 2
+    100046: crystal3 3
+    100048: crystal7
+    100050: crystal7 1
+    100052: crystal7 2
+    100054: crystal7 3
+    100056: crystal8
+    100058: crystal8 1
+    100060: crystal8 2
+    100062: crystal8 3
+    100064: crystal9
+    100066: crystal9 1
+    100068: crystal9 2
+    100070: crystal9 3
+    100072: crystal_grp_back
+    100074: crystal_grp_back 1
+    100076: crystal_grp_front
+    100078: crystal_grp_front 1
+    100080: crystal_grp_l
+    100082: crystal_grp_l 1
+    100084: crystal_grp_r
+    100086: crystal_grp_r 1
+    100088: head
+    100090: joint1
+    100092: joint2
+    100094: joint3
+    100096: joint4
+    100098: joint5
+    100100: joint6
+    100102: //RootNode
+    100104: l_arm
+    100106: l_eye
+    100108: l_shoulder
+    100110: mustache
+    100112: r_arm
+    100114: r_eye
+    100116: r_shoulder
+    100118: root
+    100120: sword
+    100122: sword1
+    400000: armor
+    400002: body
+    400004: cape
+    400006: crown
+    400008: crown 1
+    400010: crown 2
+    400012: crown_rim
+    400014: crown_rim1
+    400016: crown_top
+    400018: crown_top 1
+    400020: crystal
+    400022: crystal 1
+    400024: crystal1
+    400026: crystal1 1
+    400028: crystal1 2
+    400030: crystal1 3
+    400032: crystal2
+    400034: crystal2 1
+    400036: crystal2 2
+    400038: crystal2 3
+    400040: crystal3
+    400042: crystal3 1
+    400044: crystal3 2
+    400046: crystal3 3
+    400048: crystal7
+    400050: crystal7 1
+    400052: crystal7 2
+    400054: crystal7 3
+    400056: crystal8
+    400058: crystal8 1
+    400060: crystal8 2
+    400062: crystal8 3
+    400064: crystal9
+    400066: crystal9 1
+    400068: crystal9 2
+    400070: crystal9 3
+    400072: crystal_grp_back
+    400074: crystal_grp_back 1
+    400076: crystal_grp_front
+    400078: crystal_grp_front 1
+    400080: crystal_grp_l
+    400082: crystal_grp_l 1
+    400084: crystal_grp_r
+    400086: crystal_grp_r 1
+    400088: head
+    400090: joint1
+    400092: joint2
+    400094: joint3
+    400096: joint4
+    400098: joint5
+    400100: joint6
+    400102: //RootNode
+    400104: l_arm
+    400106: l_eye
+    400108: l_shoulder
+    400110: mustache
+    400112: r_arm
+    400114: r_eye
+    400116: r_shoulder
+    400118: root
+    400120: sword
+    400122: sword1
+    2300000: armor
+    2300002: body
+    2300004: crown
+    2300006: crown 2
+    2300008: crown_rim
+    2300010: crown_rim1
+    2300012: crown_top
+    2300014: crown_top 1
+    2300016: crystal
+    2300018: crystal 1
+    2300020: crystal1
+    2300022: crystal1 1
+    2300024: crystal1 2
+    2300026: crystal1 3
+    2300028: crystal2
+    2300030: crystal2 1
+    2300032: crystal2 2
+    2300034: crystal2 3
+    2300036: crystal3
+    2300038: crystal3 1
+    2300040: crystal3 2
+    2300042: crystal3 3
+    2300044: crystal7
+    2300046: crystal7 1
+    2300048: crystal7 2
+    2300050: crystal7 3
+    2300052: crystal8
+    2300054: crystal8 1
+    2300056: crystal8 2
+    2300058: crystal8 3
+    2300060: crystal9
+    2300062: crystal9 1
+    2300064: crystal9 2
+    2300066: crystal9 3
+    2300068: head
+    2300070: l_arm
+    2300072: l_eye
+    2300074: l_shoulder
+    2300076: mustache
+    2300078: r_arm
+    2300080: r_eye
+    2300082: r_shoulder
+    2300084: sword
+    2300086: sword1
+    3300000: armor
+    3300002: body
+    3300004: crown
+    3300006: crown 2
+    3300008: crown_rim
+    3300010: crown_rim1
+    3300012: crown_top
+    3300014: crown_top 1
+    3300016: crystal
+    3300018: crystal 1
+    3300020: crystal1
+    3300022: crystal1 1
+    3300024: crystal1 2
+    3300026: crystal1 3
+    3300028: crystal2
+    3300030: crystal2 1
+    3300032: crystal2 2
+    3300034: crystal2 3
+    3300036: crystal3
+    3300038: crystal3 1
+    3300040: crystal3 2
+    3300042: crystal3 3
+    3300044: crystal7
+    3300046: crystal7 1
+    3300048: crystal7 2
+    3300050: crystal7 3
+    3300052: crystal8
+    3300054: crystal8 1
+    3300056: crystal8 2
+    3300058: crystal8 3
+    3300060: crystal9
+    3300062: crystal9 1
+    3300064: crystal9 2
+    3300066: crystal9 3
+    3300068: head
+    3300070: l_arm
+    3300072: l_eye
+    3300074: l_shoulder
+    3300076: mustache
+    3300078: r_arm
+    3300080: r_eye
+    3300082: r_shoulder
+    3300084: sword
+    3300086: sword1
+    4300000: armor
+    4300002: body
+    4300004: head
+    4300006: l_eye
+    4300008: r_eye
+    4300010: mustache
+    4300012: crown_rim
+    4300014: crown_top
+    4300016: crown
+    4300018: crystal7
+    4300020: crystal8
+    4300022: crystal9
+    4300024: crystal1
+    4300026: crystal2
+    4300028: crystal3
+    4300030: crystal1
+    4300032: crystal2
+    4300034: crystal3
+    4300036: crystal7
+    4300038: crystal8
+    4300040: crystal9
+    4300042: crystal
+    4300044: l_shoulder
+    4300046: l_arm
+    4300048: r_shoulder
+    4300050: r_arm
+    4300052: sword
+    4300054: cape
+    4300056: sword1
+    4300058: crown_rim1
+    4300060: crown_top
+    4300062: crown
+    4300064: crystal7
+    4300066: crystal8
+    4300068: crystal9
+    4300070: crystal1
+    4300072: crystal2
+    4300074: crystal3
+    4300076: crystal1
+    4300078: crystal2
+    4300080: crystal3
+    4300082: crystal7
+    4300084: crystal8
+    4300086: crystal9
+    4300088: crystal
+    7400000: king_idle
+    7400002: king_strike_left
+    7400004: king_attacking_left
+    7400006: king_strike_right
+    7400008: king_attacking_right
+    7400010: king_start_attack
+    7400012: king_talking
+    7400014: king_hurt
+    7400016: king_die
+    9500000: //RootNode
+    13700000: cape
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations:
+    - serializedVersion: 16
+      name: king_idle
+      takeName: Take 001
+      firstFrame: 1
+      lastFrame: 48
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cape
+        weight: 1
+      - path: crown_rim1
+        weight: 1
+      - path: crown_rim1/crown
+        weight: 1
+      - path: crown_rim1/crown_top
+        weight: 1
+      - path: crown_rim1/crystal
+        weight: 1
+      - path: crown_rim1/crystal_grp_back
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal7
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal8
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal9
+        weight: 1
+      - path: crown_rim1/crystal_grp_front
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal7 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal8 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal9 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal2
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal3
+        weight: 1
+      - path: crown_rim1/crystal_grp_r
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal1 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal2 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal3 1
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/armor
+        weight: 1
+      - path: root/armor/body
+        weight: 1
+      - path: root/armor/body/head
+        weight: 1
+      - path: root/armor/body/head/crown 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown_top 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal7 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal8 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal9 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal7
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal8
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal9
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal1 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal2 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal3 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal1 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal2 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal3 3
+        weight: 1
+      - path: root/armor/body/head/l_eye
+        weight: 1
+      - path: root/armor/body/head/mustache
+        weight: 1
+      - path: root/armor/body/head/r_eye
+        weight: 1
+      - path: root/armor/joint1
+        weight: 1
+      - path: root/armor/joint1/joint2
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: root/armor/l_shoulder
+        weight: 1
+      - path: root/armor/l_shoulder/l_arm
+        weight: 1
+      - path: root/armor/r_shoulder
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm/sword
+        weight: 1
+      - path: sword1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: king_strike_left
+      takeName: Take 001
+      firstFrame: 51
+      lastFrame: 73
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cape
+        weight: 1
+      - path: crown_rim1
+        weight: 1
+      - path: crown_rim1/crown
+        weight: 1
+      - path: crown_rim1/crown_top
+        weight: 1
+      - path: crown_rim1/crystal
+        weight: 1
+      - path: crown_rim1/crystal_grp_back
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal7
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal8
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal9
+        weight: 1
+      - path: crown_rim1/crystal_grp_front
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal7 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal8 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal9 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal2
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal3
+        weight: 1
+      - path: crown_rim1/crystal_grp_r
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal1 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal2 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal3 1
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/armor
+        weight: 1
+      - path: root/armor/body
+        weight: 1
+      - path: root/armor/body/head
+        weight: 1
+      - path: root/armor/body/head/crown 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown_top 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal7 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal8 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal9 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal7
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal8
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal9
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal1 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal2 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal3 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal1 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal2 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal3 3
+        weight: 1
+      - path: root/armor/body/head/l_eye
+        weight: 1
+      - path: root/armor/body/head/mustache
+        weight: 1
+      - path: root/armor/body/head/r_eye
+        weight: 1
+      - path: root/armor/joint1
+        weight: 1
+      - path: root/armor/joint1/joint2
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: root/armor/l_shoulder
+        weight: 1
+      - path: root/armor/l_shoulder/l_arm
+        weight: 1
+      - path: root/armor/r_shoulder
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm/sword
+        weight: 1
+      - path: sword1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: king_attacking_left
+      takeName: Take 001
+      firstFrame: 73
+      lastFrame: 86
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cape
+        weight: 1
+      - path: crown_rim1
+        weight: 1
+      - path: crown_rim1/crown
+        weight: 1
+      - path: crown_rim1/crown_top
+        weight: 1
+      - path: crown_rim1/crystal
+        weight: 1
+      - path: crown_rim1/crystal_grp_back
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal7
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal8
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal9
+        weight: 1
+      - path: crown_rim1/crystal_grp_front
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal7 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal8 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal9 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal2
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal3
+        weight: 1
+      - path: crown_rim1/crystal_grp_r
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal1 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal2 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal3 1
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/armor
+        weight: 1
+      - path: root/armor/body
+        weight: 1
+      - path: root/armor/body/head
+        weight: 1
+      - path: root/armor/body/head/crown 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown_top 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal7 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal8 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal9 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal7
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal8
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal9
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal1 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal2 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal3 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal1 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal2 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal3 3
+        weight: 1
+      - path: root/armor/body/head/l_eye
+        weight: 1
+      - path: root/armor/body/head/mustache
+        weight: 1
+      - path: root/armor/body/head/r_eye
+        weight: 1
+      - path: root/armor/joint1
+        weight: 1
+      - path: root/armor/joint1/joint2
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: root/armor/l_shoulder
+        weight: 1
+      - path: root/armor/l_shoulder/l_arm
+        weight: 1
+      - path: root/armor/r_shoulder
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm/sword
+        weight: 1
+      - path: sword1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: king_strike_right
+      takeName: Take 001
+      firstFrame: 101
+      lastFrame: 123
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cape
+        weight: 1
+      - path: crown_rim1
+        weight: 1
+      - path: crown_rim1/crown
+        weight: 1
+      - path: crown_rim1/crown_top
+        weight: 1
+      - path: crown_rim1/crystal
+        weight: 1
+      - path: crown_rim1/crystal_grp_back
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal7
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal8
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal9
+        weight: 1
+      - path: crown_rim1/crystal_grp_front
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal7 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal8 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal9 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal2
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal3
+        weight: 1
+      - path: crown_rim1/crystal_grp_r
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal1 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal2 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal3 1
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/armor
+        weight: 1
+      - path: root/armor/body
+        weight: 1
+      - path: root/armor/body/head
+        weight: 1
+      - path: root/armor/body/head/crown 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown_top 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal7 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal8 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal9 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal7
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal8
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal9
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal1 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal2 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal3 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal1 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal2 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal3 3
+        weight: 1
+      - path: root/armor/body/head/l_eye
+        weight: 1
+      - path: root/armor/body/head/mustache
+        weight: 1
+      - path: root/armor/body/head/r_eye
+        weight: 1
+      - path: root/armor/joint1
+        weight: 1
+      - path: root/armor/joint1/joint2
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: root/armor/l_shoulder
+        weight: 1
+      - path: root/armor/l_shoulder/l_arm
+        weight: 1
+      - path: root/armor/r_shoulder
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm/sword
+        weight: 1
+      - path: sword1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: king_attacking_right
+      takeName: Take 001
+      firstFrame: 123
+      lastFrame: 136
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cape
+        weight: 1
+      - path: crown_rim1
+        weight: 1
+      - path: crown_rim1/crown
+        weight: 1
+      - path: crown_rim1/crown_top
+        weight: 1
+      - path: crown_rim1/crystal
+        weight: 1
+      - path: crown_rim1/crystal_grp_back
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal7
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal8
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal9
+        weight: 1
+      - path: crown_rim1/crystal_grp_front
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal7 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal8 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal9 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal2
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal3
+        weight: 1
+      - path: crown_rim1/crystal_grp_r
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal1 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal2 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal3 1
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/armor
+        weight: 1
+      - path: root/armor/body
+        weight: 1
+      - path: root/armor/body/head
+        weight: 1
+      - path: root/armor/body/head/crown 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown_top 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal7 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal8 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal9 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal7
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal8
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal9
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal1 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal2 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal3 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal1 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal2 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal3 3
+        weight: 1
+      - path: root/armor/body/head/l_eye
+        weight: 1
+      - path: root/armor/body/head/mustache
+        weight: 1
+      - path: root/armor/body/head/r_eye
+        weight: 1
+      - path: root/armor/joint1
+        weight: 1
+      - path: root/armor/joint1/joint2
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: root/armor/l_shoulder
+        weight: 1
+      - path: root/armor/l_shoulder/l_arm
+        weight: 1
+      - path: root/armor/r_shoulder
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm/sword
+        weight: 1
+      - path: sword1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: king_start_attack
+      takeName: Take 001
+      firstFrame: 150
+      lastFrame: 165
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cape
+        weight: 1
+      - path: crown_rim1
+        weight: 1
+      - path: crown_rim1/crown
+        weight: 1
+      - path: crown_rim1/crown_top
+        weight: 1
+      - path: crown_rim1/crystal
+        weight: 1
+      - path: crown_rim1/crystal_grp_back
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal7
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal8
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal9
+        weight: 1
+      - path: crown_rim1/crystal_grp_front
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal7 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal8 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal9 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal2
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal3
+        weight: 1
+      - path: crown_rim1/crystal_grp_r
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal1 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal2 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal3 1
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/armor
+        weight: 1
+      - path: root/armor/body
+        weight: 1
+      - path: root/armor/body/head
+        weight: 1
+      - path: root/armor/body/head/crown 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown_top 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal7 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal8 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal9 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal7
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal8
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal9
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal1 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal2 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal3 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal1 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal2 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal3 3
+        weight: 1
+      - path: root/armor/body/head/l_eye
+        weight: 1
+      - path: root/armor/body/head/mustache
+        weight: 1
+      - path: root/armor/body/head/r_eye
+        weight: 1
+      - path: root/armor/joint1
+        weight: 1
+      - path: root/armor/joint1/joint2
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: root/armor/l_shoulder
+        weight: 1
+      - path: root/armor/l_shoulder/l_arm
+        weight: 1
+      - path: root/armor/r_shoulder
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm/sword
+        weight: 1
+      - path: sword1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: king_talking
+      takeName: Take 001
+      firstFrame: 168
+      lastFrame: 185
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 1
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cape
+        weight: 1
+      - path: crown_rim1
+        weight: 1
+      - path: crown_rim1/crown
+        weight: 1
+      - path: crown_rim1/crown_top
+        weight: 1
+      - path: crown_rim1/crystal
+        weight: 1
+      - path: crown_rim1/crystal_grp_back
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal7
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal8
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal9
+        weight: 1
+      - path: crown_rim1/crystal_grp_front
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal7 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal8 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal9 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal2
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal3
+        weight: 1
+      - path: crown_rim1/crystal_grp_r
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal1 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal2 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal3 1
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/armor
+        weight: 1
+      - path: root/armor/body
+        weight: 1
+      - path: root/armor/body/head
+        weight: 1
+      - path: root/armor/body/head/crown 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown_top 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal7 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal8 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal9 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal7
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal8
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal9
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal1 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal2 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal3 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal1 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal2 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal3 3
+        weight: 1
+      - path: root/armor/body/head/l_eye
+        weight: 1
+      - path: root/armor/body/head/mustache
+        weight: 1
+      - path: root/armor/body/head/r_eye
+        weight: 1
+      - path: root/armor/joint1
+        weight: 1
+      - path: root/armor/joint1/joint2
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: root/armor/l_shoulder
+        weight: 1
+      - path: root/armor/l_shoulder/l_arm
+        weight: 1
+      - path: root/armor/r_shoulder
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm/sword
+        weight: 1
+      - path: sword1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: king_hurt
+      takeName: Take 001
+      firstFrame: 195
+      lastFrame: 214
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cape
+        weight: 1
+      - path: crown_rim1
+        weight: 1
+      - path: crown_rim1/crown
+        weight: 1
+      - path: crown_rim1/crown_top
+        weight: 1
+      - path: crown_rim1/crystal
+        weight: 1
+      - path: crown_rim1/crystal_grp_back
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal7
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal8
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal9
+        weight: 1
+      - path: crown_rim1/crystal_grp_front
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal7 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal8 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal9 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal2
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal3
+        weight: 1
+      - path: crown_rim1/crystal_grp_r
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal1 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal2 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal3 1
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/armor
+        weight: 1
+      - path: root/armor/body
+        weight: 1
+      - path: root/armor/body/head
+        weight: 1
+      - path: root/armor/body/head/crown 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown_top 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal7 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal8 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal9 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal7
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal8
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal9
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal1 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal2 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal3 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal1 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal2 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal3 3
+        weight: 1
+      - path: root/armor/body/head/l_eye
+        weight: 1
+      - path: root/armor/body/head/mustache
+        weight: 1
+      - path: root/armor/body/head/r_eye
+        weight: 1
+      - path: root/armor/joint1
+        weight: 1
+      - path: root/armor/joint1/joint2
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: root/armor/l_shoulder
+        weight: 1
+      - path: root/armor/l_shoulder/l_arm
+        weight: 1
+      - path: root/armor/r_shoulder
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm/sword
+        weight: 1
+      - path: sword1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: king_die
+      takeName: Take 001
+      firstFrame: 230
+      lastFrame: 295
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask:
+      - path: 
+        weight: 1
+      - path: cape
+        weight: 1
+      - path: crown_rim1
+        weight: 1
+      - path: crown_rim1/crown
+        weight: 1
+      - path: crown_rim1/crown_top
+        weight: 1
+      - path: crown_rim1/crystal
+        weight: 1
+      - path: crown_rim1/crystal_grp_back
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal7
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal8
+        weight: 1
+      - path: crown_rim1/crystal_grp_back/crystal9
+        weight: 1
+      - path: crown_rim1/crystal_grp_front
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal7 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal8 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_front/crystal9 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal1
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal2
+        weight: 1
+      - path: crown_rim1/crystal_grp_l/crystal3
+        weight: 1
+      - path: crown_rim1/crystal_grp_r
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal1 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal2 1
+        weight: 1
+      - path: crown_rim1/crystal_grp_r/crystal3 1
+        weight: 1
+      - path: root
+        weight: 1
+      - path: root/armor
+        weight: 1
+      - path: root/armor/body
+        weight: 1
+      - path: root/armor/body/head
+        weight: 1
+      - path: root/armor/body/head/crown 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crown_top 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal7 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal8 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_back 1/crystal9 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal7
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal8
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_front 1/crystal9
+          3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal1 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal2 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_l 1/crystal3 2
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal1 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal2 3
+        weight: 1
+      - path: root/armor/body/head/crown 1/crown_rim/crystal_grp_r 1/crystal3 3
+        weight: 1
+      - path: root/armor/body/head/l_eye
+        weight: 1
+      - path: root/armor/body/head/mustache
+        weight: 1
+      - path: root/armor/body/head/r_eye
+        weight: 1
+      - path: root/armor/joint1
+        weight: 1
+      - path: root/armor/joint1/joint2
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5
+        weight: 1
+      - path: root/armor/joint1/joint2/joint3/joint4/joint5/joint6
+        weight: 1
+      - path: root/armor/l_shoulder
+        weight: 1
+      - path: root/armor/l_shoulder/l_arm
+        weight: 1
+      - path: root/armor/r_shoulder
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm
+        weight: 1
+      - path: root/armor/r_shoulder/r_arm/sword
+        weight: 1
+      - path: sword1
+        weight: 1
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
