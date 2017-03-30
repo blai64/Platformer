@@ -5,6 +5,7 @@ using UnityEngine;
 public class SwitchScript : MonoBehaviour {
 
 	private bool isActive;
+	public bool isAvailable;
 
 	private GameObject handle; 
 
@@ -24,6 +25,7 @@ public class SwitchScript : MonoBehaviour {
 
 	void Start () {
 		isActive = false;
+		isAvailable = true;
 		handle = transform.Find ("lever_handle").gameObject;
 	}
 
@@ -35,7 +37,8 @@ public class SwitchScript : MonoBehaviour {
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Player") && 
 			Input.GetKeyDown (KeyCode.LeftShift) &&
-			disableTime < 0.0f) {
+			disableTime < 0.0f &&
+			isAvailable) {
 			isActive = !isActive;
 			StartCoroutine (MoveSwitch ());
 			StartCoroutine (MovePlayer ());
