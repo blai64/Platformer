@@ -347,6 +347,7 @@ public class PlayerBehavior : MonoBehaviour {
 		} else if (col.gameObject.CompareTag ("Killer")) {
 			Die ();
 		}
+
 	}
 
 	void OnTriggerEnter(Collider col) {
@@ -373,6 +374,8 @@ public class PlayerBehavior : MonoBehaviour {
 
 		}
 	}
+
+
 		
 	//If player is colliding and presses button, then change switch
 	void OnTriggerStay (Collider other){

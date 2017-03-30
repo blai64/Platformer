@@ -13,18 +13,41 @@ public class BossMove : MonoBehaviour {
 	public float centerx = 30.0f;
 	public float centery = 18.5f;
 
+	public static BossMove instance;
+
 	private float x;
 	private float y;
-	private int alpha;
+	private float alpha;
+	private float radian;
+
+	private Transform p1;
+	private Transform p2;
+	private Transform p3;
+	private Transform p4;
+
+	public int health;
+	private int hit;
+
+	public float smoothTime = 0.3F;
 
 	private bool isMoving;
+	private bool isMoving2;
+	private bool invincible;
+
+	private IEnumerator curRoutine;
+
+	private float speed;
 
 
 	void Start () {
-		x = 24.7f;
-		y = 19.5f;
-		alpha = 0;
+		health = 3;
+		x = centerx;
+		y = centery;
+		alpha = 0f;
 		isMoving = true;
+		invincible = false;
+		speed = 5.0f;
+
 	}
 	
 	void Update() {
@@ -36,21 +59,72 @@ public class BossMove : MonoBehaviour {
 			transform.position = Vector3.MoveTowards (transform.position, p2.position, step);
 		}
 		*/
-		if (isMoving) {
-			alpha += 5;
+		if (isMoving && health > 0) {
+			moveInOval ();
 		}
-		x = centerx + (float)(semimajor * Mathf.Cos(alpha*.005f));
-		y = centery + (float)(semiminor * Mathf.Sin(alpha*.005f));
-		this.gameObject.transform.position = new Vector3 (x, y, 0);
+		/*
+		if (radian % (Mathf.PI/4) < 0.05) {
+			isMoving = false;
 
+			Debug.Log ("here");
 
+			if (curRoutine != null)
+				StopCoroutine (curRoutine);
+			
+			curRoutine = Stop (2);
+			StartCoroutine (curRoutine);
+		}*/
+
+			
+	}
+
+	void moveInOval(){
+		alpha += speed;
+		radian = alpha * .005f;
+		x = centerx + (float)(semimajor * Mathf.Cos (radian));
+		y = centery + (float)(semiminor * Mathf.Sin (radian));
+		Vector3 targetPosition = new Vector3 (x, y, 0);
+		this.gameObject.transform.position = targetPosition;
+	}
+
+	IEnumerator Stop(int time) {
+		yield return new WaitForSeconds (time);
+		isMoving = true;
+		invincible = false;
+	}
+
+	void OnCollisionEnter(Collision col){
+		if (col.gameObject.CompareTag ("Killer") && health > 0
+			&& !invincible) {
+			Debug.Log ("kk");
+			isMoving = false;
+			invincible = true; 
+			if (health == 3)
+				health = 2;
+			else if (health == 2)
+				health = 1;
+			else if (health == 1)
+				health = 0;
+
+			if (curRoutine != null)
+				StopCoroutine (curRoutine);
+
+			curRoutine = Stop (4);
+			StartCoroutine (curRoutine);
+
+		}
 	}
 
 	void OnTriggerEnter(Collider col){
-		if(col.gameObject.tag == "Player"){
+		if (col.gameObject.CompareTag ("BossStop")) {
 			isMoving = false;
-			Debug.Log ("collision");
-			//Collect ();
+		
+			if (curRoutine != null)
+				StopCoroutine (curRoutine);
+
+			curRoutine = Stop (2);
+			StartCoroutine (curRoutine);
+
 		}
 	}
 }
