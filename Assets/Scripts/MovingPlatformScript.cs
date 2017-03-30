@@ -14,9 +14,9 @@ public class MovingPlatformScript : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 		body.velocity = new Vector3 (direction,0,0);
-		if (transform.position.x > 82)
+		if (transform.position.x > 106)
 			direction = -1;
-		if (transform.position.x < 65)
+		if (transform.position.x < 88)
 			direction = 1;
 	}
 }
