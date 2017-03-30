@@ -32,12 +32,14 @@ public class ChandelierTarget : SwitchTarget {
 
 	IEnumerator DropChandelier(){
 		yield return new WaitForSeconds (0.5f);
+		gameObject.tag = "Killer";
 		GetComponent<Rigidbody> ().useGravity = true;
 	}
 
 	IEnumerator ReturnChandelier(Vector3 newPos, float duration){
 		yield return new WaitForSeconds (2.0f);
 
+		gameObject.tag = "Untagged";
 		GetComponent<Rigidbody> ().useGravity = false;
 		Vector3 oldPos = transform.position;
 
@@ -52,6 +54,8 @@ public class ChandelierTarget : SwitchTarget {
 
 			yield return 0;
 		}
+
+		transform.position = newPos;
 
 		sm.StopSound("platform");
 		base.MakeSwitchAvailable ();
