@@ -12,14 +12,15 @@ public class EnemyDie : MonoBehaviour {
 	}
 
 	void OnCollisionEnter(Collision col){
-		if (col.gameObject.CompareTag ("Killer")) {
+		if (col.gameObject.CompareTag ("Killer") && !gameObject.CompareTag("Dead")) {
+			tag = "Dead";
 			StartCoroutine (Die ());
 		}
 	}
 
 	IEnumerator Die(){
 		transform.Rotate (90, 0, 0);
-		yield return new WaitForSeconds (1.5f);
+		yield return new WaitForSeconds (2.0f);
 		Destroy (this.gameObject);
 		yield return 0;
 	}
