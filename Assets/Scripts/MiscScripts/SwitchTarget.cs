@@ -33,4 +33,8 @@ public abstract class SwitchTarget : MonoBehaviour {
 	virtual public void Activate(bool activating){
 		
 	}
+
+	public void MakeSwitchAvailable(){
+		mySwitch.GetComponent<SwitchScript> ().isAvailable = true;
+	}
 }

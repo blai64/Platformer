@@ -17,11 +17,14 @@ public class BossMove : MonoBehaviour {
 	private float y;
 	private int alpha;
 
+	private bool isMoving;
+
 
 	void Start () {
 		x = 24.7f;
 		y = 19.5f;
 		alpha = 0;
+		isMoving = true;
 	}
 	
 	void Update() {
@@ -31,13 +34,23 @@ public class BossMove : MonoBehaviour {
 			transform.position = Vector3.MoveTowards (transform.position, p1.position, step);
 		} else if (transform.position != p2.position) {
 			transform.position = Vector3.MoveTowards (transform.position, p2.position, step);
-		}*/
-
-		alpha += 5;
+		}
+		*/
+		if (isMoving) {
+			alpha += 5;
+		}
 		x = centerx + (float)(semimajor * Mathf.Cos(alpha*.005f));
 		y = centery + (float)(semiminor * Mathf.Sin(alpha*.005f));
 		this.gameObject.transform.position = new Vector3 (x, y, 0);
 
 
+	}
+
+	void OnTriggerEnter(Collider col){
+		if(col.gameObject.tag == "Player"){
+			isMoving = false;
+			Debug.Log ("collision");
+			//Collect ();
+		}
 	}
 }

@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Zao_BossLevel.unity
+=======
+- path: Assets/Scenes/LevelTeachLeaveTeleporter.unity
+>>>>>>> 94ed8c1728666607e74a34d8d4368f8b3baf7a3d
   isLoaded: 1
   isActive: 1
