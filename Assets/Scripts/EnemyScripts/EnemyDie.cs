@@ -20,8 +20,9 @@ public class EnemyDie : MonoBehaviour {
 
 	IEnumerator Die(){
 		transform.Rotate (90, 0, 0);
+		DeathManager.instance.SpawnParticles (transform.position);
 		yield return new WaitForSeconds (2.0f);
-		Destroy (this.gameObject);
+		Destroy (gameObject);
 		yield return 0;
 	}
 }

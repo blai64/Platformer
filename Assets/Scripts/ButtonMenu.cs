@@ -13,6 +13,7 @@ public class ButtonMenu : MonoBehaviour {
 	void Start () {
 		Button btn = yourButton.GetComponent<Button> ();
 		pg = GameObject.Find ("UI Controller").GetComponent<PauseGame> ();
+		pg.Pause ();
 
 		if (buttonName == "Resume") {
 			btn.onClick.AddListener (Resume);
@@ -38,6 +39,7 @@ public class ButtonMenu : MonoBehaviour {
 
 	void Resume () {
 		pg.Pause ();
+
 	}
 
 	void Quit() {
