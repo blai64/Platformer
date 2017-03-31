@@ -62,4 +62,5 @@ public class ChandelierTarget : SwitchTarget {
 		base.MakeSwitchAvailable ();
 
 	}
+
 }

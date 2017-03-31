@@ -267,7 +267,7 @@ public class PlayerBehavior : MonoBehaviour {
 		GameObject targetBall; 
 		int numBallsValid = 0;
 		int i = 0;
-		while (trajectoryBallList.Count < 20) {
+		while (trajectoryBallList.Count < 40) {
 			if (i >= trajectoryBallList.Count)
 				trajectoryBallList.Add (Instantiate (trajectoryBallPrefab));
 			
@@ -346,6 +346,7 @@ public class PlayerBehavior : MonoBehaviour {
 		} else if (col.gameObject.CompareTag ("Killer")) {
 			Die ();
 		}
+
 	}
 
 	void OnTriggerEnter(Collider col) {
@@ -372,6 +373,8 @@ public class PlayerBehavior : MonoBehaviour {
 
 		}
 	}
+
+
 		
 	//If player is colliding and presses button, then change switch
 	void OnTriggerStay (Collider other){
