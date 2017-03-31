@@ -379,7 +379,9 @@ public class PlayerBehavior : MonoBehaviour {
 	//If player is colliding and presses button, then change switch
 	void OnTriggerStay (Collider other){
 		if (other.gameObject.CompareTag ("Switch") && 
-			(Input.GetKeyDown(KeyCode.LeftShift))) {
+			(Input.GetKeyDown(KeyCode.LeftShift)) &&
+			other.gameObject.GetComponent<SwitchScript>().isAvailable) {
+			other.gameObject.GetComponent<SwitchScript> ().makeUnavailable ();
 			if (other.gameObject.GetComponent<SwitchScript>().IsActive)
 				Pull(false);
 			else 

@@ -15,7 +15,7 @@ public class CameraMoveTrigger : MonoBehaviour {
 	void OnTriggerEnter(Collider other){
 		translation = new Vector3 (camXRight, camYDown, zoomZ);
 
-		if (other.gameObject.CompareTag ("Player")) {
+		if (other.gameObject.CompareTag ("Player") || other.gameObject.CompareTag ("Essence")) {
 			if (other.transform.position.x < transform.position.x && availableFromLeft) {
 				MainCamera.instance.MoveCamera (translation);
 				availableFromLeft = !availableFromLeft;
