@@ -11,7 +11,7 @@ public class EnemyDetectionScript : MonoBehaviour {
 	private bool moving;
 	private int direction;
 	private float speed = 0.05f;
-	private float chaseEndDelay = 3.0f;
+	private float chaseEndDelay = 3.5f;
 	private Transform eyes; // empty game object for raycasting 
 
 	void Start() {

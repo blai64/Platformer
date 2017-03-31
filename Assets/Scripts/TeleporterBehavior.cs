@@ -6,7 +6,7 @@ public class TeleporterBehavior : MonoBehaviour {
 
 	public GameObject parentBone;
 	public static TeleporterBehavior instance;
-	//public GameObject Projector;
+	public GameObject Projector;
 
 	// Components
 	private Rigidbody rb;
@@ -26,14 +26,14 @@ public class TeleporterBehavior : MonoBehaviour {
 		instance = this;
 		rb = GetComponent<Rigidbody> ();
 		anim = GetComponent<Animator> ();
-		//Projector.SetActive(false);
+		Projector.SetActive(false);
 
 		Reset ();
 	}
 
 	public void Disappear() {
 		anim.SetBool ("isVisible", false);
-		//Projector.SetActive(false);
+		Projector.SetActive(false);
 	}
 
 	public void Reset() {
@@ -45,7 +45,7 @@ public class TeleporterBehavior : MonoBehaviour {
 
 	public void Summon() {
 		anim.SetBool ("isVisible", true);
-		//Projector.SetActive(true);
+		Projector.SetActive(true);
 	}
 
 	public void Release() {
@@ -84,8 +84,8 @@ public class TeleporterBehavior : MonoBehaviour {
 	}
 
 	void Update() {
-		//Projector.transform.position = new Vector3(transform.position.x,
-		//											transform.position.y,
-		//											Projector.transform.position.z);
+		Projector.transform.position = new Vector3(transform.position.x,
+												   transform.position.y,
+												   Projector.transform.position.z);
 	}
 }
