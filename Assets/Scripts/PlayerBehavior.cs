@@ -149,7 +149,7 @@ public class PlayerBehavior : MonoBehaviour {
 
 		if (canUseArrows) {
 			// Jumping
-			if (Input.GetKey (KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) {
+			if (Input.GetKeyDown (KeyCode.UpArrow) || Input.GetKey(KeyCode.W)) {
 				Jump ();
 			}
 
