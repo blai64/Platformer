@@ -69,7 +69,9 @@ public class BossMove : MonoBehaviour {
 
 	void moveInOval(){
 		alpha += speed;
-		radian = alpha * .005f;
+		//radian = alpha * .005f;
+		radian = Mathf.PI / 2;
+		radian += alpha * .005f;
 		x = centerx + (float)(semimajor * Mathf.Cos (radian));
 		y = centery + (float)(semiminor * Mathf.Sin (radian));
 		Vector3 targetPosition = new Vector3 (x, y, 0);
