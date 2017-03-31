@@ -267,7 +267,7 @@ public class PlayerBehavior : MonoBehaviour {
 		GameObject targetBall; 
 		int numBallsValid = 0;
 		int i = 0;
-		while (trajectoryBallList.Count < 20) {
+		while (trajectoryBallList.Count < 40) {
 			if (i >= trajectoryBallList.Count)
 				trajectoryBallList.Add (Instantiate (trajectoryBallPrefab));
 			

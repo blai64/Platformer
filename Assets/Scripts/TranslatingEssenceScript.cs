@@ -11,7 +11,7 @@ public class TranslatingEssenceScript : MonoBehaviour {
 	private float YDirection;
 	private float limit;
 
-	private float transSpeed = 0.05f;
+	private float transSpeed = 0.2f;
 
 	public float TransSpeed{
 		get{ return transSpeed;}
