@@ -3,20 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class MovingPlatformScript : MonoBehaviour {
-	int direction = 1;
+
+	public float LeftBound = 41;
+	public float RightBound = 59;
+	private float leftBound;
+	private float rightBound;
+	private int direction = 1;
 
 	Rigidbody body;
-	// Use this for initialization
+
 	void Start () {
 		body = this.GetComponent<Rigidbody> ();
+		leftBound = LeftBound;
+		rightBound = RightBound;
 	}
-	
-	// Update is called once per frame
+
 	void Update () {
 		body.velocity = new Vector3 (direction,0,0);
-		if (transform.position.x > 59)
+		if (transform.position.x > rightBound)
 			direction = -1;
-		if (transform.position.x < 41)
+		if (transform.position.x < leftBound)
 			direction = 1;
 	}
 }

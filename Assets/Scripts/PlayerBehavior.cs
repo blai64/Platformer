@@ -187,6 +187,8 @@ public class PlayerBehavior : MonoBehaviour {
 				projected = true;
 			}
 			if (projected) {
+
+				canUseArrows = false;
 				Vector3 screenPos = cam.WorldToScreenPoint (transform.position);
 
 				if ((Input.mousePosition.x > screenPos.x) && isLeft) {
@@ -194,17 +196,13 @@ public class PlayerBehavior : MonoBehaviour {
 				} else if ((Input.mousePosition.x < screenPos.x) && !isLeft) {
 					ChangeDirection (true);
 				}
-		
 
 				DisplayThrowTrajectory ();
 			}
 
 			if (Input.GetMouseButtonUp (0) && attached && projected) {
-
 				ThrowTeleporter ();
 				DestroyProjectedPath ();
-
-
 			}
 
 			// Cancels the throwing animation without throwing
