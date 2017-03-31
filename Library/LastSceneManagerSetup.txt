@@ -1,4 +1,8 @@
 sceneSetups:
+<<<<<<< HEAD
 - path: Assets/Scenes/Zao_BossLevel.unity
+=======
+- path: Assets/Scenes/LevlEnvDmg.unity
+>>>>>>> 0d3af651b8020687f6015fe8015ede36cdc6244d
   isLoaded: 1
   isActive: 1

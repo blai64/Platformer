@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class BossMove : MonoBehaviour {
 
@@ -13,7 +14,8 @@ public class BossMove : MonoBehaviour {
 	public float centerx = 30.0f;
 	public float centery = 18.5f;
 
-	public static BossMove instance;
+
+	public string nextSceneName;
 
 	private float x;
 	private float y;
@@ -31,12 +33,15 @@ public class BossMove : MonoBehaviour {
 	public float smoothTime = 0.3F;
 
 	private bool isMoving;
-	private bool isMoving2;
+	private bool isDead;
 	private bool invincible;
+	private int stopCounter; 
 
 	private IEnumerator curRoutine;
 
 	private float speed;
+
+	private Animator anim;
 
 
 	void Start () {
@@ -46,36 +51,20 @@ public class BossMove : MonoBehaviour {
 		alpha = 0f;
 		isMoving = true;
 		invincible = false;
+		isDead = false;
 		speed = 5.0f;
 
+		stopCounter = 1;
+
+		anim = transform.GetChild (0).GetComponent<Animator> ();
+		anim.SetBool ("isLeft", false);
+		anim.SetBool ("isAttacking", true);
 	}
 	
 	void Update() {
-		/*
-		float step = speed * Time.deltaTime;
-		if (transform.position != p1.position) {
-			transform.position = Vector3.MoveTowards (transform.position, p1.position, step);
-		} else if (transform.position != p2.position) {
-			transform.position = Vector3.MoveTowards (transform.position, p2.position, step);
-		}
-		*/
-		if (isMoving && health > 0) {
+		if (isMoving && health > 0 && !isDead) {
 			moveInOval ();
 		}
-		/*
-		if (radian % (Mathf.PI/4) < 0.05) {
-			isMoving = false;
-
-			Debug.Log ("here");
-
-			if (curRoutine != null)
-				StopCoroutine (curRoutine);
-			
-			curRoutine = Stop (2);
-			StartCoroutine (curRoutine);
-		}*/
-
-			
 	}
 
 	void moveInOval(){
@@ -91,40 +80,68 @@ public class BossMove : MonoBehaviour {
 		yield return new WaitForSeconds (time);
 		isMoving = true;
 		invincible = false;
+		anim.SetBool ("isHurt", false);
+		anim.SetBool ("isAttacking", true);
 	}
 
 	void OnCollisionEnter(Collision col){
 		if (col.gameObject.CompareTag ("Killer") && health > 0
-			&& !invincible) {
+		    && !invincible && !isDead) {
 			Debug.Log ("kk");
 			isMoving = false;
 			invincible = true; 
-			if (health == 3)
-				health = 2;
-			else if (health == 2)
-				health = 1;
-			else if (health == 1)
-				health = 0;
+
+			health--;
 
 			if (curRoutine != null)
 				StopCoroutine (curRoutine);
 
-			curRoutine = Stop (4);
-			StartCoroutine (curRoutine);
+			anim.SetBool ("isHurt", true);
 
+			if (health <= 0) {
+				anim.SetBool ("isAttacking", false);
+				gameObject.tag = "Untagged";
+				isDead = true;
+				StartCoroutine (KillBoss ()); 
+			} else {
+				curRoutine = Stop (4);
+				StartCoroutine (curRoutine);
+
+			}
+
+		} else if (col.gameObject.CompareTag ("Ground") && isDead) {
+			GetComponent<BoxCollider> ().size = new Vector3 (1.0f, 1.0f, 1.0f);
+			anim.SetBool ("isDead", true);
+			//StartCoroutine (ChangeScene ());
 		}
 	}
 
 	void OnTriggerEnter(Collider col){
 		if (col.gameObject.CompareTag ("BossStop")) {
 			isMoving = false;
-		
+			stopCounter = (stopCounter + 1) % 2;
+			if (stopCounter == 0)
+				anim.SetBool ("isLeft", !anim.GetBool ("isLeft"));
+
 			if (curRoutine != null)
 				StopCoroutine (curRoutine);
 
+			anim.SetBool ("isAttacking", false);
 			curRoutine = Stop (2);
 			StartCoroutine (curRoutine);
 
 		}
+	}
+
+	IEnumerator KillBoss(){
+		yield return new WaitForSeconds (1.0f);
+		anim.SetBool ("isHurt", false);
+		GetComponent<Rigidbody> ().useGravity = true;
+	} 
+
+	IEnumerator ChangeScene(){
+		UIFade.instance.Fade (false);
+		yield return new WaitForSeconds (1.5f);
+		SceneManager.LoadScene (nextSceneName);
 	}
 }
